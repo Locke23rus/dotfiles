@@ -1,0 +1,7 @@
+if [ -f ~/.dotfiles/bash/paths ]; then
+  . ~/.dotfiles/bash/paths
+fi
+
+if [ -f ~/.dotfiles/bash/aliases ]; then
+  . ~/.dotfiles/bash/aliases
+fi
