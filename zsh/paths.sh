@@ -1,0 +1,5 @@
+export JAVA_HOME="/opt/java"
+export GROOVY_HOME="$HOME/share/groovy-1.7.1"
+export GRAILS_HOME="$HOME/share/grails-1.3.0.RC1"
+export SCALA_HOME="$HOME/share/scala-2.8.0.Beta1-prerelease"
+export PATH="$JAVA_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$SCALA_HOME/bin:$PATH"
