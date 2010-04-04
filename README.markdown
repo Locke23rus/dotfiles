@@ -27,6 +27,10 @@ In ~/.bashrc, add:
 
 ## Ruby ##
 
+### RVM ###
+
+    mkdir -p ~/.rvm/src/ && cd ~/.rvm/src && rm -rf ./rvm/ && git clone --depth 1 git://github.com/wayneeseguin/rvm.git && cd rvm && ./install
+
 ### Gems ###
 
     $ ln -s ~/.dotfiles/gemrc ~/.gemrc
