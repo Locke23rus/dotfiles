@@ -29,11 +29,12 @@ In ~/.bashrc, add:
 
 ### RVM ###
 
-    mkdir -p ~/.rvm/src/ && cd ~/.rvm/src && rm -rf ./rvm/ && git clone --depth 1 git://github.com/wayneeseguin/rvm.git && cd rvm && ./install
+    $ mkdir -p ~/.rvm/src/ && cd ~/.rvm/src && rm -rf ./rvm/ && git clone --depth 1 git://github.com/wayneeseguin/rvm.git && cd rvm && ./install
 
 ### Gems ###
 
     $ ln -s ~/.dotfiles/gemrc ~/.gemrc
+    $ gem install bundler capistrano rails will_paginate hpricot haml compass right-rails sqlite3-ruby pg cucumber
 
 ## Git ##
 
