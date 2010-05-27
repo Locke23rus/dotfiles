@@ -42,5 +42,16 @@ In ~/.bashrc, add:
     $ git config --global user.email "mail@example.com"
     $ git config --global github.user githubusername
     $ git config --global github.token individualapikey
+    $ git config --global core.editor "vim"
 
 
+## Fonts ##
+
+    $ cd ~
+    $ mkdir .fonts
+    $ cd .fonts
+    $ wget -q http://www.gringod.com/wp-upload/software/Fonts/Monaco_Linux.ttf
+    $ mkfontscale
+    $ mkfontdir
+    $ fc-cache -fv ~/.fonts 
+    $ fc-list | grep Monaco

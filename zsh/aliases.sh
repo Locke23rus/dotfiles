@@ -9,3 +9,10 @@ alias redcar-dev='jruby $HOME/Projects/redcar/bin/redcar --font=Monaco --font-si
 
 # Reload zsh config
 alias reload='source ~/.zshrc'
+
+# Rubygems
+alias jgem='jruby -S gem'
+alias cheat='jruby -S cheat'
+
+# Ruby on Rails
+alias r='rails'
