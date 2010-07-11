@@ -9,6 +9,7 @@ syntax on
 autocmd BufEnter * :syntax sync fromstart
 filetype on
 filetype plugin on
+filetype indent on
 
 set guifont=Monaco\ 12
 
@@ -42,5 +43,6 @@ autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4 
 
 " ruby support
 " ------------
+au BufRead,BufNewFile Gemfile,Rakefile set filetype=ruby
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
