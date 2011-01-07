@@ -11,7 +11,10 @@ filetype on
 filetype plugin on
 filetype indent on
 
-set guifont=Monaco\ 12
+if has("gui_running")
+  set guifont=Liberation\ Mono\ Bold\ 12
+  :
+endif
 
 " Make shift-insert work like in Xterm
 map <S-Insert> <MiddleMouse>
@@ -45,4 +48,13 @@ autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4 
 " ------------
 au BufRead,BufNewFile Gemfile,Rakefile set filetype=ruby
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+
+
+" Mappings to move lines
+nnoremap <A-j> :m+<CR>==
+nnoremap <A-k> :m-2<CR>==
+inoremap <A-j> <Esc>:m+<CR>==gi
+inoremap <A-k> <Esc>:m-2<CR>==gi
+vnoremap <A-j> :m'>+<CR>gv=gv
+vnoremap <A-k> :m-2<CR>gv=gv
 

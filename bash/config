@@ -6,4 +6,11 @@ if [ -f ~/.dotfiles/bash/aliases ]; then
   . ~/.dotfiles/bash/aliases
 fi
 
+if [ -f ~/.dotfiles/bash/completions ]; then
+  . ~/.dotfiles/bash/completions
+fi
+
+# RVM
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
+cd ~

@@ -4,4 +4,8 @@ alias ..='cd ../..'
 alias ...='cd ../../..'
 
 # Redcar Editor
-alias redcar='redcar --theme=Railscasts'
+alias redcar='redcar --fork'
+alias redcar-dev='jruby ~/Applications/redcar/bin/redcar --fork'
+
+# Rails
+alias r='rails'

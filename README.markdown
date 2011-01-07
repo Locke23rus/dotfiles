@@ -44,7 +44,6 @@ In ~/.bashrc, add:
     $ git config --global github.token individualapikey
     $ git config --global core.editor "vim"
 
-
 ## Fonts ##
 
     $ cd ~
