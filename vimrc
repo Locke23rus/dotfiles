@@ -2,11 +2,6 @@
 " ----------------------
 set enc=utf-8
 
-" Pathogen.vim
-" http://www.vim.org/scripts/script.php?script_id=2332
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
 set nocompatible
 set backspace=indent,eol,start
 
