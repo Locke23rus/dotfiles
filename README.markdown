@@ -1,12 +1,12 @@
 # Kirill Nikitin Dot Files #
-    
+
     $ git clone git://github.com/Locke23rus/dotfiles.git ~/.dotfiles
 
 ## Zsh ##
 
     $ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
     $ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
-    
+
 To change the default shell to zsh, run:
 
     $ chsh -s /bin/zsh
@@ -34,7 +34,7 @@ In ~/.bashrc, add:
 ### Gems ###
 
     $ ln -s ~/.dotfiles/gemrc ~/.gemrc
-    $ gem install bundler capistrano rails will_paginate hpricot haml compass right-rails sqlite3-ruby pg cucumber
+    $ gem install bundler capistrano hirb cheat
 
 ## Git ##
 
@@ -52,5 +52,5 @@ In ~/.bashrc, add:
     $ wget -q http://www.gringod.com/wp-upload/software/Fonts/Monaco_Linux.ttf
     $ mkfontscale
     $ mkfontdir
-    $ fc-cache -fv ~/.fonts 
+    $ fc-cache -fv ~/.fonts
     $ fc-list | grep Monaco
