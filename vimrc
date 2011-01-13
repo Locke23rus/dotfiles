@@ -1,7 +1,7 @@
 source ~/.vim/vimrc
 
 if has("gui_running")
-  set guifont=Liberation\ Mono\ Bold\ 12
+  set guifont=Liberation\ Mono\ Bold\ 11
 endif
 
 " CSS
