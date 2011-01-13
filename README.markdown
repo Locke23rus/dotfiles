@@ -1,8 +1,10 @@
-# Kirill Nikitin Dot Files #
+Kirill Nikitin Dot Files
+========================
 
     $ git clone git://github.com/Locke23rus/dotfiles.git ~/.dotfiles
 
-## Zsh ##
+Zsh
+---
 
     $ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
     $ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
@@ -17,7 +19,8 @@ In ~/.zshrc, add:
       source ~/.dotfiles/zsh/config.sh
     fi
 
-## Bash ##
+Bash
+----
 
 In ~/.bashrc, add:
 
@@ -25,26 +28,32 @@ In ~/.bashrc, add:
       . ~/.dotfiles/bash/config
     fi
 
-## Ruby ##
+Ruby
+----
 
-### RVM ###
+    $ ln -s ~/.dotfiles/irbrc ~/.irbrc
+
+### RVM
 
     $ mkdir -p ~/.rvm/src/ && cd ~/.rvm/src && rm -rf ./rvm/ && git clone --depth 1 git://github.com/wayneeseguin/rvm.git && cd rvm && ./install
 
-### Gems ###
+### Gems
 
     $ ln -s ~/.dotfiles/gemrc ~/.gemrc
     $ gem install bundler capistrano hirb cheat
 
-## Git ##
+Git
+---
 
     $ git config --global user.name "Name Surname"
     $ git config --global user.email "mail@example.com"
     $ git config --global github.user githubusername
     $ git config --global github.token individualapikey
     $ git config --global core.editor "vim"
+    $ git config --global core.excludesfile ~/.dotfiles/gitignore
 
-## Fonts ##
+Fonts
+-----
 
     $ cd ~
     $ mkdir .fonts
