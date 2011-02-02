@@ -9,3 +9,4 @@ alias redcar-dev='jruby ~/Applications/redcar/bin/redcar --fork'
 
 # Rails
 alias r='rails'
+alias rmigrate='rake db:migrate && rake db:test:prepare'
