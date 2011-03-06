@@ -1,7 +1,7 @@
 # cd
-alias .='cd ..'
-alias ..='cd ../..'
-alias ...='cd ../../..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 # Redcar Editor
 alias redcar='redcar --fork'
@@ -9,3 +9,7 @@ alias redcar-dev='jruby ~/Applications/redcar/bin/redcar --fork'
 
 # Rails
 alias r='rails'
+alias a='autotest'
+alias b='bundle'
+
+alias latest-npm='curl http://npmjs.org/install.sh | sh'

@@ -10,6 +10,10 @@ if [ -f ~/.dotfiles/bash/completions ]; then
   . ~/.dotfiles/bash/completions
 fi
 
+if [ -f ~/.dotfiles/bash/env ]; then
+  . ~/.dotfiles/bash/env
+fi
+
 # RVM
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
