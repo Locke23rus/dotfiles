@@ -7,9 +7,10 @@ alias ....='cd ../../..'
 alias redcar='redcar --fork'
 alias redcar-dev='jruby ~/Applications/redcar/bin/redcar --fork'
 
-# Rails
+# Ruby and Rails
 alias r='rails'
 alias a='autotest'
 alias b='bundle'
+alias rmigrate='rake db:migrate && rake db:test:prepare'
 
 alias latest-npm='curl http://npmjs.org/install.sh | sh'
