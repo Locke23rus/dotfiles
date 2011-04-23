@@ -14,3 +14,4 @@ alias b='bundle'
 alias rmigrate='rake db:migrate && rake db:test:prepare'
 
 alias latest-npm='curl http://npmjs.org/install.sh | sh'
+alias latest-go='cd $HOME/Libraries/go/src && hg pull && hg update release && ./all.bash'
