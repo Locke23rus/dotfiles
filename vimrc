@@ -1,4 +1,4 @@
-source ~/.vim/vimrc
+" source ~/.vim/vimrc
 
 if has("gui_running")
   set guifont=Liberation\ Mono\ Bold\ 11

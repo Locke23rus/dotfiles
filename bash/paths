@@ -1,8 +1,2 @@
-export JAVA_HOME="/usr/lib/jvm/java-6-sun"
-export JDK_HOME="/usr/lib/jvm/java-6-sun"
 export PATH="$HOME/Libraries/go/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
-
-NVM_DIR=$HOME/.nvm
-. $NVM_DIR/nvm.sh
-nvm use
