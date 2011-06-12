@@ -1,23 +1,7 @@
 Kirill Nikitin Dot Files
 ========================
 
-    $ git clone git://github.com/Locke23rus/dotfiles.git ~/.dotfiles
-
-Zsh
----
-
-    $ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-    $ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
-
-To change the default shell to zsh, run:
-
-    $ chsh -s /bin/zsh
-
-In ~/.zshrc, add:
-
-    if [ -f ~/.dotfiles/zsh/config.sh ]; then
-      source ~/.dotfiles/zsh/config.sh
-    fi
+    $ git clone git@github.com:Locke23rus/dotfiles.git ~/.dotfiles
 
 Bash
 ----
@@ -28,38 +12,23 @@ In ~/.bashrc, add:
       . ~/.dotfiles/bash/config
     fi
 
-Ruby
-----
-
-    $ ln -s ~/.dotfiles/irbrc ~/.irbrc
-
-### RVM
-
-    $ mkdir -p ~/.rvm/src/ && cd ~/.rvm/src && rm -rf ./rvm/ && git clone --depth 1 git://github.com/wayneeseguin/rvm.git && cd rvm && ./install
-
-### Gems
-
-    $ ln -s ~/.dotfiles/gemrc ~/.gemrc
-    $ gem install bundler capistrano hirb cheat
-
-Git
----
-
-    $ git config --global user.name "Name Surname"
-    $ git config --global user.email "mail@example.com"
-    $ git config --global github.user githubusername
-    $ git config --global github.token individualapikey
-    $ git config --global core.editor "vim"
-    $ git config --global core.excludesfile ~/.dotfiles/gitignore
-
 Fonts
 -----
 
-    $ cd ~
-    $ mkdir .fonts
-    $ cd .fonts
+    $ mkdir ~/.fonts && cd .fonts
     $ wget -q http://www.gringod.com/wp-upload/software/Fonts/Monaco_Linux.ttf
     $ mkfontscale
     $ mkfontdir
     $ fc-cache -fv ~/.fonts
     $ fc-list | grep Monaco
+
+Others
+----
+
+    $ ln -s ~/.dotfiles/vimrc ~/.vimrc
+    $ ln -s ~/.dotfiles/gemrc ~/.gemrc
+    $ ln -s ~/.dotfiles/irbrc ~/.irbrc
+    $ ln -s ~/.dotfiles/hgrc ~/.hgrc
+    $ ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+    $ git config --global core.excludesfile ~/.dotfiles/gitignore
+
