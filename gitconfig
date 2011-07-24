@@ -15,7 +15,7 @@
   ls = ls-files
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-  excludesfile = /home/Locke23rus/.dotfiles/gitignore
+	excludesfile = /home/locke23rus/.dotfiles/gitignore
 [color]
   ui = true
 [color "branch"]
