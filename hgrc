@@ -2,3 +2,6 @@
 editor = vim
 ssh = ssh -C
 username = Kirill Nikitin <locke23rus@gmail.com>
+
+[web]
+cacerts = /etc/ssl/certs/ca-certificates.crt

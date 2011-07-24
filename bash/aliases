@@ -5,13 +5,14 @@ alias ....='cd ../../..'
 
 # Redcar Editor
 alias redcar='redcar --fork'
-alias redcar-dev='jruby ~/Applications/redcar/bin/redcar --fork'
+alias redcar-dev='jruby ~/applications/redcar/bin/redcar --fork'
 
 # Ruby and Rails
 alias r='rails'
 alias a='autotest'
 alias b='bundle'
 alias rmigrate='rake db:migrate && rake db:test:prepare'
+alias b-rmigrate='b exec rake db:migrate && b exec rake:db:test:prepare'
 
 alias latest-npm='curl http://npmjs.org/install.sh | sh'
-alias latest-go='cd $HOME/Libraries/go/src && hg pull && hg update release && ./all.bash'
+alias latest-go='cd $HOME/libraries/go/src && hg pull && hg update release && ./all.bash'
