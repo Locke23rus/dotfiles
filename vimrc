@@ -68,6 +68,7 @@ vmap <Tab> >gv
 " NERDTree
 silent! nmap <silent> <F9> :NERDTreeToggle<CR>
 nnoremap <silent> <C-f> :NERDTreeFind<CR>
+let NERDTreeIgnore = ['\.rbc$']
 
 " Dictionary completions
 set dictionary+=/usr/share/dict/words

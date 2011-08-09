@@ -22,7 +22,11 @@ https://github.com/tpope/vim-pathogen
 
 https://github.com/scrooloose/nerdtree
 
-    $ cd ~/.vim/bundle && git clone https://github.com/scrooloose/nerdtree
+    $ cd ~/.vim/bundle && git clone https://github.com/scrooloose/nerdtree.git
+
+https://github.com/jpo/vim-railscasts-theme
+
+    $ cd ~/.vim/bundle && git clone https://github.com/jpo/vim-railscasts-theme.git
 
 Bash
 ----
