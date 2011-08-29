@@ -12,21 +12,7 @@ http://golang.org/doc/install.html
 Vim
 ---
 
-    $ mkdir -p ~/.vim/autoload
-    $ mkdir -p ~/.vim/bundle
     $ ln -s ~/libraries/go/misc/vim/ ~/.vim/bundle/go
-
-https://github.com/tpope/vim-pathogen
-
-    $ cd ~/.vim/autoload && wget https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-
-https://github.com/scrooloose/nerdtree
-
-    $ cd ~/.vim/bundle && git clone https://github.com/scrooloose/nerdtree.git
-
-https://github.com/jpo/vim-railscasts-theme
-
-    $ cd ~/.vim/bundle && git clone https://github.com/jpo/vim-railscasts-theme.git
 
 Bash
 ----
@@ -42,6 +28,7 @@ Others
 
     $ ln -s ~/.dotfiles/vimrc ~/.vimrc
     $ ln -s ~/.dotfiles/gvimrc ~/.gvimrc
+    $ ln -s ~/.dotfiles/vim ~/.vim
     $ ln -s ~/.dotfiles/gemrc ~/.gemrc
     $ ln -s ~/.dotfiles/irbrc ~/.irbrc
     $ ln -s ~/.dotfiles/hgrc ~/.hgrc
