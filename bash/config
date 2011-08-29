@@ -15,7 +15,9 @@ if [ -f ~/.dotfiles/bash/env ]; then
 fi
 
 # NVM
-. ~/.nvm/nvm.sh
+if [ -f ~/.nvm/nvm.sh ]; then
+  . ~/.nvm/nvm.sh
+fi
 
 # RVM
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
