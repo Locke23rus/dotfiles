@@ -6,7 +6,8 @@ Kirill Nikitin Dot Files
 Apps
 ----
 
-https://github.com/creationix/nvm
+    $ sudo apt-get install -y ack-grep
+
 http://golang.org/doc/install.html
 
 Vim
