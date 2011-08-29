@@ -4,3 +4,6 @@
 [submodule "vim/bundle/railscasts-theme"]
 	path = vim/bundle/railscasts-theme
 	url = https://github.com/jpo/vim-railscasts-theme.git
+[submodule "vim/bundle/endwise"]
+	path = vim/bundle/endwise
+	url = https://github.com/tpope/vim-endwise.git
