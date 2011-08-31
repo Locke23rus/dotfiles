@@ -8,6 +8,21 @@ filetype plugin indent on
 "Use Vim settings, rather then Vi settings
 set nocompatible
 
+"allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+"store lots of :cmdline history
+set history=1000
+
+set showcmd     "show incomplete cmds down the bottom
+set showmode    "show current mode down the bottom
+
+set incsearch   "find the next match as we type the search
+set hlsearch    "hilight searches by default
+
+set number      "add line numbers
+set showbreak=...
+
 syntax enable
 if has("gui_running")
   set guifont=Liberation\ Mono\ Bold\ 11
@@ -43,6 +58,9 @@ autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4 
 
 " GO support
 autocmd FileType go setlocal shiftwidth=8 tabstop=8 softtabstop=8
+
+" CoffeeScript
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 tabstop=2 softtabstop=2 expandtab foldmethod=indent nofoldenable
 
 " Remove trailing spaces
 autocmd BufWritePre * :%s/\s\+$//e
