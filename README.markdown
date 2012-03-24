@@ -2,6 +2,7 @@ Kirill Nikitin Dot Files
 ========================
 
     $ git clone git@github.com:Locke23rus/dotfiles.git ~/.dotfiles
+    $ cd ~/.dotfiles && git submodule update --init
 
 Apps
 ----
