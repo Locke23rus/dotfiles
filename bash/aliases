@@ -3,10 +3,6 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-# Redcar Editor
-alias redcar='redcar --fork'
-alias redcar-dev='jruby ~/applications/redcar/bin/redcar --fork'
-
 # Ruby and Rails
 alias r='rails'
 alias a='autotest'

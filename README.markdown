@@ -13,7 +13,7 @@ http://golang.org/doc/install.html
 Vim
 ---
 
-    $ ln -s ~/libraries/go/misc/vim/ ~/.vim/bundle/go
+    $ sudo apt-get install -y vim-gtk vim-puppet
 
 Bash
 ----
@@ -34,6 +34,3 @@ Others
     $ ln -s ~/.dotfiles/irbrc ~/.irbrc
     $ ln -s ~/.dotfiles/hgrc ~/.hgrc
     $ ln -s ~/.dotfiles/gitconfig ~/.gitconfig
-    $ sudo ln -s  ~/libraries/go/misc/bash/go /etc/bash_completion.d/go
-    $ git config --global core.excludesfile ~/.dotfiles/gitignore
-

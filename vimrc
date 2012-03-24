@@ -1,8 +1,8 @@
 " source ~/.vim/vimrc
 
 "load pathogen managed plugins
-filetype off
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
+syntax on
 filetype plugin indent on
 
 "Use Vim settings, rather then Vi settings
@@ -23,7 +23,6 @@ set hlsearch    "hilight searches by default
 set number      "add line numbers
 set showbreak=...
 
-syntax enable
 if has("gui_running")
   set guifont=Liberation\ Mono\ Bold\ 11
   colorscheme railscasts
