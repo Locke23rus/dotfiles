@@ -52,3 +52,6 @@
 [submodule "vim/bundle/align"]
 	path = vim/bundle/align
 	url = https://github.com/pix/vim-align.git
+[submodule "vim/bundle/bundler"]
+	path = vim/bundle/bundler
+	url = https://github.com/tpope/vim-bundler.git

@@ -7,9 +7,7 @@ Kirill Nikitin Dot Files
 Apps
 ----
 
-    $ sudo apt-get install -y ack-grep
-
-http://golang.org/doc/install.html
+    $ sudo apt-get install -y ack-grep exuberant-ctags
 
 Vim
 ---
@@ -24,6 +22,11 @@ In ~/.bashrc, add:
     if [ -f ~/.dotfiles/bash/config ]; then
       . ~/.dotfiles/bash/config
     fi
+
+RVM
+---
+
+    echo 'gem-ctags' >> ~/.rvm/gemsets/global.gems
 
 Others
 ------
