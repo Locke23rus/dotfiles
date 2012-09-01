@@ -37,5 +37,4 @@
 [difftool]
   prompt = false
 [push]
-# Push current branch even if you've never pushed it before
-default = current
+  default = upstream

@@ -1,5 +1,7 @@
 " source ~/.vim/vimrc
 
+set rtp+=/usr/lib/go/misc/vim
+
 "load pathogen managed plugins
 call pathogen#infect()
 syntax on
@@ -57,6 +59,10 @@ autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4 
 
 " GO support
 autocmd FileType go setlocal shiftwidth=8 tabstop=8 softtabstop=8
+
+" Ruby
+" ----------
+autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " CoffeeScript
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 tabstop=2 softtabstop=2 expandtab foldmethod=indent nofoldenable

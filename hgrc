@@ -5,3 +5,6 @@ username = Kirill Nikitin <locke23rus@gmail.com>
 
 [web]
 cacerts = /etc/ssl/certs/ca-certificates.crt
+
+[extensions]
+hggit=
