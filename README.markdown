@@ -37,4 +37,4 @@ Others
     $ ln -s ~/.dotfiles/gemrc ~/.gemrc
     $ ln -s ~/.dotfiles/irbrc ~/.irbrc
     $ ln -s ~/.dotfiles/hgrc ~/.hgrc
-    $ ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+    $ cp ~/.dotfiles/gitconfig ~/.gitconfig
