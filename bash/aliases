@@ -17,6 +17,7 @@ alias b-a='b-e autotest'
 alias b-migrate='b-t db:migrate && b-t db:test:prepare'
 alias b-routes='b-t routes'
 alias b-g='b-e rails g'
+alias b-spec='b-e rspec'
 
 alias latest-npm='curl http://npmjs.org/install.sh | sh'
 alias latest-go='cd $HOME/libraries/go/src && hg pull && hg update release && ./all.bash'

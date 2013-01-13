@@ -1,6 +1,6 @@
 " source ~/.vim/vimrc
 
-set rtp+=/usr/lib/go/misc/vim
+set rtp+=/usr/share/vim/addons
 
 "load pathogen managed plugins
 call pathogen#infect()
