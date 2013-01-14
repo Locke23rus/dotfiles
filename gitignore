@@ -6,3 +6,5 @@
 .directory
 .netrwhist
 .rbx
+*.beam
+*.out

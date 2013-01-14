@@ -70,6 +70,13 @@ au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 tabstop=2 softtabstop=2 exp
 " Remove trailing spaces
 autocmd BufWritePre * :%s/\s\+$//e
 
+" Copy, cut and paste
+nnoremap <C-S-c> "+y
+vnoremap <C-S-c> "+y
+inoremap <C-S-v> <Esc>1l"+gPgi
+nnoremap <C-S-v> "+gP
+vnoremap <C-S-v> "+gP
+
 " Make shift-insert work like in Xterm
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
