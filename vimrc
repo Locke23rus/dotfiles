@@ -24,10 +24,18 @@ set hlsearch    "hilight searches by default
 
 set number      "add line numbers
 set showbreak=...
+set autoindent
 
 if has("gui_running")
   set guifont=Liberation\ Mono\ Bold\ 11
   colorscheme railscasts
+endif
+
+" use system clipboard
+if has("unnamedplus")
+  set clipboard=unnamedplus
+elseif has("clipboard")
+  set clipboard=unnamed
 endif
 
 " default tab width
@@ -59,6 +67,7 @@ autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4 
 
 " GO support
 autocmd FileType go setlocal shiftwidth=8 tabstop=8 softtabstop=8
+autocmd BufWritePre *.go :silent Fmt
 
 " Ruby
 " ----------
@@ -98,7 +107,7 @@ vmap <Tab> >gv
 " NERDTree
 silent! nmap <silent> <F9> :NERDTreeToggle<CR>
 nnoremap <silent> <C-f> :NERDTreeFind<CR>
-let NERDTreeIgnore = ['\.rbc$']
+let NERDTreeIgnore = ['\.rbc$','\.pyc','\~$','\.swo$','\.swp$','\.git','\.hg','\.svn','\.bzr']
 
 " Dictionary completions
 set dictionary+=/usr/share/dict/words

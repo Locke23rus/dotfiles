@@ -8,3 +8,5 @@
 .rbx
 *.beam
 *.out
+/public/system/
+
