@@ -3,6 +3,8 @@
 /.idea
 *~
 /.rvmrc
+/.ruby-gemset
+/.ruby-version
 .directory
 .netrwhist
 .rbx
