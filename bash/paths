@@ -1,4 +1,4 @@
+export GOROOT="$HOME/share/go"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/code/rubinius/bin:$PATH"
-export GOPATH="$HOME/src/go"
-export GOROOT="/usr/lib/go"
+export PATH=$GOROOT/bin:$PATH

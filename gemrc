@@ -3,7 +3,7 @@
 :update_sources: true
 gem: --no-ri --no-rdoc
 :sources:
-  - http://rubygems.org/
+  - https://rubygems.org/
   - http://gems.github.com
 :backtrace: false
 :verbose: true
