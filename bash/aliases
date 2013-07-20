@@ -21,3 +21,5 @@ alias b-spec='b-e rspec'
 
 alias latest-npm='curl http://npmjs.org/install.sh | sh'
 alias latest-go='cd $HOME/libraries/go/src && hg pull && hg update release && ./all.bash'
+
+alias git-update-submodules='git submodule foreach git pull origin master'
