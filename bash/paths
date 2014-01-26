@@ -1,4 +1,9 @@
 export GOROOT="$HOME/share/go"
-export PATH="$HOME/bin:$PATH"
-export PATH="$HOME/code/rubinius/bin:$PATH"
+export GOPATH=$HOME/src/go
 export PATH=$GOROOT/bin:$PATH
+export PATH="$HOME/bin:$PATH"
+
+function rubinius-dev()
+{
+  export PATH="$HOME/code/rubinius/bin:$PATH"
+}

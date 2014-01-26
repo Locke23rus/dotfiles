@@ -1,25 +1,15 @@
-# cd
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-
 # Ruby and Rails
 alias r='rails'
-alias a='autotest'
-alias rmigrate='rake db:migrate && rake db:test:prepare'
 alias b='bundle'
 alias b-e='b exec'
 alias b-t='b-e rake'
 alias b-s='b-e rails s'
 alias b-c='b-e rails c'
 alias b-db='b-e rails db'
-alias b-a='b-e autotest'
+alias b-g='b-e rails g'
+alias b-r='b-e rails r'
 alias b-migrate='b-t db:migrate && b-t db:test:prepare'
 alias b-routes='b-t routes'
-alias b-g='b-e rails g'
 alias b-spec='b-e rspec'
-
-alias latest-npm='curl http://npmjs.org/install.sh | sh'
-alias latest-go='cd $HOME/libraries/go/src && hg pull && hg update release && ./all.bash'
 
 alias git-update-submodules='git submodule foreach git pull origin master'

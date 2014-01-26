@@ -1,6 +1,7 @@
 " source ~/.vim/vimrc
 
 set rtp+=/usr/share/vim/addons
+set runtimepath+=$GOROOT/misc/vim
 
 "load pathogen managed plugins
 call pathogen#infect()
