@@ -11,4 +11,4 @@
 *.beam
 *.out
 /public/system/
-
+.pryrc

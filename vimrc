@@ -115,3 +115,6 @@ set dictionary+=/usr/share/dict/words
 
 " Ack
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
+" Shortcut for saving read-only files
+cnoremap sudow w !sudo dd of=%

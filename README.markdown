@@ -23,11 +23,6 @@ In ~/.bashrc, add:
       . ~/.dotfiles/bash/config
     fi
 
-RVM
----
-
-    echo 'gem-ctags' >> ~/.rvm/gemsets/global.gems
-
 Others
 ------
 
