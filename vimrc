@@ -1,13 +1,16 @@
 " source ~/.vim/vimrc
 
-set rtp+=/usr/share/vim/addons
-set runtimepath+=$GOROOT/misc/vim
+"Use Vim settings, rather then Vi settings
+set nocompatible
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+"let Vundle manage Vundle
+Bundle 'gmarik/vundle'
 
 syntax on
 filetype plugin indent on
-
-"Use Vim settings, rather then Vi settings
-set nocompatible
 
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
