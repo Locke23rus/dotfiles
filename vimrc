@@ -3,8 +3,6 @@
 set rtp+=/usr/share/vim/addons
 set runtimepath+=$GOROOT/misc/vim
 
-"load pathogen managed plugins
-call pathogen#infect()
 syntax on
 filetype plugin indent on
 
@@ -106,15 +104,15 @@ vmap <S-Tab> <gv
 vmap <Tab> >gv
 
 " NERDTree
-silent! nmap <silent> <F9> :NERDTreeToggle<CR>
-nnoremap <silent> <C-f> :NERDTreeFind<CR>
-let NERDTreeIgnore = ['\.rbc$','\.pyc','\~$','\.swo$','\.swp$','\.git','\.hg','\.svn','\.bzr']
+"silent! nmap <silent> <F9> :NERDTreeToggle<CR>
+"nnoremap <silent> <C-f> :NERDTreeFind<CR>
+"let NERDTreeIgnore = ['\.rbc$','\.pyc','\~$','\.swo$','\.swp$','\.git','\.hg','\.svn','\.bzr']
 
 " Dictionary completions
 set dictionary+=/usr/share/dict/words
 
 " Ack
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+"let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " Shortcut for saving read-only files
 cnoremap sudow w !sudo dd of=%
