@@ -23,6 +23,13 @@ In ~/.bashrc, add:
       . ~/.dotfiles/bash/config
     fi
 
+
+Gems
+----
+
+    gem install bundler gem-browse
+
+
 Others
 ------
 
