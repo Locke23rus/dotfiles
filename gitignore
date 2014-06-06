@@ -12,3 +12,5 @@
 *.out
 /public/system/
 .pryrc
+*.sublime-project
+*.sublime-workspace
