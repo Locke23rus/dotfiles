@@ -14,6 +14,10 @@ if [ -f ~/.dotfiles/bash/env ]; then
   . ~/.dotfiles/bash/env
 fi
 
+if [ -f ~/.dotfiles/bash/functions ]; then
+  . ~/.dotfiles/bash/functions
+fi
+
 # NVM
 if [ -f ~/.nvm/nvm.sh ]; then
   . ~/.nvm/nvm.sh

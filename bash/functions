@@ -1,0 +1,15 @@
+function latest-rust() {
+  mkdir -p ~/.local &&
+  cd /tmp &&
+  wget https://static.rust-lang.org/rustup.sh &&
+  chmod +x ./rustup.sh &&
+  ./rustup.sh --prefix=~/.local
+}
+
+function latest-atom() {
+  cd ~/code/atom &&
+  git pull upstream master &&
+  npm install browserify &&
+  ./script/build &&
+  sudo script/grunt install
+}
