@@ -1,6 +1,7 @@
-if has('vim_starting')
-  set nocompatible               " Be iMproved
+" Note: Skip initialization for vim-tiny or vim-small.
+ if !1 | finish | endif
 
+if has('vim_starting')
   " Required:
   set runtimepath+=~/.nvim/bundle/neobundle.vim/
   set runtimepath+=/home/kirill/.local/share/go/misc/vim
@@ -13,7 +14,23 @@ call neobundle#begin(expand('~/.nvim/bundle/'))
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'tpope/vim-sensible'
+NeoBundle 'tpope/vim-rsi'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/vim-eunuch'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-sleuth'
+NeoBundle 'tpope/vim-repeat'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'tpope/vim-bundler'
+NeoBundle 'tpope/vim-ragtag'
+NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-git'
+NeoBundle 'tpope/vim-rake'
+NeoBundle 'tpope/vim-projectionist'
+NeoBundle 'tpope/vim-obsession'
+NeoBundle 'tpope/vim-vinegar'
+"NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'bling/vim-airline'

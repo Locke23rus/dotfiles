@@ -27,7 +27,9 @@ In ~/.bashrc, add:
 Gems
 ----
 
-    gem install bundler gem-browse
+    gem install rails_best_practices
+    gem install bundle-audit
+    gem install bumbler
 
 
 Others

@@ -1,15 +1,28 @@
 function latest-rust() {
-  mkdir -p ~/.local &&
-  cd /tmp &&
-  wget https://static.rust-lang.org/rustup.sh &&
-  chmod +x ./rustup.sh &&
-  ./rustup.sh --prefix=~/.local
+  mkdir -p ~/.local
+  cd /tmp
+  if [ -f ./rustup.sh ]; then rm ./rustup.sh; fi
+  curl -sSf https://static.rust-lang.org/rustup.sh | sh -s -- --prefix=~/.local --disable-sudo
+  # wget https://static.rust-lang.org/rustup.sh &&
+  # chmod +x ./rustup.sh &&
+  # ./rustup.sh --prefix=~/.local
+  cd $OLDPWD
 }
 
 function latest-atom() {
-  cd ~/code/atom &&
+  cd ~/code/atom
   git pull upstream master &&
   npm install browserify &&
   ./script/build &&
   sudo script/grunt install
+  cd $OLDPWD
+}
+
+function latest-neovim() {
+  # git clone git@github.com:neovim/neovim.git
+  cd ~/src/neovim &&
+  git pull &&
+  rm -rf ./build &&
+  make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/.local" install
+  cd $OLDPWD
 }

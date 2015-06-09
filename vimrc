@@ -51,21 +51,9 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 "NeoBundleCheck
 
-"allow backspacing over everything in insert mode
-set backspace=indent,eol,start
-
-"store lots of :cmdline history
-set history=1000
-
-set showcmd     "show incomplete cmds down the bottom
-set showmode    "show current mode down the bottom
-
-set incsearch   "find the next match as we type the search
-set hlsearch    "hilight searches by default
-
+set hlsearch
 set number      "add line numbers
 set showbreak=...
-set autoindent
 
 " TODO
 "if has("gui_running")
@@ -84,52 +72,19 @@ set autoindent
 " default tab width
 setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
-" CSS
-" ---
-autocmd FileType css setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
-
-" HTML, XHTML, XML
-" ----------------
-autocmd FileType html,xhtml,xml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
-
-" Java
-" ----
-autocmd FileType java setlocal shiftwidth=4 tabstop=4 softtabstop=4
-
-" Javascript
-" ----------
-autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
-
-" php support
-" -----------
-autocmd FileType php setlocal shiftwidth=4 tabstop=4 softtabstop=4
-
-" python support
-" --------------
-autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4 smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class,with
-
 " GO support
 autocmd FileType go setlocal shiftwidth=8 tabstop=8 softtabstop=8
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
 autocmd FileType go compiler go
 
-" Ruby
-" ----------
-autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
-
-" CoffeeScript
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 tabstop=2 softtabstop=2 expandtab foldmethod=indent nofoldenable
-
 " Remove trailing spaces
 autocmd BufWritePre * :%s/\s\+$//e
-
 
 au FileType c nnoremap <F5> :w <bar> exec '!cc -std=c99 -Wall '.shellescape('%').' -o '.shellescape('%:r.out').' && ./'.shellescape('%:r.out')<CR>
 au FileType cpp nnoremap <F5> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r.out').' && ./'.shellescape('%:r.out')<CR>
 au FileType rust nnoremap <F4> :w <bar> exec '!rustc -L . '.shellescape('%').' -o '.shellescape('%:r.out')<CR>
 au FileType rust nnoremap <F5> :w <bar> exec '!rustc -L . '.shellescape('%').' -o '.shellescape('%:r.out').' && ./'.shellescape('%:r.out')<CR>
 au FileType go nnoremap <F5> :w <bar> exec '!go run '.shellescape('%')<CR>
-
 
 " Copy, cut and paste
 nnoremap <C-S-c> "+y
