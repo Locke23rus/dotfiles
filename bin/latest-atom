@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+source "${0%/*}/../bash/functions.sh"
+
+
+if [ -d ~/code/atom ]; then
+    cd ~/code/atom
+else
+    sudo dnf --assumeyes install make gcc gcc-c++ glibc-devel git-core libgnome-keyring-devel || fail "Installation of dependencies failed!"
+    cd ~/code/
+    git clone git@github.com:Locke23rus/atom.git
+    cd ~/code/atom
+    git remote add upstream https://github.com/atom/atom.git
+fi
+
+git fetch upstream || fail "Fetching of upstream failed!"
+git rebase upstream/master || fail "Rebase to upstream/master failed!"
+
+./script/build || fail "Build of Atom filed!"
+./script/grunt install --install-dir ~/.local || fail "Installation of Atom failed"

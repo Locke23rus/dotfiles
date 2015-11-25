@@ -70,17 +70,16 @@ function download_node()
 {
     node_url="https://nodejs.org/dist/latest/$node_archive"
     
-	log "Downloading $node_url into $src_dir ..."
+    log "Downloading $node_url into $src_dir ..."
 	
-	download "$node_url" "$src_dir/$node_archive" || return $?
+    download "$node_url" "$src_dir/$node_archive" || return $?
 }
 
 
 function verify_node()
 {
     log "Verifying $node_archive ..."
-    
-	verify_checksum "$src_dir/$node_archive" sha256 "$node_archive_checksum" || return $?
+    verify_checksum "$src_dir/$node_archive" sha256 "$node_archive_checksum" || return $?
 }
 
 #
@@ -90,9 +89,9 @@ function extract_node()
 {
     node_src_dir="$(sed "s/\.tar\.xz//" <<< "$node_archive")"
     
-	log "Extracting $node_archive to $src_dir/$node_src_dir ..."
+    log "Extracting $node_archive to $src_dir/$node_src_dir ..."
 	
-	extract "$src_dir/$node_archive" "$src_dir" || return $?
+    extract "$src_dir/$node_archive" "$src_dir" || return $?
 }
 
 #
@@ -101,26 +100,17 @@ function extract_node()
 function install_node()
 {
     local dir
-    local file
-    
+
     log "Installing node $node_version ..."	
 
-    cd "$src_dir/$node_src_dir"    
-    
-    local install_dirs=$(find "${dirs[@]}" -type d)
-    local install_files=$(find "${dirs[@]}" -type f)
-
-    for dir in $install_dirs; do 
+    for dir in $dirs; do 
         mkdir -p "$install_dir/$dir" || return $?
-    done
-    
-    for file in $install_files; do 
-        cp "$file" "$install_dir/$file" || return $?
+        cp -R $src_dir/$node_src_dir/$dir/* "$install_dir/$dir/" || return $?
     done
 }
 
 
-# import_gpg_keys || fail "Import of verified GPG keys failed!"
+import_gpg_keys || fail "Import of verified GPG keys failed!"
 
 download_checksums || fail "Download of $checksums_url failed!"
 

@@ -136,29 +136,6 @@ function extract()
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function latest-atom() {
-  cd ~/code/atom
-  git pull upstream master &&
-  npm install browserify &&
-  ./script/build &&
-  sudo script/grunt install
-  cd $OLDPWD
-}
-
 function latest-neovim() {
   # git clone git@github.com:neovim/neovim.git
   cd ~/src/neovim &&
@@ -172,12 +149,12 @@ function latest-chruby() {
     if [ -d ~/src/chruby/ ]; then
         cd ~/src/chruby/
         git pull
-    else 
+    else
         mkdir -p ~/src
         git clone https://github.com/postmodern/chruby.git ~/src/chruby
         cd ~/src/chruby/
     fi
-	
+
     make install PREFIX=~/.local
     cd $OLDPWD
 }
@@ -186,25 +163,12 @@ function latest-ruby-install() {
     if [ -d ~/src/ruby-install/ ]; then
         cd ~/src/ruby-install/
         git pull
-    else 
+    else
         mkdir -p ~/src
         git clone https://github.com/postmodern/ruby-install.git ~/src/ruby-install
         cd ~/src/ruby-install/
     fi
-	
+
     make install PREFIX=~/.local
     cd $OLDPWD
-}
-
-function latest-node() {
-    cd /tmp
-    wget https://nodejs.org/dist/latest/SHASUMS256.txt
-    
-    `grep linux-x64.tar.xz SHASUMS256.txt | sed "s/^.* //"`
-    # wget https://nodejs.org/dist/node-latest.tar.gz
-    # tar xvfvz node-latest.tar.gz
-    # cd node-v0.10.21 (replace a version with your own)
-    # ./configure
-    # make
-    # sudo make install 
 }
