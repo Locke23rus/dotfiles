@@ -1,0 +1,81 @@
+#!/usr/bin/env bash
+
+source "${0%/*}/../bash/functions.sh"
+
+src_dir="/tmp"
+install_dir="$HOME/.local"
+erlang_version="18.1.5"
+erlang_archive="OTP-$erlang_version.tar.gz"
+erlang_src_dir="otp-OTP-$erlang_version"
+erlang_url="https://github.com/erlang/otp/archive/$erlang_archive"
+
+
+function install_deps() {
+    $sudo dnf install gcc gcc-c++ glibc-devel make ncurses-devel openssl-devel autoconf
+}
+
+function download_erlang() {
+    log "Downloading $erlang_url into $src_dir ..."
+	download "$erlang_url" "$src_dir/$erlang_archive" || return $?
+}
+
+function extract_erlang()
+{
+	log "Extracting $erlang_archive to $src_dir/$erlang_src_dir ..."
+	extract "$src_dir/$erlang_archive" "$src_dir" || return $?
+}
+
+function configure_erlang()
+{
+    log "Configuring Erlang/OTP $erlang_version ..."
+    export ERL_TOP=`pwd`
+    ./otp_build autoconf || return $?
+    ./configure --prefix=$install_dir || return $?
+}
+
+function compile_erlang()
+{
+	log "Compiling Erlang/OTP $erlang_version ..."
+	make || return $?
+}
+
+function install_erlang()
+{
+	log "Installing Erlang/OTP $erlang_version ..."
+	make install || return $?
+}
+
+function configure_docs()
+{
+    log "Configuring docs for Erlang/OTP $erlang_version ..."
+    export PATH="$ERL_TOP/bin:$PATH"
+}
+
+function compile_docs()
+{
+    log "Compiling docs for Erlang/OTP $erlang_version ..."
+    make docs || return $?
+}
+
+function install_docs()
+{
+    log "Installing docs for Erlang/OTP $erlang_version ..."
+	make install-docs || return $?
+}
+
+log "Installing Erlang/OTP $erlang_version into $install_dir ..."
+
+install_deps || fail "Installing dependencies failed!"
+download_erlang || fail "Download of $erlang_url failed!"
+extract_erlang || fail "Unpacking of $erlang_archive failed!"
+
+cd "$src_dir/$erlang_src_dir"
+configure_erlang || fail "Configuration of Erlang/OTP $erlang_version failed!"
+compile_erlang || fail "Compiling Erlang/OTP $erlang_version failed!"
+install_erlang || fail "Installation of Erlang/OTP $erlang_version failed!"
+
+configure_docs || fail "Configuration of docs for Erlang/OTP $erlang_version failed!"
+compile_docs || fail "Compiling docs for Erlang/OTP $erlang_version failed!"
+install_docs || fail "Installation of docs for Erlang/OTP $erlang_version failed!"
+
+log "Successfully installed Erlang/OTP $erlang_version into $install_dir"
