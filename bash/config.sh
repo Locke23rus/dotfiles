@@ -18,6 +18,9 @@ if [ -f ~/.dotfiles/bash/apps.sh ]; then
     . ~/.dotfiles/bash/apps.sh
 fi
 
+if [ -f ~/.dotfiles/bash/functions.sh ]; then
+    . ~/.dotfiles/bash/functions.sh
+fi
 
 # NVM
 # if [ -f ~/.nvm/nvm.sh ]; then

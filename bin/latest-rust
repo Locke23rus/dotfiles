@@ -2,6 +2,6 @@
 
 mkdir -p ~/.local
 
-curl -sSf https://static.rust-lang.org/rustup.sh | sh -s -- --channel=nightly --prefix=~/.local --disable-sudo
+curl -sSf https://static.rust-lang.org/rustup.sh | sh -s -- --prefix=~/.local --disable-sudo
 
 cd ~/src/rust && git pull

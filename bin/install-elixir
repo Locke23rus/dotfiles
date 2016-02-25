@@ -5,7 +5,10 @@ source "${0%/*}/../bash/functions.sh"
 dirs=(bin lib share/man/man1)
 src_dir="/tmp"
 install_dir="$HOME/.local"
-elixir_version="v1.1.1"
+elixir_version="$(github-latest-release elixir-lang/elixir)"
+if [[ -z "$elixir_version" ]]; then
+    fail "Fetching of the latest version of elixir-lang/elixir faield!"
+fi
 elixir_archive="elixir-$elixir_version.zip"
 elixir_src_dir="elixir-$elixir_version"
 elixir_url="https://github.com/elixir-lang/elixir/releases/download/$elixir_version/Precompiled.zip"

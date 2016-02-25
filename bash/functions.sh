@@ -138,3 +138,12 @@ function latest-ruby-install() {
     make install PREFIX=~/.local
     cd $OLDPWD
 }
+
+#
+# Returns latest release of specified repository on GitHub
+#
+function github-latest-release() {
+    local repo="$1"
+
+    curl -s https://api.github.com/repos/$repo/releases/latest | grep tag_name | cut -d '"' -f 4
+}
