@@ -4,7 +4,7 @@ source "${0%/*}/../bash/functions.sh"
 
 src_dir="/tmp"
 install_dir="$HOME/.local"
-erlang_version="18.2.4"
+erlang_version="18.3.1"
 erlang_archive="OTP-$erlang_version.tar.gz"
 erlang_src_dir="otp-OTP-$erlang_version"
 erlang_url="https://github.com/erlang/otp/archive/$erlang_archive"
