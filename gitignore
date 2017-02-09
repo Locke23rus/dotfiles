@@ -17,3 +17,4 @@
 /db/fixtures/achievements/personal_program/
 /work.txt
 .DS_Store
+/.vscode
