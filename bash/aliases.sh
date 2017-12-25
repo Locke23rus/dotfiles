@@ -15,3 +15,4 @@ alias b-spec='b-e rspec'
 alias git-update-submodules='git submodule foreach git pull origin master'
 alias yolo='git push -f'
 alias got='git'
+alias start_pg="pg_ctl -D /usr/local/var/postgres start"
