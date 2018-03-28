@@ -1,9 +1,11 @@
 # export GOROOT="/usr/local/opt/go/libexec"
 # export GOROOT="$HOME/.local/share/go"
 # export GOPATH="$HOME/code/go"
-
 # PATH="$GOROOT/bin:$PATH"
 # PATH="$GOPATH/bin:$PATH"
+
+PATH="$PATH:$HOME/go/bin"
+
 PATH="$HOME/.dotfiles/bin:$PATH"
 PATH="$HOME/.cargo/bin:$PATH"
 # PATH="/opt/crystal/bin:$PATH"
