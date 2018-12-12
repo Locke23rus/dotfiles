@@ -16,5 +16,7 @@
 *.sublime-workspace
 /db/fixtures/achievements/personal_program/
 /work.txt
+/work
 .DS_Store
 /.vscode
+/.byebug_history
