@@ -4,7 +4,6 @@
 gem: --no-document
 :sources:
   - https://rubygems.org/
-  - http://gems.github.com
 :backtrace: false
 :verbose: true
 :benchmark: false
