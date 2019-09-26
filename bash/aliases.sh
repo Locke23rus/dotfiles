@@ -14,7 +14,8 @@ alias b-spec='b-e rspec'
 
 alias git-update-submodules='git submodule foreach git pull origin master'
 alias yolo='git push -f'
-alias got='git'
+alias git='hub'
+alias got='hub'
 alias start_pg="pg_ctl -D /usr/local/var/postgres start"
 alias stop_pg="pg_ctl -D /usr/local/var/postgres stop"
 
@@ -27,7 +28,11 @@ alias start_ops='docker-machine start default; eval $(docker-machine env); cd ~/
 alias hh_web='eval $(docker-machine env) && docker exec -u app -it `docker ps | grep heiaheia_web | sed "s/ .*//"` /bin/bash'
 alias hh_web_root='eval $(docker-machine env) && docker exec -it `docker ps | grep heiaheia_web | sed "s/ .*//"` /bin/bash'
 
+
+# alias start_ops='cd ~/code/hh-ops; make run'
 # alias start_hh='cd ~/code/HeiaHeia; docker-compose start'
 # alias hh_web='docker exec -u app -it `docker ps | grep heiaheia_web | sed "s/ .*//"` /bin/bash'
 # alias hh_web_root='docker exec -it `docker ps | grep heiaheia_web | sed "s/ .*//"` /bin/bash'
+
+alias ls='exa'
 
