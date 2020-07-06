@@ -16,6 +16,7 @@ alias git-update-submodules='git submodule foreach git pull origin master'
 alias yolo='git push -f'
 alias git='hub'
 alias got='hub'
+alias gut='hub'
 alias start_pg="pg_ctl -D /usr/local/var/postgres start"
 alias stop_pg="pg_ctl -D /usr/local/var/postgres stop"
 
@@ -35,4 +36,17 @@ alias hh_web_root='eval $(docker-machine env) && docker exec -it `docker ps | gr
 # alias hh_web_root='docker exec -it `docker ps | grep heiaheia_web | sed "s/ .*//"` /bin/bash'
 
 alias ls='exa'
+#alias warren_web='pod = kubectl -n kirill-warren get pods | grep "web-" | cut -f 1 -d " "; kubectl -n kirill-warren exec -it $pod bin/rails console'
+alias warren_web='docker exec -it `docker ps | grep warren_web | sed "s/ .*//"` /bin/bash'
+alias warren_local_box='docker exec -it `docker ps | grep "/warren:" | sed "s/ .*//"` /bin/bash'
+alias v1_test='bin/run_backend_docker.sh be-unit-tests /bin/bash'
+alias v1='cd ~/code/smartly/smartly-v1'
+alias warren='cd ~/code/smartly/warren'
+alias al='cd ~/code/smartly/asset-library'
+alias fe='cd ~/code/smartly/frontend'
+alias graffiti='cd ~/code/smartly/graffiti'
+alias graffiti_sh='docker-compose run --rm dev /bin/sh'
+alias tl='cd ~/code/smartly/testlab'
+alias ui='cd ~/code/smartly/smartly-ui'
 
+alias download-audio="youtube-dl -f 'bestaudio' -o '%(title)s.%(ext)s'"

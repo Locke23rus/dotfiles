@@ -1,0 +1,5 @@
+[kubernetes]
+disabled = false
+
+[package]
+disabled = true

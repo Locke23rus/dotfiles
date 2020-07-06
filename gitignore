@@ -17,8 +17,12 @@
 *.sublime-workspace
 /db/fixtures/achievements/personal_program/
 /work.txt
+/work.md
 /work
 .DS_Store
 /.vscode
 /.byebug_history
 /pnpm-lock.yaml
+.generators
+.rakeTasks
+Brewfile.lock.json
