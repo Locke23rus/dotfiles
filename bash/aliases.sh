@@ -12,30 +12,24 @@ alias b-migrate='b-t db:migrate && b-t db:test:prepare'
 alias b-routes='b-t routes'
 alias b-spec='b-e rspec'
 
+# GIT
 alias git-update-submodules='git submodule foreach git pull origin master'
 alias yolo='git push -f'
 alias git='hub'
 alias got='hub'
 alias gut='hub'
+
+# Services
 alias start_pg="pg_ctl -D /usr/local/var/postgres start"
 alias stop_pg="pg_ctl -D /usr/local/var/postgres stop"
 
+# Utils
 alias optisvg='svgo --disable=removeXMLProcInst --enable=removeTitle'
-
-# HeiaHeia
-alias start_docker='docker-machine start default; eval $(docker-machine env)'
-alias start_hh='docker-machine start default; eval $(docker-machine env); cd ~/code/HeiaHeia; docker-compose start'
-alias start_ops='docker-machine start default; eval $(docker-machine env); cd ~/code/hh-ops; make run'
-alias hh_web='eval $(docker-machine env) && docker exec -u app -it `docker ps | grep heiaheia_web | sed "s/ .*//"` /bin/bash'
-alias hh_web_root='eval $(docker-machine env) && docker exec -it `docker ps | grep heiaheia_web | sed "s/ .*//"` /bin/bash'
-
-
-# alias start_ops='cd ~/code/hh-ops; make run'
-# alias start_hh='cd ~/code/HeiaHeia; docker-compose start'
-# alias hh_web='docker exec -u app -it `docker ps | grep heiaheia_web | sed "s/ .*//"` /bin/bash'
-# alias hh_web_root='docker exec -it `docker ps | grep heiaheia_web | sed "s/ .*//"` /bin/bash'
-
+alias download-audio="youtube-dl -f 'bestaudio' -o '%(title)s.%(ext)s'"
+alias gdiff='git diff --no-index'
 alias ls='exa'
+
+# SMARTLY
 #alias warren_web='pod = kubectl -n kirill-warren get pods | grep "web-" | cut -f 1 -d " "; kubectl -n kirill-warren exec -it $pod bin/rails console'
 alias warren_web='docker exec -it `docker ps | grep warren_web | sed "s/ .*//"` /bin/bash'
 alias warren_local_box='docker exec -it `docker ps | grep "/warren:" | sed "s/ .*//"` /bin/bash'
@@ -47,6 +41,8 @@ alias fe='cd ~/code/smartly/frontend'
 alias graffiti='cd ~/code/smartly/graffiti'
 alias graffiti_sh='docker-compose run --rm dev /bin/sh'
 alias tl='cd ~/code/smartly/testlab'
+alias tlu='cd ~/code/smartly/testlab-ui'
 alias ui='cd ~/code/smartly/smartly-ui'
-
-alias download-audio="youtube-dl -f 'bestaudio' -o '%(title)s.%(ext)s'"
+alias e2e_sh='docker-compose run -v $(pwd):/usr/src/app test-e2e /bin/sh'
+alias e2e_build='docker-compose up --build test-e2e'
+alias openapi_build='docker-compose up --build build-open-api'
