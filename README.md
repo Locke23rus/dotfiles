@@ -29,3 +29,4 @@ In ~/.bashrc, add:
     ln -s ~/.dotfiles/rspec ~/.rspec
     ln -s ~/.dotfiles/ruby-version ~/.ruby-version
     ln -s ~/.dotfiles/starship.toml ~/.config/starship.toml
+    ln -s ~/.dotfiles/zshrc ~/.zshrc
