@@ -11,3 +11,5 @@ MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export PATH
 export MANPATH
 export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
+
+export BAT_CONFIG_PATH="$HOME/.dotfiles/bat.conf"
