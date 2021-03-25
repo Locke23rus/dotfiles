@@ -16,7 +16,6 @@
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
   excludesfile = /Users/kirillnikitin/.dotfiles/gitignore
-  pager = delta
 [color]
   ui = true
 [color "branch"]
@@ -40,8 +39,8 @@
 [push]
   default = upstream
 [pull]
-	rebase = false
+  rebase = false
 [interactive]
   diffFilter = delta --color-only
-[delta]
-  line-numbers = true
+[init]
+  defaultBranch = main
