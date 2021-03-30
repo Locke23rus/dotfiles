@@ -10,3 +10,6 @@ alias gdiff='git diff --no-index'
 alias optisvg='svgo --disable=removeXMLProcInst --enable=removeTitle'
 alias download-audio="youtube-dl -f 'bestaudio' -o '%(title)s.%(ext)s'"
 alias ls='exa'
+alias reyarn='rm -rf node_modules/ && yarn'
+
+alias start_redis='redis-server /usr/local/etc/redis.conf'

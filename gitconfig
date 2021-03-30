@@ -15,7 +15,7 @@
   ls = ls-files
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-  excludesfile = /Users/kirillnikitin/.dotfiles/gitignore
+  excludesfile = ~/.dotfiles/gitignore
 [color]
   ui = true
 [color "branch"]
@@ -39,4 +39,6 @@
 [push]
   default = upstream
 [pull]
-	rebase = false
+  rebase = false
+[init]
+  defaultBranch = main
