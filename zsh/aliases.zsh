@@ -13,3 +13,6 @@ alias ls='exa'
 alias reyarn='rm -rf node_modules/ && yarn'
 
 alias start_redis='redis-server /usr/local/etc/redis.conf'
+
+alias b='bundle'
+alias b-e='bundle exec'
