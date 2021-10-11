@@ -79,7 +79,6 @@ plugins=(
   rust
   rustup
   yarn
-  zsh_reload
 )
 
 source $ZSH/oh-my-zsh.sh
