@@ -81,6 +81,7 @@ plugins=(
   yarn
 )
 
+fpath+=(~/.config/hcloud/completion/zsh)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
