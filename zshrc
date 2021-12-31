@@ -58,7 +58,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM="$HOME/.dotfiles/zsh"
@@ -70,14 +70,13 @@ ZSH_CUSTOM="$HOME/.dotfiles/zsh"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   bundler
-  cargo
   docker
   docker-compose
+  fnm
   git
   postgres
   ripgrep
   rust
-  rustup
   yarn
 )
 
@@ -110,5 +109,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval "$(nodenv init -)"
+# eval "$(nodenv init -)"
+eval "$(fnm env)"
 eval "$(rbenv init -)"
