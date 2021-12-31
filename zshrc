@@ -109,6 +109,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# eval "$(nodenv init -)"
 eval "$(fnm env)"
-eval "$(rbenv init -)"
+eval "$(frum init)"
