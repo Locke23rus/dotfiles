@@ -11,10 +11,6 @@ In ~/.bashrc, add:
         . ~/.dotfiles/bash/config.sh
     fi
 
-## nushell
-
-Add `source ~/.dotfiles/nu/init.nu` to the end of the config file `$nu.config-path`
-
 ## Gems
 
     gem install rails_best_practices
@@ -35,3 +31,4 @@ Add `source ~/.dotfiles/nu/init.nu` to the end of the config file `$nu.config-pa
     ln -s ~/.dotfiles/starship.toml ~/.config/starship.toml
     ln -s ~/.dotfiles/zshrc ~/.zshrc
     ln -s ~/.dotfiles/csgo.cfg ~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/csgo/cfg/autoexec.cfg
+    ln -s ~/.dotfiles/nu/config.nu ~/.config/nushell/config.nu
