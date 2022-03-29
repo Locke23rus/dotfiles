@@ -1,5 +1,13 @@
 # Nushell Config File
 
+let-env PATH = (
+  $env.PATH |
+  prepend "/usr/local/bin" |
+  prepend "~/.cargo/bin"
+)
+
+let-env BAT_CONFIG_PATH = "~/.dotfiles/bat.conf"
+
 let-env STARSHIP_SHELL = "nu"
 
 def create_left_prompt [] {

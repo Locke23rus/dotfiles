@@ -3,7 +3,6 @@ PATH="/usr/local/bin:$PATH"
 PATH="$PATH:$HOME/go/bin"
 PATH="$HOME/.dotfiles/bin:$PATH"
 PATH="$HOME/.cargo/bin:$PATH"
-PATH="$HOME/.cargo/bin:$PATH"
 PATH="$HOME/.mix/escripts:$PATH"
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
