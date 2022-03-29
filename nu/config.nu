@@ -187,6 +187,7 @@ let $config = {
 }
 
 source ~/.dotfiles/nu/aliases.nu
+source ~/.dotfiles/nu/aliases_smartly.nu
 source ~/.dotfiles/nu/completions.nu
 
 # Get just the extern definitions without the custom completion commands
