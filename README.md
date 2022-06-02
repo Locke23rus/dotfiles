@@ -32,3 +32,6 @@ In ~/.bashrc, add:
     ln -s ~/.dotfiles/zshrc ~/.zshrc
     ln -s ~/.dotfiles/csgo.cfg ~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/csgo/cfg/autoexec.cfg
     ln -s ~/.dotfiles/nu/config.nu ~/.config/nushell/config.nu
+    ln -s ~/.dotfiles/nu/env.nu ~/.config/nushell/env.nu
+    ln -s ~/.dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
+    ln -s ~/.dotfiles/helix.toml ~/.config/helix/config.toml

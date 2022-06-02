@@ -1,0 +1,9 @@
+[keys.normal]
+C-o = ":open ~/.config/helix/config.toml"
+C-s = ":w"
+tab = "indent"
+S-tab = "unindent"
+
+[keys.select]
+tab = "indent"
+S-tab = "unindent"
