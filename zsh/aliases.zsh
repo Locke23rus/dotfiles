@@ -5,6 +5,7 @@ alias git='hub'
 alias got='hub'
 alias gut='hub'
 alias gdiff='git diff --no-index'
+alias gdifft='GIT_EXTERNAL_DIFF=difft git diff'
 
 
 alias optisvg='svgo --disable=removeXMLProcInst --enable=removeTitle'
