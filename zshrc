@@ -69,12 +69,11 @@ ZSH_CUSTOM="$HOME/.dotfiles/zsh"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  asdf
   bundler
   docker
   docker-compose
-  fnm
   git
-  postgres
   ripgrep
   rust
   yarn
@@ -112,6 +111,3 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-eval "$(fnm env)"
-eval "$(frum init)"
