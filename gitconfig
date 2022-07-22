@@ -38,6 +38,7 @@
   prompt = false
 [push]
   default = upstream
+  autoSetupRemote = true
 [pull]
   rebase = false
 [init]

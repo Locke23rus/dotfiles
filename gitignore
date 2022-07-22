@@ -21,11 +21,13 @@
 /work
 .DS_Store
 /.vscode
+.vscode
 /.byebug_history
 /pnpm-lock.yaml
 .generators
 .rakeTasks
 Brewfile.lock.json
+.pnpm-debug.log
 
 
 
