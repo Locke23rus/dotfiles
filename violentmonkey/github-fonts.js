@@ -8,8 +8,7 @@ GM_addStyle(`
 body {
   font-family: sans-serif !important;
 }
-pre, 
-.blob-code-inner {
+tt, code, samp, .blob-code-inner {
   font-family: monospace !important;
 }
 `);
