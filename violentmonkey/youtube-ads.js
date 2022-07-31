@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        youtube-ads
-// @match				https://www.youtube.com/
+// @match				https://www.youtube.com/*
 // ==/UserScript==
 
 function removeBanners() {
