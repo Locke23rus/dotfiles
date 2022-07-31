@@ -1,15 +1,11 @@
 // ==UserScript==
 // @name        youtube-ads
 // @match				https://www.youtube.com/*
+// @grant       GM_addStyle
 // ==/UserScript==
 
-function removeBanners() {
-  document
-    .querySelector(
-      "ytd-banner-promo-renderer,#masthead-ad,ytd-display-ad-renderer"
-    )
-    ?.remove();
+GM_addStyle(`
+#masthead-ad, .ytd-banner-promo-renderer, .ytd-display-ad-renderer {
+  display: none !important;
 }
-
-removeBanners();
-setInterval(removeBanners, 2500);
+`);
