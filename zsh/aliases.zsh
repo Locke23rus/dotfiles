@@ -21,3 +21,6 @@ alias b='bundle'
 alias b-e='bundle exec'
 alias b-spec='bundle exec rspec'
 alias c='cargo'
+
+# macOS
+alias cpu-temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
