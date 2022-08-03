@@ -8,7 +8,12 @@ GM_addStyle(`
 body {
   font-family: sans-serif !important;
 }
-tt, code, samp, .blob-code-inner {
+tt,
+code,
+samp,
+.blob-code-inner,
+.text-mono,
+.commit-ref {
   font-family: monospace !important;
 }
 `);
