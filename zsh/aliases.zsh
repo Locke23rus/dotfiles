@@ -20,6 +20,7 @@ alias start_livebook_dropbox='docker run -p 8080:8080 --pull always -v $HOME/Dro
 alias b='bundle'
 alias b-e='bundle exec'
 alias be='bundle exec'
+alias r='bundle exec rails'
 alias bs='bundle exec rspec'
 alias b-spec='bundle exec rspec'
 
