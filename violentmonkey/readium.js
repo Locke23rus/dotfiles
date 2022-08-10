@@ -23,7 +23,7 @@ if (document.querySelector('meta[property="og:site_name"][content="Medium"]')) {
     }
   };
 
-  const deleteDialog = () => {
+  const removeDialog = () => {
     let dialog = document.querySelector("div[role=alert]");
     if (dialog) {
       let parent = dialog;
@@ -34,10 +34,19 @@ if (document.querySelector('meta[property="og:site_name"][content="Medium"]')) {
     }
   };
 
-  removeSidebars();
-  deleteDialog();
-  setTimeout(() => {
+  const removeFloatingActions = () => {
+    let action = document.querySelector(".pw-multi-vote-icon");
+    if (action) {
+      action.parentNode.parentNode.remove();
+    }
+  };
+
+  const removeEverything = () => {
     removeSidebars();
-    deleteDialog();
-  }, 1000);
+    removeDialog();
+    removeFloatingActions();
+  };
+
+  removeEverything();
+  setTimeout(removeEverything, 1000);
 }
