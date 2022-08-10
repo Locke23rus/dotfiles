@@ -34,3 +34,6 @@ alias y='detect_y'
 
 # macOS
 alias cpu-temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
+
+# kubernetes
+alias k='kubectl'
