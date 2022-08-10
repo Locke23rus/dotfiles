@@ -5,6 +5,7 @@
 
 GM_addStyle(`
 header,
+footer,
 #credential_picker_container {
   display: none!important;
 }
@@ -35,5 +36,8 @@ if (document.querySelector('meta[property="og:site_name"][content="Medium"]')) {
 
   removeSidebars();
   deleteDialog();
-  setTimeout(deleteDialog, 1000);
+  setTimeout(() => {
+    removeSidebars();
+    deleteDialog();
+  }, 1000);
 }
