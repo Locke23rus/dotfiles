@@ -19,15 +19,10 @@ In ~/.bashrc, add:
 
 ## Others
 
-    ln -s ~/.dotfiles/vimrc ~/.vimrc
-    ln -s ~/.dotfiles/gvimrc ~/.gvimrc
-    ln -s ~/.dotfiles/vim ~/.vim
     ln -s ~/.dotfiles/gemrc ~/.gemrc
     ln -s ~/.dotfiles/irbrc ~/.irbrc
-    ln -s ~/.dotfiles/hgrc ~/.hgrc
     ln -s ~/.dotfiles/gitconfig ~/.gitconfig
     ln -s ~/.dotfiles/rspec ~/.rspec
-    ln -s ~/.dotfiles/ruby-version ~/.ruby-version
     ln -s ~/.dotfiles/starship.toml ~/.config/starship.toml
     ln -s ~/.dotfiles/zshrc ~/.zshrc
     ln -s ~/.dotfiles/csgo.cfg ~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/csgo/cfg/autoexec.cfg
