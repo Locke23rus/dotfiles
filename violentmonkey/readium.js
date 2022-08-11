@@ -3,7 +3,8 @@
 // @grant       GM_addStyle
 // ==/UserScript==
 
-GM_addStyle(`
+if (document.querySelector('meta[property="og:site_name"][content="Medium"]')) {
+  GM_addStyle(`
 header,
 footer,
 #credential_picker_container {
@@ -11,7 +12,6 @@ footer,
 }
 `);
 
-if (document.querySelector('meta[property="og:site_name"][content="Medium"]')) {
   const removeSidebars = () => {
     let main = document.querySelector("main");
     if (main) {
