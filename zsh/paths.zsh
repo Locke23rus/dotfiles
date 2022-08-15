@@ -1,3 +1,5 @@
+PATH="/opt/homebrew/opt/coreutils/bin:$PATH"
+PATH="/opt/homebrew/bin:$PATH"
 PATH="/usrl/local/bin:$PATH"
 PATH="$PATH:$HOME/go/bin"
 PATH="$HOME/.dotfiles/bin:$PATH"
