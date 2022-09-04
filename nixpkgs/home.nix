@@ -20,13 +20,11 @@
   programs.home-manager.enable = true;
 
   home.packages = with pkgs; [
-    neovim
     helix
     asdf-vm
     bat
     starship
     difftastic
-    terraform
     rust-analyzer
     httpie
     dog
@@ -34,10 +32,19 @@
     zsh-completions
     nix-zsh-completions
     git-extras
+    exa
+    ripgrep
+    nushell
 
     kubectx
     kubernetes
     hcloud
     doctl
+    terraform
+
+    # fonts
+    # inter
+    # jetbrains-mono
+    # cascadia-code
   ];
 }
