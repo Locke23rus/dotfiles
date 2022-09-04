@@ -14,3 +14,4 @@ export MANPATH
 
 export BAT_CONFIG_PATH="$HOME/.dotfiles/bat.conf"
 export LIVEBOOK_ROOT_PATH="$HOME/Dropbox/livebook"
+export NIX_PATH=$HOME/.nix-defexpr/channels:/nix/var/nix/profiles/per-user/root/channels${NIX_PATH:+:$NIX_PATH}

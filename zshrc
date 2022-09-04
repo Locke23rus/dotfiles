@@ -111,3 +111,5 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+source $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
