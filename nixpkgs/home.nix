@@ -23,7 +23,6 @@
 
   home.packages = with pkgs; [
     asdf-vm
-    bat
     bottom
     difftastic
     doctl
@@ -53,7 +52,6 @@
     ".gitconfig".source = ../gitconfig;
     ".gemrc".source = ../gemrc;
     ".irbrc".source = ../irbrc;
-    ".rspec".source = ../rspec;
     ".config/herlix/config.toml".source = ../helix.toml;
   };
 
@@ -87,4 +85,6 @@
       package.disabled = true;
     };
   };
+
+  programs.bat.enable = true;
 }
