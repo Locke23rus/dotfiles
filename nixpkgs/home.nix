@@ -20,6 +20,8 @@
   programs.home-manager.enable = true;
 
   targets.genericLinux.enable = true;
+  xdg.enable = true;
+  fonts.fontconfig.enable = true;
 
   home.packages = with pkgs; [
     asdf-vm
