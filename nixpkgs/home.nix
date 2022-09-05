@@ -38,7 +38,6 @@
     jq
     kubectx
     kubernetes
-    nix-zsh-completions
     nodePackages.svgo
     nushell
     optipng
@@ -52,13 +51,30 @@
   ];
 
   home.file = {
-    "zshrc".source = ../zshrc;
     ".gitconfig".source = ../gitconfig;
     ".gemrc".source = ../gemrc;
     ".irbrc".source = ../irbrc;
     ".rspec".source = ../rspec;
     ".config/starship.toml".source = ../starship.toml;
     ".config/herlix/config.toml".source = ../helix.toml;
-    # ".config/nix/nix.conf".source = ../nix.conf;
+  };
+
+  programs.zsh = {
+    enable = true;
+    enableAutosuggestions = true;
+    oh-my-zsh = {
+      enable = true;
+      custom = "$HOME/.dotfiles/zsh";
+      plugins = [
+        "asdf"
+        "bundler"
+        "docker"
+        "docker-compose"
+        "git"
+        "ripgrep"
+        "rust"
+        "yarn"
+      ];
+    };
   };
 }
