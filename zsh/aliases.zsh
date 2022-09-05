@@ -36,5 +36,5 @@ alias cpu-temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"
 # kubernetes
 alias k='kubectl'
 
-alias v='nvim'
+alias e='nvim'
 alias hm='home-manager switch'

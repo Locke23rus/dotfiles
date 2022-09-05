@@ -22,38 +22,33 @@
   targets.genericLinux.enable = true;
 
   home.packages = with pkgs; [
-    helix
     asdf-vm
     bat
-    starship
-    difftastic
-    rust-analyzer
-    httpie
-    dog
     bottom
-    zsh-completions
-    nix-zsh-completions
-    git-extras
+    difftastic
+    doctl
+    dog
     exa
-    ripgrep
-    nushell
-    tealdeer
+    fd
+    git-extras
+    hcloud
+    helix
+    httpie
     hub
     jq
-    tokei
-    optipng
-    nodePackages.svgo
-
     kubectx
     kubernetes
-    hcloud
-    doctl
+    nix-zsh-completions
+    nodePackages.svgo
+    nushell
+    optipng
+    ripgrep
+    rust-analyzer
+    starship
+    tealdeer
     terraform
-
-    # fonts
-    # inter
-    # jetbrains-mono
-    # cascadia-code
+    tokei
+    zsh-completions
   ];
 
   home.file = {
