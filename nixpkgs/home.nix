@@ -55,7 +55,6 @@
     ".gemrc".source = ../gemrc;
     ".irbrc".source = ../irbrc;
     ".rspec".source = ../rspec;
-    ".config/starship.toml".source = ../starship.toml;
     ".config/herlix/config.toml".source = ../helix.toml;
   };
 
@@ -75,6 +74,18 @@
         "rust"
         "yarn"
       ];
+    };
+  };
+
+  programs.starship = {
+    enable = true;
+    enableZshIntegration = true;
+    settings = {
+      kubernetes = {
+        disabled = false;
+        style = "green";
+      };
+      package.disabled = true;
     };
   };
 }
