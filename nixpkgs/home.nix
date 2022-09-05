@@ -43,7 +43,6 @@
     optipng
     ripgrep
     rust-analyzer
-    starship
     tealdeer
     terraform
     tokei
