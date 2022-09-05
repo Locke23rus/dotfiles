@@ -59,5 +59,6 @@
     ".rspec".source = ../rspec;
     ".config/starship.toml".source = ../starship.toml;
     ".config/herlix/config.toml".source = ../helix.toml;
+    # ".config/nix/nix.conf".source = ../nix.conf;
   };
 }
