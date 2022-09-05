@@ -87,4 +87,48 @@
   };
 
   programs.bat.enable = true;
+
+  programs.git = {
+    enable = true;
+    package = pkgs.gitAndTools.gitFull;
+    userName = "Kirill Nikitin";
+    userEmail = "locke23rus@gmail.com";
+    aliases = {
+      st = "status";
+      ci = "commit";
+      br = "branch";
+      co = "checkout";
+      df = "diff";
+      lg = "log -p";
+      lol = "log --graph --decorate --pretty=oneline --abbrev-commit";
+      lola = "log --graph --decorate --pretty=oneline --abbrev-commit --all";
+      ls = "ls-files";
+      rs = "restore";
+      sw = "switch";
+      dm = "delete-merged-branches";
+    };
+    extraConfig = {
+      github.user = "locke23rus";
+      core.whitespace = "fix,-indent-with-non-tab,trailing-space,cr-at-eol";
+      core.excludesfile = "~/.dotfiles/gitignore";
+      color.ui = true;
+      color.branch.current = "yellow reverse";
+      color.branch.local = "yellow";
+      color.branch.remote = "green";
+      color.diff.whitespace = "red reverse";
+      color.diff.meta = "yellow bold";
+      color.diff.frag = "magenta bold";
+      color.diff.old = "red bold";
+      color.diff.new = "green bold";
+      color.status.added = "yellow";
+      color.status.changed = "green";
+      color.status.untracked = "cyan";
+      diff.tool = "vimdiff";
+      difftool.prompt = false;
+      push.default = "upstream";
+      push.autSetupRemote = true;
+      pull.rebase = false;
+      init.defaultBranch = "main";
+    };
+  };
 }
