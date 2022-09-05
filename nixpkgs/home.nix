@@ -19,6 +19,8 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+  targets.genericLinux.enable = true;
+
   home.packages = with pkgs; [
     helix
     asdf-vm
@@ -35,6 +37,12 @@
     exa
     ripgrep
     nushell
+    tealdeer
+    hub
+    jq
+    tokei
+    optipng
+    nodePackages.svgo
 
     kubectx
     kubernetes

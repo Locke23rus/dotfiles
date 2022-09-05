@@ -1,12 +1,10 @@
 # GIT
 alias git-update-submodules='git submodule foreach git pull origin master'
 alias yolo='git push -f'
-alias git='hub'
-alias got='hub'
-alias gut='hub'
+alias got='git'
+alias gut='git'
 alias gdiff='git diff --no-index'
 alias gdifft='GIT_EXTERNAL_DIFF=difft git diff'
-
 
 alias optisvg='svgo --disable=removeXMLProcInst --enable=removeTitle'
 alias download-audio="youtube-dl -f 'bestaudio' -o '%(title)s.%(ext)s'"
@@ -37,3 +35,6 @@ alias cpu-temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"
 
 # kubernetes
 alias k='kubectl'
+
+alias v='nvim'
+alias hm='home-manager switch'
