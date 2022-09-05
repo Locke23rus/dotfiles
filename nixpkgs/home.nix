@@ -55,4 +55,14 @@
     # jetbrains-mono
     # cascadia-code
   ];
+
+  home.file = {
+    "zshrc".source = ../zshrc;
+    ".gitconfig".source = ../gitconfig;
+    ".gemrc".source = ../gemrc;
+    ".irbrc".source = ../irbrc;
+    ".rspec".source = ../rspec;
+    ".config/starship.toml".source = ../starship.toml;
+    ".config/herlix/config.toml".source = ../helix.toml;
+  };
 }
