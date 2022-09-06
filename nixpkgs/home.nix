@@ -96,7 +96,6 @@
 
   programs.git = {
     enable = true;
-    package = pkgs.gitAndTools.gitFull;
     userName = "Kirill Nikitin";
     userEmail = "locke23rus@gmail.com";
     aliases = {
