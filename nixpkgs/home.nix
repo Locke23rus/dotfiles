@@ -60,10 +60,6 @@
   programs.zsh = {
     enable = true;
     enableAutosuggestions = true;
-		envExtra = ''
-			export EDITOR=nvim
-			export TERM=xterm-256color
-		'';
     oh-my-zsh = {
       enable = true;
       custom = "$HOME/.dotfiles/zsh";
