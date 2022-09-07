@@ -39,8 +39,8 @@
     jq
     kubectx
     kubernetes
+    nixfmt
     nodePackages.svgo
-    nushell
     optipng
     ripgrep
     rust-analyzer
