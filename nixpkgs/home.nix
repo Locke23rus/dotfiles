@@ -26,6 +26,7 @@
   home.packages = with pkgs; [
     asdf-vm
     bottom
+    cacert
     difftastic
     doctl
     dog
@@ -39,6 +40,7 @@
     jq
     kubectx
     kubernetes
+    nix
     nixfmt
     nodePackages.svgo
     optipng
