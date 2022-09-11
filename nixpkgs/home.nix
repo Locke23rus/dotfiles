@@ -33,6 +33,7 @@
     exa
     fd
     git-extras
+    go_1_19
     hcloud
     helix
     httpie
