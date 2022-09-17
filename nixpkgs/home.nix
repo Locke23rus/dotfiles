@@ -24,6 +24,7 @@
   fonts.fontconfig.enable = true;
 
   home.packages = with pkgs; [
+    any-nix-shell
     asdf-vm
     bottom
     cacert
@@ -77,6 +78,9 @@
         "yarn"
       ];
     };
+    initExtra = ''
+      any-nix-shell zsh --info-right | source /dev/stdin
+    '';
   };
 
   programs.starship = {
@@ -136,6 +140,6 @@
     };
   };
 
-	programs.direnv.enable = true;
+  programs.direnv.enable = true;
   programs.direnv.nix-direnv.enable = true;
 }
