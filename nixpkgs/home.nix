@@ -135,4 +135,7 @@
       push.default = "upstream";
     };
   };
+
+	programs.direnv.enable = true;
+  programs.direnv.nix-direnv.enable = true;
 }
