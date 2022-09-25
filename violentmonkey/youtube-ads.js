@@ -2,6 +2,7 @@
 // @name        youtube-ads
 // @match				https://www.youtube.com/*
 // @grant       GM_addStyle
+// @version     0.1
 // ==/UserScript==
 
 GM_addStyle(`

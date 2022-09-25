@@ -2,6 +2,7 @@
 // @name        github-fonts
 // @match       https://github.com/*
 // @grant       GM_addStyle
+// @version     0.1
 // ==/UserScript==
 
 GM_addStyle(`

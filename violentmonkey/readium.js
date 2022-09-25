@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name        readium
 // @grant       GM_addStyle
+// @version     0.1
 // ==/UserScript==
 
 if (document.querySelector('meta[property="og:site_name"][content="Medium"]')) {
