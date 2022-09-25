@@ -5,7 +5,7 @@
 // ==/UserScript==
 
 GM_addStyle(`
-#masthead-ad, .ytd-banner-promo-renderer, .ytd-display-ad-renderer {
+#masthead-ad, .ytd-banner-promo-renderer, .ytd-display-ad-renderer, ytd-rich-section-renderer {
   display: none !important;
 }
 `);
