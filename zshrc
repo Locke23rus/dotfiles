@@ -112,3 +112,4 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+. $(brew --prefix asdf)/libexec/asdf.sh

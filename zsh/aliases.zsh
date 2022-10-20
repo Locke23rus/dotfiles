@@ -26,7 +26,7 @@ alias b-spec='bundle exec rspec'
 alias c='cargo'
 
 # node
-alias reyarn='rm -rf node_modules/ && yarn'
+alias reyarn='rm -rf node_modules/ && y install'
 alias y-corepack='corepack enable && corepack prepare --activate'
 alias y='detect_y'
 
