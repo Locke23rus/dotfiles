@@ -52,6 +52,7 @@
     terraform
     tokei
     zsh-completions
+    nodejs-19_x
   ];
 
   home.file = {
