@@ -15,12 +15,13 @@ alias start_livebook='docker run -p 8080:8080 -p 8081:8081 --pull always -v $(pw
 alias start_livebook_dropbox='docker run -p 8080:8080 -p 8081:8081 --pull always -v $HOME/Dropbox/livebook:/data:z livebook/livebook'
 
 # ruby
-alias b='bundle'
-alias b-e='bundle exec'
-alias be='bundle exec'
-alias r='bundle exec rails'
-alias bs='bundle exec rspec'
-alias b-spec='bundle exec rspec'
+alias b='noglob bundle'
+alias b-e='b exec'
+alias be='b exec'
+alias br='be rake'
+alias r='be rails'
+alias bs='be rspec'
+alias b-spec='be rspec'
 
 # rust
 alias c='cargo'

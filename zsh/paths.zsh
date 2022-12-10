@@ -5,6 +5,7 @@ PATH="$PATH:$HOME/go/bin"
 PATH="$HOME/.dotfiles/bin:$PATH"
 PATH="$HOME/.cargo/bin:$PATH"
 PATH="$HOME/.mix/escripts:$PATH"
+PATH="$HOME/.local/share/gem/ruby/3.1.0/bin:$PATH"
 
 MANPATH="/usr/local/man:$MANPATH"
 MANPATH="/opt/homebrew/manpages:$MANPATH"
