@@ -25,7 +25,7 @@
 
   home.packages = with pkgs; [
     any-nix-shell
-    asdf-vm
+    # asdf-vm
     bottom
     cacert
     difftastic
@@ -52,7 +52,8 @@
     terraform
     tokei
     zsh-completions
-    nodejs-19_x
+    # nodejs-19_x
+    # ruby_3_1
   ];
 
   home.file = {
@@ -69,7 +70,7 @@
       enable = true;
       custom = "$HOME/.dotfiles/zsh";
       plugins = [
-        "asdf"
+        # "asdf"
         "bundler"
         "docker"
         "docker-compose"
