@@ -14,7 +14,7 @@
   # You can update Home Manager without changing this value. See
   # the Home Manager release notes for a list of state version
   # changes in each release.
-  home.stateVersion = "22.05";
+  home.stateVersion = "22.11";
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
@@ -53,7 +53,9 @@
     tokei
     zsh-completions
     # nodejs-19_x
-    # ruby_3_1
+    ruby_3_1
+    rubyPackages_3_1.solargraph
+    rubyPackages_3_1.rubocop
   ];
 
   home.file = {
