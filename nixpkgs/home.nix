@@ -37,7 +37,6 @@
     go_1_19
     hcloud
     helix
-    httpie
     hub
     jq
     kubectx
@@ -146,4 +145,10 @@
 
   programs.direnv.enable = true;
   programs.direnv.nix-direnv.enable = true;
+
+  programs.mcfly = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
 }
