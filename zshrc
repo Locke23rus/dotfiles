@@ -113,3 +113,5 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 . $(brew --prefix asdf)/libexec/asdf.sh
+
+eval "$(mcfly init zsh)"
