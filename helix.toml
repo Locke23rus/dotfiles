@@ -3,6 +3,10 @@ C-o = ":open ~/.config/helix/config.toml"
 C-s = ":w"
 tab = "indent"
 S-tab = "unindent"
+X = "extend_line_above"
+
+[keys.insert]
+C-s = ":w"
 
 [keys.select]
 tab = "indent"
