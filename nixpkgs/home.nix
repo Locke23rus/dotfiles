@@ -61,7 +61,7 @@
     ".gitconfig".source = ../gitconfig;
     ".gemrc".source = ../gemrc;
     ".irbrc".source = ../irbrc;
-    ".config/herlix/config.toml".source = ../helix.toml;
+    ".config/helix".source = ../helix;
   };
 
   programs.zsh = {
