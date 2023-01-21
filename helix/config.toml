@@ -1,3 +1,5 @@
+# theme = "locke23r"
+
 [keys.normal]
 C-o = ":open ~/.config/helix/config.toml"
 C-s = ":w"

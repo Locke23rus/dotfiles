@@ -1,0 +1,14 @@
+comment = "comment"
+string = "#448C27"
+
+"ui.selection" = { bg = "black" }
+"ui.cursorline.primary" = { bg = "#f0f0f0" }
+"ui.background" = { fg = "black",  bg = "#f7f7f7" }
+
+"ui.cursor.select" = { bg = "delta" }
+"ui.cursor.insert" = { bg = "white" }
+"ui.cursor.match" = { fg = "#212121", bg = "#6C6999" }
+"ui.cursor" = { modifiers = ["reversed"] }
+
+[palette]
+comment = "#AA3731"

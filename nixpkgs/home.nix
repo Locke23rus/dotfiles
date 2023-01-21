@@ -38,6 +38,7 @@
     hcloud
     helix
     hub
+    # inter
     jq
     kubectx
     kubernetes
@@ -55,13 +56,14 @@
     ruby_3_1
     rubyPackages_3_1.solargraph
     rubyPackages_3_1.rubocop
+    # (nerdfonts.override { fonts = [ "JetBrainsMono" ]; }) # these fonts don't work in flatpak apps :/
   ];
 
   home.file = {
     ".gitconfig".source = ../gitconfig;
     ".gemrc".source = ../gemrc;
     ".irbrc".source = ../irbrc;
-    ".config/helix".source = ../helix;
+    ".config/helix/config.toml".source = ../helix/config.toml;
   };
 
   programs.zsh = {
