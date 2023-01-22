@@ -40,6 +40,7 @@
     hub
     # inter
     jq
+    just
     kubectx
     kubernetes
     nix
