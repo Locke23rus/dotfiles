@@ -52,6 +52,4 @@ let-env PATH = (
   prepend "~/.cargo/bin"
 )
 
-let-env BAT_CONFIG_PATH = "~/.dotfiles/bat.conf"
-
 let-env STARSHIP_SHELL = "nu"
