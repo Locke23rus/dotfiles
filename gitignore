@@ -21,6 +21,7 @@
 /.rvmrc
 /.tool-versions
 /.vscode
+/.fleet
 /pnpm-lock.yaml
 /public/system/
 /tags
