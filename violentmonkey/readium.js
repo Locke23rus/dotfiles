@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        readium
 // @grant       GM_addStyle
-// @version     0.2
+// @version     0.3
 // ==/UserScript==
 
 if (document.querySelector('meta[property="og:site_name"][content="Medium"]')) {
@@ -51,9 +51,12 @@ footer,
 	};
 
 	const removeSignupSectionBeforeArticle = () => {
-		const p = [...document.querySelectorAll("p")].find((p) =>
-			p.textContent.includes("free member-only stories left this month")
-		);
+		const p = [...document.querySelectorAll("p")].find((p) => {
+			const text = p.textContent;
+			return (
+				text.includes("free member-only") && text.includes("left this month")
+			);
+		});
 		if (p) {
 			p.parentNode.parentNode.remove();
 		}
