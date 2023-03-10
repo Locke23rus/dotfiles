@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        monospace-fonts
 // @grant       GM_addStyle
-// @version     0.1
+// @version     0.2
 // ==/UserScript==
 
 GM_addStyle(`
