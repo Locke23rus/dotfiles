@@ -34,7 +34,7 @@
     exa
     fd
     git-extras
-    go_1_19
+    go_1_20
     hcloud
     helix
     hub
@@ -54,9 +54,9 @@
     tokei
     zsh-completions
     # nodejs-19_x
-    ruby_3_1
-    rubyPackages_3_1.solargraph
-    rubyPackages_3_1.rubocop
+    # ruby_3_1
+    # rubyPackages_3_1.solargraph
+    # rubyPackages_3_1.rubocop
     # (nerdfonts.override { fonts = [ "JetBrainsMono" ]; }) # these fonts don't work in flatpak apps :/
   ];
 

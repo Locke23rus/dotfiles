@@ -5,9 +5,11 @@
 // ==/UserScript==
 
 GM_addStyle(`
+pre.code-block-inner,
 tt,
 code,
 samp {
   font-family: monospace !important;
+	font-variant-ligatures: normal !important;
 }
 `);
