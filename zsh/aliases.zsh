@@ -11,8 +11,8 @@ alias download-audio="youtube-dl -f 'bestaudio' -o '%(title)s.%(ext)s'"
 alias ls='exa'
 
 alias start_redis='redis-server /usr/local/etc/redis.conf'
-alias start_livebook='docker run -p 8080:8080 -p 8081:8081 --pull always -v $(pwd):/data:z livebook/livebook'
-alias start_livebook_dropbox='docker run -p 8080:8080 -p 8081:8081 --pull always -v $HOME/Dropbox/livebook:/data:z livebook/livebook'
+alias start_livebook='docker run -p 8080:8080 -p 8081:8081 --pull always -v $(pwd):/data:z ghcr.io/livebook-dev/livebook.'
+alias start_livebook_dropbox='docker run -p 8080:8080 -p 8081:8081 --pull always -v $HOME/Dropbox/livebook:/data:z ghcr.io/livebook-dev/livebook.'
 
 # ruby
 alias b='noglob bundle'
