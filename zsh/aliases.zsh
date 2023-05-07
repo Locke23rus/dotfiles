@@ -30,6 +30,7 @@ alias c='cargo'
 alias reyarn='rm -rf node_modules/ && y install'
 alias y-corepack='corepack enable && corepack prepare --activate'
 alias y='detect_y'
+alias latest-pnpm='corepack prepare pnpm@latest --activate'
 
 # macOS
 alias cpu-temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
