@@ -2,7 +2,7 @@
 // @name        github-fonts
 // @match       https://github.com/*
 // @grant       GM_addStyle
-// @version     0.1
+// @version     0.2
 // ==/UserScript==
 
 GM_addStyle(`
@@ -12,6 +12,7 @@ body {
 tt,
 code,
 samp,
+pre,
 .blob-code-inner,
 .text-mono,
 .commit-ref {
