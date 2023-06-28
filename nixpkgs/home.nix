@@ -65,6 +65,7 @@
     ".gemrc".source = ../gemrc;
     ".irbrc".source = ../irbrc;
     ".config/helix/config.toml".source = ../helix/config.toml;
+    # ".wezterm.lua".source = ../wezterm.lua;
   };
 
   programs.zsh = {
