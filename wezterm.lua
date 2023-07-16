@@ -16,7 +16,7 @@ end
 
 -- For example, changing the color scheme:
 config.color_scheme = 'Alabaster'
-config.font = wezterm.font 'JetBrains Mono'
+config.font = wezterm.font 'JetBrainsMono Nerd Font'
 config.font_size = 11
 config.enable_scroll_bar = true
 config.hide_tab_bar_if_only_one_tab = true
