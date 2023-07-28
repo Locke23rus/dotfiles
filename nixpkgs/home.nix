@@ -61,10 +61,10 @@
   ];
 
   home.file = {
-    ".gitconfig".source = ../gitconfig;
-    ".gemrc".source = ../gemrc;
-    ".irbrc".source = ../irbrc;
-    ".config/helix/config.toml".source = ../helix/config.toml;
+    # ".gitconfig".source = ../gitconfig;
+    # ".gemrc".source = ../gemrc;
+    # ".irbrc".source = ../irbrc;
+    # ".config/helix/config.toml".source = ../helix/config.toml;
     # ".wezterm.lua".source = ../wezterm.lua;
   };
 
