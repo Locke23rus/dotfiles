@@ -1,4 +1,5 @@
 # theme = "locke23r"
+theme = "github_light"
 
 [keys.normal]
 C-o = ":open ~/.config/helix/config.toml"
