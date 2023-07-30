@@ -19,6 +19,7 @@
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
   excludesfile = ~/.dotfiles/gitignore
+  pager = delta
 [color]
   ui = true
 [color "branch"]
@@ -37,6 +38,7 @@
   untracked = cyan
 [diff]
   tool = vimdiff
+  colorMoved = default
 [difftool]
   prompt = false
 [push]
@@ -46,3 +48,13 @@
   rebase = false
 [init]
   defaultBranch = main
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true
+  line-numbers = true
+  true-color = always
+  hyperlinks = true
+  hyperlinks-file-link-format = "vscode://file/{path}:{line}"
+[merge]
+  conflictstyle = diff3

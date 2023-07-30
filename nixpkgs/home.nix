@@ -28,6 +28,7 @@
     # asdf-vm
     bottom
     cacert
+    delta
     difftastic
     doctl
     dog
