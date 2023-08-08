@@ -58,3 +58,5 @@
   hyperlinks-file-link-format = "vscode://file/{path}:{line}"
 [merge]
   conflictstyle = diff3
+[includeIf "gitdir:~/code/smartly/"]
+	path = ~/.dotfiles/gitconfig_smartly
