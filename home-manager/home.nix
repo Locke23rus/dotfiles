@@ -32,7 +32,7 @@
     difftastic
     doctl
     dog
-    exa
+    eza # fork of exa
     fd
     git-extras
     go_1_20
@@ -51,7 +51,6 @@
     ripgrep
     rust-analyzer
     tealdeer
-    terraform
     tokei
     zsh-completions
     # nodejs-19_x

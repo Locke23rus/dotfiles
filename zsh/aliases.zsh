@@ -8,7 +8,7 @@ alias gdifft='GIT_EXTERNAL_DIFF=difft git diff'
 
 alias optisvg='svgo --disable=removeXMLProcInst --enable=removeTitle'
 alias download-audio="youtube-dl -f 'bestaudio' -o '%(title)s.%(ext)s'"
-alias ls='exa'
+alias ls='eza'
 
 alias start_redis='redis-server /usr/local/etc/redis.conf'
 alias start_livebook='docker run -p 8080:8080 -p 8081:8081 --pull always -v $(pwd):/data:z ghcr.io/livebook-dev/livebook.'
