@@ -2,7 +2,7 @@
 // @name        youtube-ads
 // @match				https://www.youtube.com/*
 // @grant       GM_addStyle
-// @version     0.1
+// @version     0.2
 // ==/UserScript==
 
 GM_addStyle(`
@@ -10,3 +10,11 @@ GM_addStyle(`
   display: none !important;
 }
 `);
+
+function removeCookieConsent() {
+	const consent = document.querySelector("ytd-consent-bump-v2-lightbox");
+	consent?.remove();
+}
+
+removeCookieConsent();
+setTimeout(removeCookieConsent, 1000);
