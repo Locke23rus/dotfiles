@@ -2,7 +2,7 @@
 // @name        youtube-ads
 // @match				https://www.youtube.com/*
 // @grant       GM_addStyle
-// @version     0.2
+// @version     0.3
 // ==/UserScript==
 
 GM_addStyle(`
@@ -17,4 +17,7 @@ function removeCookieConsent() {
 }
 
 removeCookieConsent();
-setTimeout(removeCookieConsent, 1000);
+setTimeout(removeCookieConsent, 10000);
+for (let i = 0; i < 10; i++) {
+	setTimeout(removeCookieConsent, i * 500);
+}
