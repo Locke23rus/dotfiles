@@ -1,9 +1,9 @@
 # git
 alias git-update-submodules = git submodule foreach git pull origin master
 alias yolo = git push -f
-alias git = hub
-alias got = hub
-alias gut = hub
+# alias git = hub
+alias got = git
+alias gut = git
 alias gdiff = git diff --no-index
 
 
