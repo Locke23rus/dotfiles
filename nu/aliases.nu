@@ -15,6 +15,7 @@ alias c = cargo
 
 
 # Docker
+alias k = kubectl
 alias dcr = docker-compose run
 alias dcb = docker-compose build
 
@@ -29,3 +30,4 @@ alias optisvg = svgo --disable=removeXMLProcInst --enable=removeTitle
 alias download-audio = youtube-dl -f 'bestaudio' -o '%(title)s.%(ext)s'
 alias l = ls
 alias ll = ls -la
+alias lll = eza -la

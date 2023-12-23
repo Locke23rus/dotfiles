@@ -41,6 +41,7 @@
     helix
     hub
     # inter
+    jless
     jq
     just
     kubectx
