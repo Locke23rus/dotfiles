@@ -28,6 +28,7 @@
     # asdf-vm
     bottom
     cacert
+    carapace
     delta
     difftastic
     doctl
