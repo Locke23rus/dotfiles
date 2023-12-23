@@ -797,3 +797,5 @@ $env.config = {
 
 source ~/src/nu_scripts/custom-completions/tealdeer/tldr-completions.nu
 source ~/src/nu_scripts/modules/nix/nix.nu
+
+source ~/.dotfiles/nu/aliases.nu
