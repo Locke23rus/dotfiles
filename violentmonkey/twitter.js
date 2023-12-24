@@ -2,7 +2,7 @@
 // @name        twitter
 // @match				https://twitter.com/*
 // @grant       GM_addStyle
-// @version     0.2
+// @version     0.3
 // ==/UserScript==
 
 GM_addStyle(`
@@ -19,7 +19,7 @@ const removeAds = () => {
 					(span) => span.textContent === "Ad"
 				)
 			) {
-				card.remove();
+				card.style.display = "none";
 			}
 		}
 	);
