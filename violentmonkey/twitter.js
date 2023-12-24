@@ -2,7 +2,7 @@
 // @name        twitter
 // @match				https://twitter.com/*
 // @grant       GM_addStyle
-// @version     0.3
+// @version     0.4
 // ==/UserScript==
 
 GM_addStyle(`
@@ -12,6 +12,9 @@ GM_addStyle(`
 `);
 
 const removeAds = () => {
+	if (document.hidden) {
+		return;
+	}
 	[...document.querySelectorAll("div[data-testid='cellInnerDiv']")].forEach(
 		(card) => {
 			if (
