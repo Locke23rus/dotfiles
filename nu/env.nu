@@ -1,12 +1,8 @@
 # Nushell Environment Config File
 
-def create_left_prompt [] {
-	^starship prompt --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)'
-}
-
 # Use nushell functions to define your right and left prompt
-$env.PROMPT_COMMAND = {|| create_left_prompt }
-$env.PROMPT_COMMAND_RIGHT = ""
+$env.PROMPT_COMMAND = {|| "" }
+$env.PROMPT_COMMAND_RIGHT = {|| "" }
 
 # The prompt indicators are environmental variables that represent
 # the state of the prompt
@@ -62,4 +58,3 @@ $env.PATH = (
 	prepend '~/.cargo/bin'
 )
 
-$env.STARSHIP_SHELL = 'nu'
