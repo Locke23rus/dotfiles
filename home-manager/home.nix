@@ -101,6 +101,7 @@
         style = "green";
       };
       package.disabled = true;
+      elixir.disabled = true;
     };
   };
 
