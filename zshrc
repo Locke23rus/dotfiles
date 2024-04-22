@@ -71,6 +71,7 @@ ZSH_CUSTOM="$HOME/.dotfiles/zsh"
 plugins=(
   asdf
   bundler
+  direnv
   docker
   docker-compose
   git
