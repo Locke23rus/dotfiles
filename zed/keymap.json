@@ -1,0 +1,27 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-j": "workspace::OpenTerminal"
+    }
+  },
+  {
+    "context": "Pane && docked",
+    "bindings": {
+      "cmd-j": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-/": "pane::GoBack",
+      "ctrl-?": "pane::GoForward"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "shift-f12": "editor::FindAllReferences"
+    }
+  }
+]

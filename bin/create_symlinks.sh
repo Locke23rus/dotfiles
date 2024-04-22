@@ -13,5 +13,6 @@ ln -s ~/.dotfiles/wezterm.lua ~/.wezterm.lua
 ln -s ~/.dotfiles/nu/env.nu ~/.config/nushell/env.nu
 ln -s ~/.dotfiles/nu/config.nu ~/.config/nushell/config.nu
 
-ln -s  ~/.dotfiles/zed/settings.json ~/.config/zed/settings.json
-ln -s  ~/.dotfiles/zed/themes ~/.config/zed/themes
+ln -s ~/.dotfiles/zed/keymap.json ~/.config/zed/keymap.json
+ln -s ~/.dotfiles/zed/settings.json ~/.config/zed/settings.json
+ln -s ~/.dotfiles/zed/themes ~/.config/zed/themes
