@@ -12,11 +12,16 @@
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "terminal": {
     "font_size": 12,
-    "font_family": "JetBrainsMono Nerd Font"
+    "font_family": "JetBrainsMono Nerd Font",
+    "max_scroll_history_lines": 100000
   },
   "confirm_quit": true,
   "collaboration_panel": { "button": false },
   "chat_panel": { "button": false },
   "autosave": "on_focus_change",
-  "preferred_line_length": 120
+  "preferred_line_length": 120,
+  "project_panel": {
+    "folder_icons": false,
+    "file_icons": false
+  }
 }
