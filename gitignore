@@ -15,11 +15,13 @@
 *~
 /.byebug_history
 /.direnv/
+/.envrc
 /.idea
 /.ruby-gemset
 /.ruby-version
 /.rvmrc
 /.tool-versions
+/.mise.toml
 /.vscode
 /.fleet
 /pnpm-lock.yaml

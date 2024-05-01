@@ -69,7 +69,6 @@ ZSH_CUSTOM="$HOME/.dotfiles/zsh"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  asdf
   bundler
   direnv
   docker
@@ -112,7 +111,3 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-. $(brew --prefix asdf)/libexec/asdf.sh
-
-eval "$(mcfly init zsh)"
