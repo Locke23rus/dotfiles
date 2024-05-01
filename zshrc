@@ -111,3 +111,6 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+eval "$(mcfly init zsh)"
+eval "$(mise activate zsh)"

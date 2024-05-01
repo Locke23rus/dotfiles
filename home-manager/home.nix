@@ -36,7 +36,7 @@
     eza # fork of exa
     fd
     git-extras
-    go_1_20
+    go_1_21
     hcloud
     helix
     hub
@@ -47,7 +47,7 @@
     kubectx
     kubernetes
     nix
-    nixfmt
+    nixfmt-rfc-style
     nodePackages.svgo
     optipng
     ripgrep
@@ -72,13 +72,13 @@
 
   programs.zsh = {
     enable = true;
-    enableAutosuggestions = true;
+    autosuggestion.enable = true;
     oh-my-zsh = {
       enable = true;
       custom = "$HOME/.dotfiles/zsh";
       plugins = [
-        "asdf"
         "bundler"
+        "direnv"
         "docker"
         "docker-compose"
         "git"
@@ -97,7 +97,7 @@
     enableZshIntegration = true;
     settings = {
       kubernetes = {
-        disabled = false;
+        disabled = true;
         style = "green";
       };
       package.disabled = true;
@@ -157,5 +157,7 @@
     enable = true;
     enableZshIntegration = true;
   };
+
+  programs.mise.enable = true;
 
 }
