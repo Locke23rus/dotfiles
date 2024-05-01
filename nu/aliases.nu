@@ -31,3 +31,6 @@ alias download-audio = youtube-dl -f 'bestaudio' -o '%(title)s.%(ext)s'
 alias l = ls
 alias ll = ls -la
 alias lll = eza -la
+
+alias e = nvim
+alias hm = home-manager switch
