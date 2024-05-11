@@ -25,7 +25,6 @@
 
   home.packages = with pkgs; [
     any-nix-shell
-    # asdf-vm
     bottom
     cacert
     carapace
@@ -46,6 +45,7 @@
     just
     kubectx
     kubernetes
+		mise
     nix
     nixfmt-rfc-style
     nodePackages.svgo
@@ -157,7 +157,5 @@
     enable = true;
     enableZshIntegration = true;
   };
-
-  programs.mise.enable = true;
 
 }
