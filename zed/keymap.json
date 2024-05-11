@@ -2,7 +2,10 @@
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-j": "workspace::OpenTerminal"
+      "cmd-j": "workspace::OpenTerminal",
+      "alt-j": "workspace::OpenTerminal",
+      "alt-s": "workspace::Save",
+      "alt-p": "file_finder::Toggle"
     }
   },
   {
@@ -21,7 +24,15 @@
   {
     "context": "Editor",
     "bindings": {
-      "shift-f12": "editor::FindAllReferences"
+      "shift-f12": "editor::FindAllReferences",
+      "alt-j": "workspace::ToggleBottomDock",
+      "alt-/": "editor::ToggleComments"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "alt-j": "workspace::ToggleBottomDock"
     }
   }
 ]

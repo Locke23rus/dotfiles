@@ -8,8 +8,9 @@
 // from the command palette or from `Zed` application menu.
 {
   "theme": "My Alabaster",
-  "buffer_font_size": 20,
-  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 18,
+  // "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "JetBrains Mono",
   "terminal": {
     "font_size": 18,
     "font_family": "JetBrainsMono Nerd Font",
