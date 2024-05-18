@@ -1,6 +1,6 @@
 # GIT
 alias git-update-submodules='git submodule foreach git pull origin master'
-alias yolo='git push -f'
+alias yolo='git push --force-with-lease'
 alias got='git'
 alias gut='git'
 alias gdiff='git diff --no-index'
