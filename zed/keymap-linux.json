@@ -1,0 +1,54 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-j": "workspace::OpenTerminal",
+      "alt-s": "workspace::Save",
+      "alt-p": "file_finder::Toggle",
+      "alt-shift-p": "command_palette::Toggle",
+      "alt-,": "zed::OpenSettings",
+      "alt-w": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-/": "pane::GoBack",
+      "ctrl-?": "pane::GoForward"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "shift-f12": "editor::FindAllReferences",
+      "alt-j": "workspace::ToggleBottomDock",
+      "alt-/": "editor::ToggleComments",
+      "alt-enter": "editor::NewlineBelow",
+      "win-left": "editor::MoveToPreviousSubwordStart",
+      "win-right": "editor::MoveToNextSubwordEnd",
+      "win-shift-left": "editor::SelectToPreviousSubwordStart",
+      "win-shift-right": "editor::SelectToNextSubwordEnd",
+      "alt-up": "editor::MoveLineUp",
+      "alt-down": "editor::MoveLineDown",
+      "win-up": "editor::SelectLargerSyntaxNode",
+      "win-down": "editor::SelectSmallerSyntaxNode",
+      "alt-left": "editor::MoveToBeginningOfLine",
+      "alt-right": "editor::MoveToEndOfLine",
+      "alt-shift-left": "editor::SelectToBeginningOfLine",
+      "alt-shift-right": "editor::SelectToEndOfLine",
+      "alt-d": "editor::DuplicateLineUp",
+      "alt-c": "editor::Copy",
+      "alt-v": "editor::Paste",
+      "alt-x": "editor::Cut",
+      "alt-z": "editor::Undo",
+      "alt-shift-z": "editor::Redo",
+      "alt-shift-k": "editor::DeleteLine"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "alt-j": "workspace::ToggleBottomDock"
+    }
+  }
+]
