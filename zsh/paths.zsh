@@ -7,6 +7,7 @@ PATH="$HOME/.cargo/bin:$PATH"
 PATH="$HOME/zig:$PATH"
 PATH="$HOME/.mix/escripts:$PATH"
 PATH="$HOME/.local/share/gem/ruby/3.2.0/bin:$PATH"
+PATH="$HOME/.local/bin:$PATH"
 # Extra paths for v1
 PATH="/opt/homebrew/opt/php@8.1/bin:$PATH"
 PATH="/opt/homebrew/opt/php@8.1/sbin:$PATH"

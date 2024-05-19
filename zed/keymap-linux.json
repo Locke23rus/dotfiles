@@ -7,7 +7,8 @@
       "alt-p": "file_finder::Toggle",
       "alt-shift-p": "command_palette::Toggle",
       "alt-,": "zed::OpenSettings",
-      "alt-w": "pane::CloseActiveItem"
+      "alt-w": "pane::CloseActiveItem",
+      "alt-f": "buffer_search::Deploy"
     }
   },
   {
@@ -42,13 +43,17 @@
       "alt-x": "editor::Cut",
       "alt-z": "editor::Undo",
       "alt-shift-z": "editor::Redo",
-      "alt-shift-k": "editor::DeleteLine"
+      "alt-shift-k": "editor::DeleteLine",
+      "ctrl-/": "pane::GoBack",
+      "ctrl-shift-/": "pane::GoForward"
     }
   },
   {
     "context": "Terminal",
     "bindings": {
-      "alt-j": "workspace::ToggleBottomDock"
+      "alt-j": "workspace::ToggleBottomDock",
+      "alt-c": "terminal::Copy",
+      "alt-v": "terminal::Paste"
     }
   }
 ]
