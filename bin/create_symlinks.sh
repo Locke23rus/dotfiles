@@ -18,3 +18,7 @@ ln -s ~/.dotfiles/zed/themes ~/.config/zed/themes
 # linux
 # ln -s ~/.dotfiles/zed/keymap-linux.json ~/.config/zed/keymap.json
 # ln -s ~/.dotfiles/zed/settings-linux.json ~/.config/zed/settings.json
+
+# mac
+# ln -s ~/.dotfiles/zed/keymap-mac.json ~/.config/zed/keymap.json
+# ln -s ~/.dotfiles/zed/settings-mac.json ~/.config/zed/settings.json

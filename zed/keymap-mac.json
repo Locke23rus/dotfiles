@@ -22,14 +22,16 @@
 		"context": "Editor",
 		"bindings": {
 			"shift-f12": "editor::FindAllReferences",
-			"alt-j": "workspace::ToggleBottomDock",
-			"alt-/": "editor::ToggleComments"
+			"alt-up": "editor::SelectLargerSyntaxNode",
+			"alt-down": "editor::SelectSmallerSyntaxNode",
+			"alt-shift-up": "editor::MoveLineUp",
+			"alt-shift-down": "editor::MoveLineDown"
 		}
 	},
 	{
 		"context": "Terminal",
 		"bindings": {
-			"alt-j": "workspace::ToggleBottomDock"
+			"cmd-t": "workspace::NewTerminal"
 		}
 	}
 ]
