@@ -53,7 +53,9 @@
     "bindings": {
       "alt-j": "workspace::ToggleBottomDock",
       "alt-c": "terminal::Copy",
-      "alt-v": "terminal::Paste"
+      "alt-v": "terminal::Paste",
+      "alt-t": "workspace::NewTerminal",
+      "alt-w": "pane::CloseActiveItem"
     }
   }
 ]

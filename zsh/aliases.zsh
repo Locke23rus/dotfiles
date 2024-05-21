@@ -3,8 +3,10 @@ alias git-update-submodules='git submodule foreach git pull origin master'
 alias yolo='git push --force-with-lease'
 alias got='git'
 alias gut='git'
+alias gd='git diff'
+alias gdd='GIT_PAGER=delta git diff'
+alias gddd='GIT_EXTERNAL_DIFF=difft git diff'
 alias gdiff='git diff --no-index'
-alias gdifft='GIT_EXTERNAL_DIFF=difft git diff'
 
 alias optisvg='svgo --disable=removeXMLProcInst --enable=removeTitle'
 alias download-audio="youtube-dl -f 'bestaudio' -o '%(title)s.%(ext)s'"
@@ -25,15 +27,6 @@ alias b-spec='be rspec'
 
 # rust
 alias c='cargo'
-
-# node
-alias reyarn='rm -rf node_modules/ && y install'
-alias y-corepack='corepack enable && corepack prepare --activate'
-alias y='detect_y'
-alias latest-pnpm='corepack prepare pnpm@latest --activate'
-
-# macOS
-alias cpu-temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
 
 # kubernetes
 alias k='kubectl'

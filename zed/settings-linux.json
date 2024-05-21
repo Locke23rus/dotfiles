@@ -31,5 +31,8 @@
   },
   "git": {
     "inline_blame": { "enabled": false }
+  },
+  "file_types": {
+    "JSON": [".prettierrc"]
   }
 }
