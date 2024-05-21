@@ -57,5 +57,12 @@
       "alt-t": "workspace::NewTerminal",
       "alt-w": "pane::CloseActiveItem"
     }
+  },
+  {
+    "context": "BufferSearchBar",
+    "bindings": {
+      "alt-g": "search::SelectNextMatch",
+      "alt-shift-g": "search::SelectPrevMatch"
+    }
   }
 ]
