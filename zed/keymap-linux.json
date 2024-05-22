@@ -8,7 +8,11 @@
       "alt-shift-p": "command_palette::Toggle",
       "alt-,": "zed::OpenSettings",
       "alt-w": "pane::CloseActiveItem",
-      "alt-f": "buffer_search::Deploy"
+      "alt-f": "buffer_search::Deploy",
+      "alt-q": "workspace::CloseWindow",
+      "alt-shift-n": "workspace::NewWindow",
+      "alt-shift-f": "pane::DeploySearch",
+      "ctrl-shift-r": "projects::OpenRecent"
     }
   },
   {
@@ -23,6 +27,7 @@
     "bindings": {
       "shift-f12": "editor::FindAllReferences",
       "alt-j": "workspace::ToggleBottomDock",
+      "alt-w": "pane::CloseActiveItem",
       "alt-/": "editor::ToggleComments",
       "alt-enter": "editor::NewlineBelow",
       "win-left": "editor::MoveToPreviousSubwordStart",
@@ -41,6 +46,7 @@
       "alt-right": "editor::MoveToEndOfLine",
       "alt-shift-left": "editor::SelectToBeginningOfLine",
       "alt-shift-right": "editor::SelectToEndOfLine",
+      "alt-a": "editor::SelectAll",
       "alt-d": "editor::DuplicateLineUp",
       "alt-c": "editor::Copy",
       "alt-v": "editor::Paste",
@@ -50,6 +56,12 @@
       "alt-shift-k": "editor::DeleteLine",
       "ctrl-/": "pane::GoBack",
       "ctrl-shift-/": "pane::GoForward"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "ctrl-enter": "editor::OpenExcerpts"
     }
   },
   {

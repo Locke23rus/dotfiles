@@ -136,119 +136,37 @@
 				"warning": "#CB9000",
 				"warning.background": null,
 				"warning.border": null,
-				"players": [
-					{
-						"selection": "#BFDBFE"
-					}
-				],
+				"players": [{ "selection": "#BFDBFE" }],
 				"syntax": {
-					"comment": {
-						"color": "#AA3731",
-						"font_style": null,
-						"font_weight": null
-					},
-					"comment.doc": {
-						"color": "#AA3731",
-						"font_style": null,
-						"font_weight": null
-					},
-					"string.doc": {
-						"color": "#AA3731",
-						"font_style": null,
-						"font_weight": null
-					},
-					"function": {
-						"color": "#325CC0",
-						"font_style": null,
-						"font_weight": null
-					},
-					"function.method": {
-						"color": "#325CC0",
-						"font_style": null,
-						"font_weight": null
-					},
-					"function.builtin": {
-						"color": "#000000",
-						"font_style": null,
-						"font_weight": null
-					},
-					"constant": {
-						// "color": "#7A3E9D",
-						"color": "#811ABC",
-						"font_style": null,
-						"font_weight": null
-					},
-					"label": {
-						"color": "#325CC0",
-						"font_style": null,
-						"font_weight": null
-					},
-					"number": {
-						// "color": "#7A3E9D",
-						"color": "#811ABC",
-						"font_style": null,
-						"font_weight": null
-					},
-					"punctuation": {
-						"color": "#777777",
-						"font_style": null,
-						"font_weight": null
-					},
-					"punctuation.bracket": {
-						"color": "#777777",
-						"font_style": null,
-						"font_weight": null
-					},
-					"punctuation.delimiter": {
-						"color": "#777777",
-						"font_style": null,
-						"font_weight": null
-					},
-					"punctuation.list_marker": {
-						"color": "#777777",
-						"font_style": null,
-						"font_weight": null
-					},
-					"punctuation.special": {
-						"color": "#777777",
-						"font_style": null,
-						"font_weight": null
-					},
-					"string": {
-						"color": "#448C27",
-						"font_style": null,
-						"font_weight": null
-					},
-					"string.escape": {
-						"color": "#811ABC",
-						"font_style": null,
-						"font_weight": null
-					},
-					"string.regex": {
-						"color": "#448C27",
-						"font_style": null,
-						"font_weight": null
-					},
-					"string.special": {
-						"color": "#448C27",
-						"font_style": null,
-						"font_weight": null
-					},
-					"string.special.symbol": {
-						"color": "#448C27",
-						"font_style": null,
-						"font_weight": null
-					},
-					"text.literal": {
-						"color": "#448C27",
-						"font_style": null,
-						"font_weight": null
-					},
-					"title": {
-						"color": "#325CC0",
-						"font_style": null,
-						"font_weight": null
-					}
+					// red
+					"comment": { "color": "#AA3731" },
+					"comment.doc": { "color": "#AA3731" },
+					"string.doc": { "color": "#AA3731" },
+					// blue
+					"function": { "color": "#325CC0" },
+					"function.method": { "color": "#325CC0" },
+					"label": { "color": "#325CC0" },
+					"title": { "color": "#325CC0" },
+					// purple
+					"constant": { "color": "#811ABC" },
+					"number": { "color": "#811ABC" },
+					"string.escape": { "color": "#811ABC" },
+					"link_uri": { "color": "#811ABC" },
+					// dark-grey
+					"punctuation": { "color": "#777777" },
+					"punctuation.bracket": { "color": "#777777" },
+					"punctuation.delimiter": { "color": "#777777" },
+					"punctuation.list_marker": { "color": "#777777" },
+					"punctuation.special": { "color": "#777777" },
+					// black
+					"function.builtin": { "color": "#000000" },
+					// green
+					"string": { "color": "#448C27" },
+					"string.regex": { "color": "#448C27" },
+					"string.special": { "color": "#448C27" },
+					"string.special.symbol": { "color": "#448C27" },
+					"text.literal": { "color": "#448C27" },
+					"link_text": { "color": "#448C27" }
 				}
 			}
 		}
