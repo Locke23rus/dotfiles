@@ -7,6 +7,7 @@ alias gd='git diff'
 alias gdd='GIT_PAGER=delta git diff'
 alias gddd='GIT_EXTERNAL_DIFF=difft git diff'
 alias gdiff='git diff --no-index'
+alias gci='git commit'
 
 alias optisvg='svgo --disable=removeXMLProcInst --enable=removeTitle'
 alias download-audio="youtube-dl -f 'bestaudio' -o '%(title)s.%(ext)s'"
