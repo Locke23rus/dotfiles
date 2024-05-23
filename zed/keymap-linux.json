@@ -1,5 +1,10 @@
 [
   {
+    "bindings": {
+      "enter": ["picker::ConfirmInput", { "secondary": false }]
+    }
+  },
+  {
     "context": "Workspace",
     "bindings": {
       "alt-j": "workspace::OpenTerminal",
@@ -12,7 +17,10 @@
       "alt-q": "workspace::CloseWindow",
       "alt-shift-n": "workspace::NewWindow",
       "alt-shift-f": "pane::DeploySearch",
-      "ctrl-shift-r": "projects::OpenRecent"
+      "ctrl-shift-r": "projects::OpenRecent",
+      "alt-t": "project_symbols::Toggle",
+      "ctrl-t": "task::Spawn",
+      "ctrl-r": "task::Rerun"
     }
   },
   {
@@ -55,7 +63,9 @@
       "alt-shift-z": "editor::Redo",
       "alt-shift-k": "editor::DeleteLine",
       "ctrl-/": "pane::GoBack",
-      "ctrl-shift-/": "pane::GoForward"
+      "ctrl-shift-/": "pane::GoForward",
+      "ctrl-t": "task::Spawn",
+      "ctrl-r": "task::Rerun"
     }
   },
   {

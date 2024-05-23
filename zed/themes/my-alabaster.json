@@ -147,12 +147,12 @@
 					"function.method": { "color": "#325CC0" },
 					"label": { "color": "#325CC0" },
 					"title": { "color": "#325CC0" },
-					// purple
+					// magenta
 					"constant": { "color": "#811ABC" },
 					"number": { "color": "#811ABC" },
 					"string.escape": { "color": "#811ABC" },
 					"link_uri": { "color": "#811ABC" },
-					// dark-grey
+					// bright_black
 					"punctuation": { "color": "#777777" },
 					"punctuation.bracket": { "color": "#777777" },
 					"punctuation.delimiter": { "color": "#777777" },
