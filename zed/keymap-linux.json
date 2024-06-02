@@ -1,8 +1,6 @@
 [
   {
-    "bindings": {
-      "enter": ["picker::ConfirmInput", { "secondary": false }]
-    }
+    "bindings": {}
   },
   {
     "context": "Workspace",
@@ -19,15 +17,18 @@
       "alt-shift-f": "pane::DeploySearch",
       "ctrl-shift-r": "projects::OpenRecent",
       "alt-t": "project_symbols::Toggle",
-      "ctrl-t": "task::Spawn",
-      "ctrl-r": "task::Rerun"
+      "alt-shift-r": "task::Spawn",
+      "alt-r": "task::Rerun",
+      "alt-k alt-s": "zed::OpenKeymap",
+      "alt-enter": ["picker::ConfirmInput", { "secondary": false }]
     }
   },
   {
     "context": "Pane",
     "bindings": {
       "ctrl-/": "pane::GoBack",
-      "ctrl-?": "pane::GoForward"
+      "ctrl-?": "pane::GoForward",
+      "ctrl-w": null
     }
   },
   {
@@ -65,7 +66,9 @@
       "ctrl-/": "pane::GoBack",
       "ctrl-shift-/": "pane::GoForward",
       "ctrl-t": "task::Spawn",
-      "ctrl-r": "task::Rerun"
+      "ctrl-r": "task::Rerun",
+      "alt-r": "task::Rerun",
+      "alt-.": "editor::ToggleCodeActions"
     }
   },
   {
@@ -81,7 +84,8 @@
       "alt-c": "terminal::Copy",
       "alt-v": "terminal::Paste",
       "alt-t": "workspace::NewTerminal",
-      "alt-w": "pane::CloseActiveItem"
+      "alt-w": "pane::CloseActiveItem",
+      "ctrl-w": "editor::DeleteToPreviousWordStart"
     }
   },
   {
