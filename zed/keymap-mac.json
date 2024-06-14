@@ -1,37 +1,50 @@
 [
-	{
-		"context": "Workspace",
-		"bindings": {
-			"cmd-j": "workspace::OpenTerminal"
-		}
-	},
-	{
-		"context": "Pane && docked",
-		"bindings": {
-			"cmd-j": "workspace::ToggleBottomDock"
-		}
-	},
-	{
-		"context": "Pane",
-		"bindings": {
-			"ctrl-/": "pane::GoBack",
-			"ctrl-?": "pane::GoForward"
-		}
-	},
-	{
-		"context": "Editor",
-		"bindings": {
-			"shift-f12": "editor::FindAllReferences",
-			"alt-up": "editor::SelectLargerSyntaxNode",
-			"alt-down": "editor::SelectSmallerSyntaxNode",
-			"alt-shift-up": "editor::MoveLineUp",
-			"alt-shift-down": "editor::MoveLineDown"
-		}
-	},
-	{
-		"context": "Terminal",
-		"bindings": {
-			"cmd-t": "workspace::NewTerminal"
-		}
-	}
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-j": "workspace::OpenTerminal",
+      "ctrl-shift-r": "projects::OpenRecent",
+      "cmd-shift-r": "task::Spawn",
+      "cmd-r": "task::Rerun"
+    }
+  },
+  {
+    "context": "Pane && docked",
+    "bindings": {
+      "cmd-j": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-/": "pane::GoBack",
+      "ctrl-?": "pane::GoForward",
+      "cmd-1": ["pane::ActivateItem", 0],
+      "cmd-2": ["pane::ActivateItem", 1],
+      "cmd-3": ["pane::ActivateItem", 2],
+      "cmd-4": ["pane::ActivateItem", 3],
+      "cmd-5": ["pane::ActivateItem", 4],
+      "cmd-6": ["pane::ActivateItem", 5],
+      "cmd-7": ["pane::ActivateItem", 6],
+      "cmd-8": ["pane::ActivateItem", 7],
+      "cmd-9": ["pane::ActivateItem", 8]
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "shift-f12": "editor::FindAllReferences",
+      "alt-up": "editor::SelectLargerSyntaxNode",
+      "alt-down": "editor::SelectSmallerSyntaxNode",
+      "alt-shift-up": "editor::MoveLineUp",
+      "alt-shift-down": "editor::MoveLineDown",
+      "cmd-d": "editor::DuplicateLineDown"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-t": "workspace::NewTerminal"
+    }
+  }
 ]

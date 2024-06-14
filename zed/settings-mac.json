@@ -7,21 +7,21 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-	"theme": "My Alabaster",
-	"buffer_font_size": 13,
-	"buffer_font_family": "JetBrainsMono Nerd Font",
-	"terminal": {
-		"font_size": 12,
-		"font_family": "JetBrainsMono Nerd Font",
-		"max_scroll_history_lines": 100000
-	},
-	"confirm_quit": true,
-	"collaboration_panel": { "button": false },
-	"chat_panel": { "button": false },
-	"autosave": "on_focus_change",
-	"preferred_line_length": 120,
-	"project_panel": {
-		"folder_icons": false,
-		"file_icons": false
-	}
+  "theme": "My Alabaster",
+  "buffer_font_size": 12,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "terminal": {
+    "font_size": 12,
+    "font_family": "JetBrainsMono Nerd Font",
+    "max_scroll_history_lines": 100000
+  },
+  "confirm_quit": true,
+  "collaboration_panel": { "button": false },
+  "chat_panel": { "button": false },
+  "autosave": "on_focus_change",
+  "preferred_line_length": 120,
+  "project_panel": {
+    "folder_icons": false,
+    "file_icons": false
+  }
 }

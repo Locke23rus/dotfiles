@@ -3,11 +3,13 @@ alias git-update-submodules='git submodule foreach git pull origin master'
 alias yolo='git push --force-with-lease'
 alias got='git'
 alias gut='git'
+alias gti='git'
 alias gd='git diff'
 alias gdd='GIT_PAGER=delta git diff'
 alias gddd='GIT_EXTERNAL_DIFF=difft git diff'
 alias gdiff='git diff --no-index'
 alias gci='git commit'
+alias gdm='git delete-merged-branches'
 
 alias optisvg='svgo --disable=removeXMLProcInst --enable=removeTitle'
 alias download-audio="youtube-dl -f 'bestaudio' -o '%(title)s.%(ext)s'"
