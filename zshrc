@@ -74,7 +74,6 @@ plugins=(
   docker
   docker-compose
   git
-  ripgrep
   rust
   yarn
 )

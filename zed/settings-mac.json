@@ -7,6 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "vim_mode": false,
   "theme": "My Alabaster",
   "buffer_font_size": 12,
   "buffer_font_family": "JetBrainsMono Nerd Font",
@@ -23,5 +24,8 @@
   "project_panel": {
     "folder_icons": false,
     "file_icons": false
+  },
+  "file_types": {
+    "JSON": ["ejson"]
   }
 }
