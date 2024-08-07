@@ -9,6 +9,8 @@ alias gdd='GIT_PAGER=delta git diff'
 alias gddd='GIT_EXTERNAL_DIFF=difft git diff'
 alias gdiff='git diff --no-index'
 alias gci='git commit'
+alias gc='git commit'
+alias gg='git lol'
 alias gdm='git delete-merged-branches'
 
 alias optisvg='svgo --disable=removeXMLProcInst --enable=removeTitle'
