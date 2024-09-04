@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name        twitter
-// @match				https://twitter.com/*
+// @match				https://x.com/*
 // @grant       GM_addStyle
-// @version     0.4
+// @version     0.5
 // ==/UserScript==
 
 GM_addStyle(`
@@ -15,17 +15,11 @@ const removeAds = () => {
 	if (document.hidden) {
 		return;
 	}
-	[...document.querySelectorAll("div[data-testid='cellInnerDiv']")].forEach(
-		(card) => {
-			if (
-				[...card.querySelectorAll("span")].some(
-					(span) => span.textContent === "Ad"
-				)
-			) {
-				card.style.display = "none";
-			}
+	[...document.querySelectorAll("div[data-testid='cellInnerDiv']")].forEach((card) => {
+		if ([...card.querySelectorAll("span")].some((span) => span.textContent === "Ad")) {
+			card.style.display = "none";
 		}
-	);
+	});
 };
 
 removeAds();
