@@ -14,8 +14,8 @@
   # You can update Home Manager without changing this value. See
   # the Home Manager release notes for a list of state version
   # changes in each release.
-  home.stateVersion = "23.11";
 
+	home.stateVersion = "24.05";
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -35,7 +35,7 @@
     eza # fork of exa
     fd
     git-extras
-    go_1_21
+    go_1_23
     hcloud
     helix
     hub
