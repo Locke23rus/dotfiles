@@ -12,14 +12,14 @@ GM_addStyle(`
 `);
 
 const removeAds = () => {
-	if (document.hidden) {
-		return;
-	}
-	[...document.querySelectorAll("div[data-testid='cellInnerDiv']")].forEach((card) => {
-		if ([...card.querySelectorAll("span")].some((span) => span.textContent === "Ad")) {
-			card.style.display = "none";
-		}
-	});
+    if (document.hidden) {
+        return;
+    }
+    [...document.querySelectorAll("div[data-testid='cellInnerDiv']")].forEach((card) => {
+        if ([...card.querySelectorAll("span")].some((span) => span.textContent === "Ad")) {
+            card.style.display = "none";
+        }
+    });
 };
 
 removeAds();

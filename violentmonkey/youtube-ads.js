@@ -12,12 +12,12 @@ GM_addStyle(`
 `);
 
 function removeCookieConsent() {
-	const consent = document.querySelector("ytd-consent-bump-v2-lightbox");
-	consent?.remove();
+    const consent = document.querySelector("ytd-consent-bump-v2-lightbox");
+    consent?.remove();
 }
 
 removeCookieConsent();
 setTimeout(removeCookieConsent, 10000);
 for (let i = 0; i < 10; i++) {
-	setTimeout(removeCookieConsent, i * 500);
+    setTimeout(removeCookieConsent, i * 500);
 }
