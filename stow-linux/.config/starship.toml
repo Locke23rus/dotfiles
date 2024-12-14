@@ -1,6 +1,0 @@
-[kubernetes]
-disabled = true
-style = "green"
-
-[package]
-disabled = true
