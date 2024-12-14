@@ -42,4 +42,4 @@ alias c='cargo'
 alias k='kubectl'
 
 alias e='nvim'
-alias hm='home-manager switch'
+alias hms='home-manager switch'
