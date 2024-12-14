@@ -1,98 +1,99 @@
 [
-  {
-    "bindings": {}
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "alt-j": "workspace::OpenTerminal",
-      "alt-s": "workspace::Save",
-      "alt-p": "file_finder::Toggle",
-      "alt-shift-p": "command_palette::Toggle",
-      "alt-,": "zed::OpenSettings",
-      "alt-w": "pane::CloseActiveItem",
-      "alt-f": "buffer_search::Deploy",
-      "alt-q": "workspace::CloseWindow",
-      "alt-shift-n": "workspace::NewWindow",
-      "alt-shift-f": "pane::DeploySearch",
-      "ctrl-shift-r": "projects::OpenRecent",
-      "alt-t": "project_symbols::Toggle",
-      "alt-shift-r": "task::Spawn",
-      "alt-r": "task::Rerun",
-      "alt-k alt-s": "zed::OpenKeymap",
-      "alt-enter": ["picker::ConfirmInput", { "secondary": false }]
+    {
+        "bindings": {}
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "alt-j": "workspace::OpenTerminal",
+            "alt-s": "workspace::Save",
+            "alt-p": "file_finder::Toggle",
+            "alt-shift-p": "command_palette::Toggle",
+            "alt-,": "zed::OpenSettings",
+            "alt-w": "pane::CloseActiveItem",
+            "alt-f": "buffer_search::Deploy",
+            "alt-q": "workspace::CloseWindow",
+            "alt-shift-n": "workspace::NewWindow",
+            "alt-shift-f": "pane::DeploySearch",
+            "ctrl-shift-r": "projects::OpenRecent",
+            "alt-t": "project_symbols::Toggle",
+            "alt-shift-r": "task::Spawn",
+            "alt-r": "task::Rerun",
+            "alt-k alt-s": "zed::OpenKeymap",
+            "alt-enter": ["picker::ConfirmInput", { "secondary": false }],
+            "alt-n": "workspace::NewFile"
+        }
+    },
+    {
+        "context": "Pane",
+        "bindings": {
+            "ctrl-/": "pane::GoBack",
+            "ctrl-?": "pane::GoForward",
+            "ctrl-w": null
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "shift-f12": "editor::FindAllReferences",
+            "alt-j": "workspace::ToggleBottomDock",
+            "alt-w": "pane::CloseActiveItem",
+            "alt-/": "editor::ToggleComments",
+            "alt-enter": "editor::NewlineBelow",
+            "win-left": "editor::MoveToPreviousSubwordStart",
+            "win-right": "editor::MoveToNextSubwordEnd",
+            "win-shift-left": "editor::SelectToPreviousSubwordStart",
+            "win-shift-right": "editor::SelectToNextSubwordEnd",
+            "win-shift-up": "editor::MoveLineUp",
+            "win-shift-down": "editor::MoveLineDown",
+            "alt-up": "editor::MoveToBeginning",
+            "alt-down": "editor::MoveToEnd",
+            "alt-shift-up": "editor::SelectToBeginning",
+            "alt-shift-down": "editor::SelectToEnd",
+            "win-up": "editor::SelectLargerSyntaxNode",
+            "win-down": "editor::SelectSmallerSyntaxNode",
+            "alt-left": "editor::MoveToBeginningOfLine",
+            "alt-right": "editor::MoveToEndOfLine",
+            "alt-shift-left": "editor::SelectToBeginningOfLine",
+            "alt-shift-right": "editor::SelectToEndOfLine",
+            "alt-a": "editor::SelectAll",
+            "alt-d": "editor::DuplicateLineUp",
+            "alt-c": "editor::Copy",
+            "alt-v": "editor::Paste",
+            "alt-x": "editor::Cut",
+            "alt-z": "editor::Undo",
+            "alt-shift-z": "editor::Redo",
+            "alt-shift-k": "editor::DeleteLine",
+            "ctrl-/": "pane::GoBack",
+            "ctrl-shift-/": "pane::GoForward",
+            "ctrl-t": "task::Spawn",
+            "ctrl-r": "task::Rerun",
+            "alt-r": "task::Rerun",
+            "alt-.": "editor::ToggleCodeActions"
+        }
+    },
+    {
+        "context": "Editor && mode == full",
+        "bindings": {
+            "ctrl-enter": "editor::OpenExcerpts"
+        }
+    },
+    {
+        "context": "Terminal",
+        "bindings": {
+            "alt-j": "workspace::ToggleBottomDock",
+            "alt-c": "terminal::Copy",
+            "alt-v": "terminal::Paste",
+            "alt-t": "workspace::NewTerminal",
+            "alt-w": "pane::CloseActiveItem",
+            "ctrl-w": "editor::DeleteToPreviousWordStart"
+        }
+    },
+    {
+        "context": "BufferSearchBar",
+        "bindings": {
+            "alt-g": "search::SelectNextMatch",
+            "alt-shift-g": "search::SelectPrevMatch"
+        }
     }
-  },
-  {
-    "context": "Pane",
-    "bindings": {
-      "ctrl-/": "pane::GoBack",
-      "ctrl-?": "pane::GoForward",
-      "ctrl-w": null
-    }
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "shift-f12": "editor::FindAllReferences",
-      "alt-j": "workspace::ToggleBottomDock",
-      "alt-w": "pane::CloseActiveItem",
-      "alt-/": "editor::ToggleComments",
-      "alt-enter": "editor::NewlineBelow",
-      "win-left": "editor::MoveToPreviousSubwordStart",
-      "win-right": "editor::MoveToNextSubwordEnd",
-      "win-shift-left": "editor::SelectToPreviousSubwordStart",
-      "win-shift-right": "editor::SelectToNextSubwordEnd",
-      "win-shift-up": "editor::MoveLineUp",
-      "win-shift-down": "editor::MoveLineDown",
-      "alt-up": "editor::MoveToBeginning",
-      "alt-down": "editor::MoveToEnd",
-      "alt-shift-up": "editor::SelectToBeginning",
-      "alt-shift-down": "editor::SelectToEnd",
-      "win-up": "editor::SelectLargerSyntaxNode",
-      "win-down": "editor::SelectSmallerSyntaxNode",
-      "alt-left": "editor::MoveToBeginningOfLine",
-      "alt-right": "editor::MoveToEndOfLine",
-      "alt-shift-left": "editor::SelectToBeginningOfLine",
-      "alt-shift-right": "editor::SelectToEndOfLine",
-      "alt-a": "editor::SelectAll",
-      "alt-d": "editor::DuplicateLineUp",
-      "alt-c": "editor::Copy",
-      "alt-v": "editor::Paste",
-      "alt-x": "editor::Cut",
-      "alt-z": "editor::Undo",
-      "alt-shift-z": "editor::Redo",
-      "alt-shift-k": "editor::DeleteLine",
-      "ctrl-/": "pane::GoBack",
-      "ctrl-shift-/": "pane::GoForward",
-      "ctrl-t": "task::Spawn",
-      "ctrl-r": "task::Rerun",
-      "alt-r": "task::Rerun",
-      "alt-.": "editor::ToggleCodeActions"
-    }
-  },
-  {
-    "context": "Editor && mode == full",
-    "bindings": {
-      "ctrl-enter": "editor::OpenExcerpts"
-    }
-  },
-  {
-    "context": "Terminal",
-    "bindings": {
-      "alt-j": "workspace::ToggleBottomDock",
-      "alt-c": "terminal::Copy",
-      "alt-v": "terminal::Paste",
-      "alt-t": "workspace::NewTerminal",
-      "alt-w": "pane::CloseActiveItem",
-      "ctrl-w": "editor::DeleteToPreviousWordStart"
-    }
-  },
-  {
-    "context": "BufferSearchBar",
-    "bindings": {
-      "alt-g": "search::SelectNextMatch",
-      "alt-shift-g": "search::SelectPrevMatch"
-    }
-  }
 ]
