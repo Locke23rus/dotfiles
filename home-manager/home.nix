@@ -15,7 +15,7 @@
   # the Home Manager release notes for a list of state version
   # changes in each release.
 
-	home.stateVersion = "24.05";
+	home.stateVersion = "24.11";
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -39,13 +39,12 @@
     hcloud
     helix
     hub
-    # inter
     jless
     jq
     just
     kubectx
     kubernetes
-		mise
+	mise
     nix
     nixfmt-rfc-style
     nodePackages.svgo
@@ -55,6 +54,7 @@
     tealdeer
     tokei
     zsh-completions
+    stow
     # nodejs-19_x
     # ruby_3_1
     # rubyPackages_3_1.solargraph
