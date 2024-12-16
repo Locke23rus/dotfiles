@@ -45,6 +45,7 @@
     just
     kubectx
     kubernetes
+    lazygit
     mise
     nix
     nixfmt-rfc-style
@@ -103,6 +104,11 @@
   programs.direnv.nix-direnv.enable = true;
 
   programs.mcfly = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
+  programs.zoxide = {
     enable = true;
     enableZshIntegration = true;
   };
