@@ -53,15 +53,12 @@
     optipng
     ripgrep
     rust-analyzer
+    sqlite
+    stow
     tealdeer
     tokei
     zsh-completions
-    stow
-    # nodejs-19_x
-    # ruby_3_1
-    # rubyPackages_3_1.solargraph
-    # rubyPackages_3_1.rubocop
-    # (nerdfonts.override { fonts = [ "JetBrainsMono" ]; }) # these fonts don't work in flatpak apps :/
+    # (nerdfonts.override { fonts = [ "JetBrainsMono" ]; }) # nix fonts don't work in flatpak apps :/
   ];
 
   programs.zsh = {
