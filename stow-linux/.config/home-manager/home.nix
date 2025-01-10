@@ -31,9 +31,9 @@
     delta
     difftastic
     doctl
-    dog
     eza # fork of exa
     fd
+    fzf
     git
     git-extras
     go_1_23
@@ -57,6 +57,8 @@
     stow
     tealdeer
     tokei
+    zig
+    zls
     zsh-completions
     # (nerdfonts.override { fonts = [ "JetBrainsMono" ]; }) # nix fonts don't work in flatpak apps :/
   ];
