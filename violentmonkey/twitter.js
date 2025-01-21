@@ -2,12 +2,15 @@
 // @name        twitter
 // @match				https://x.com/*
 // @grant       GM_addStyle
-// @version     0.7
+// @version     0.8
 // ==/UserScript==
 
 GM_addStyle(`
 [data-testid="sidebarColumn"],
 [data-testid="GrokDrawer"],
+[aria-label="Business"],
+[aria-label="Premium"],
+[aria-label="Grok"],
 [aria-label="Grok actions"] {
   display: none !important;
 }
