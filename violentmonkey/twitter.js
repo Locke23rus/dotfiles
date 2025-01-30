@@ -2,7 +2,7 @@
 // @name        twitter
 // @match				https://x.com/*
 // @grant       GM_addStyle
-// @version     0.8
+// @version     0.9
 // ==/UserScript==
 
 GM_addStyle(`
@@ -10,6 +10,7 @@ GM_addStyle(`
 [data-testid="GrokDrawer"],
 [aria-label="Business"],
 [aria-label="Premium"],
+[aria-label="Jobs"],
 [aria-label="Grok"],
 [aria-label="Grok actions"] {
   display: none !important;
