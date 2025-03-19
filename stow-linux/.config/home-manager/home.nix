@@ -46,6 +46,7 @@
     kubectx
     kubernetes
     lazygit
+    leiningen
     mise
     nix
     nixfmt-rfc-style
