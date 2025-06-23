@@ -5,7 +5,6 @@
 // ==/UserScript==
 
 GM_addStyle(`
-textarea[data-testid="read-only-cursor-text-area"],
 pre.code-block-inner,
 pre[data-language],
 tt,
