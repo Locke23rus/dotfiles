@@ -93,7 +93,7 @@
     "context": "BufferSearchBar",
     "bindings": {
       "alt-g": "search::SelectNextMatch",
-      "alt-shift-g": "search::SelectPrevMatch"
+      "alt-shift-g": "search::SelectPreviousMatch"
     }
   }
 ]

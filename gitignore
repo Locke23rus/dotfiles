@@ -23,6 +23,7 @@
 /.tool-versions
 /.mise.toml
 /.vscode
+.vscode
 /.fleet
 /pnpm-lock.yaml
 /public/system/

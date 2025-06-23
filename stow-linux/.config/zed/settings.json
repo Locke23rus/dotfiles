@@ -8,24 +8,29 @@
 // from the command palette or from `Zed` application menu.
 {
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "copilot"
   },
   "icon_theme": "Zed (Default)",
-  "assistant": {
+  "agent": {
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-3-5-sonnet"
     },
     "version": "2"
   },
-  "vim_mode": false,
+  "vim_mode": true,
   "theme": "My Alabaster",
   "ui_font_size": 23,
   "buffer_font_size": 19,
-  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_weight": 500,
+  "buffer_font_family": "Annotation Mono",
+  // "buffer_font_family": "JetBrains Mono",
+  "buffer_font_features": { "ss01": true },
   "terminal": {
     "font_size": 18,
-    "font_family": "JetBrains Mono",
+    // "font_family": "JetBrains Mono",
+    "font_family": "Annotation Mono",
+    "font_weight": 600,
     "max_scroll_history_lines": 100000
   },
   "confirm_quit": true,
