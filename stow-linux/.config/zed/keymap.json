@@ -104,5 +104,33 @@
         "bindings": {
             "alt-shift-e": "project_panel::ToggleFocus"
         }
+    },
+    {
+        "context": "GitPanel",
+        "bindings": {
+            "alt-enter": "git::Commit",
+            "alt-g alt-g": "git::Fetch",
+            "alt-g down": "git::Pull",
+            "alt-g up": "git::Push",
+            "alt-shift-enter": "git::Amend"
+        }
+    },
+    {
+        "context": "GitCommit > Editor",
+        "bindings": {
+            "alt-enter": "git::Commit"
+        }
+    },
+    {
+        "context": "CommitEditor > Editor",
+        "bindings": {
+            "alt-shift-enter": "git::Amend"
+        }
+    },
+    {
+        "context": "GitDiff > Editor",
+        "bindings": {
+            "alt-shift-enter": "git::Amend"
+        }
     }
 ]
