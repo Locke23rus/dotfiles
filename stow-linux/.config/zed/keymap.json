@@ -118,18 +118,21 @@
     {
         "context": "GitCommit > Editor",
         "bindings": {
-            "alt-enter": "git::Commit"
+            "alt-enter": "git::Commit",
+            "alt-shift-enter": "git::Amend"
         }
     },
     {
         "context": "CommitEditor > Editor",
         "bindings": {
+            "alt-enter": "git::Commit",
             "alt-shift-enter": "git::Amend"
         }
     },
     {
         "context": "GitDiff > Editor",
         "bindings": {
+            "alt-enter": "git::Commit",
             "alt-shift-enter": "git::Amend"
         }
     }
