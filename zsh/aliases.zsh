@@ -17,6 +17,8 @@ alias gcb='git checkout -b'
 alias gb='git branch'
 alias gmm='git merge master'
 alias gs='git status'
+alias gr='git rebase'
+alias grm='gir rebase master'
 
 alias optisvg='svgo --disable=removeXMLProcInst --enable=removeTitle'
 alias download-audio="youtube-dl -f 'bestaudio' -o '%(title)s.%(ext)s'"

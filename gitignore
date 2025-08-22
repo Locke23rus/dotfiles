@@ -22,6 +22,7 @@
 /.rvmrc
 /.tool-versions
 /.mise.toml
+/mise.toml
 /.vscode
 .vscode
 /.fleet
