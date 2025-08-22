@@ -2,7 +2,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-j": "workspace::OpenTerminal",
+      // "cmd-j": "workspace::OpenTerminal",
       "ctrl-shift-r": "projects::OpenRecent",
       "cmd-shift-r": "task::Spawn",
       "cmd-r": "task::Rerun"
