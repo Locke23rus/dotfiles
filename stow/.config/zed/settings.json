@@ -1,53 +1,60 @@
 {
-    "linux": {
-        "ui_font_size": 23,
-        "buffer_font_size": 19,
-        "buffer_font_weight": 500,
-        "agent_font_size": 23,
-        "terminal": {
-            "font_size": 18,
-            "font_weight": 600
-        }
-    },
-    "macos": {
-        "ui_font_size": 16,
-        "buffer_font_size": 12,
-        "terminal": {
-            "font_size": 13
-        }
-    },
-    "features": {
-        "edit_prediction_provider": "copilot"
-    },
-    "agent": {
-        "default_profile": "ask",
-        "default_model": {
-            "provider": "copilot_chat",
-            "model": "gpt-4.1"
-        }
-    },
-    "theme": "Alabaster",
-    "buffer_font_family": "Annotation Mono",
-    "buffer_font_features": { "ss01": true, "calt": true, "liga": true },
+  "linux": {
+    "ui_font_size": 23,
+    "buffer_font_size": 19,
+    "buffer_font_weight": 500,
+    "agent_font_size": 23,
     "terminal": {
-        "font_family": "Annotation Mono",
-        "max_scroll_history_lines": 100000
-    },
-    "confirm_quit": true,
-    "collaboration_panel": {
-        "button": false
-    },
-    "autosave": "on_focus_change",
-    "preferred_line_length": 120,
-    "project_panel": {
-        "folder_icons": false,
-        "file_icons": false
-    },
-    "git": {
-        "inline_blame": { "enabled": false }
-    },
-    "file_types": {
-        "JSON": [".prettierrc", "ejson"],
-        "Ruby": ["irbrc"]
+      "font_size": 18,
+      "font_weight": 600
     }
+  },
+  "macos": {
+    "ui_font_size": 16,
+    "buffer_font_size": 12,
+    "terminal": {
+      "font_size": 13
+    }
+  },
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "agent": {
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    }
+  },
+  "theme": "Alabaster",
+  "buffer_font_family": "Annotation Mono",
+  "buffer_font_features": { "ss01": true, "calt": true, "liga": true },
+  "terminal": {
+    "font_family": "Annotation Mono",
+    "max_scroll_history_lines": 100000
+  },
+  "confirm_quit": true,
+  "collaboration_panel": {
+    "button": false
+  },
+  "autosave": "on_focus_change",
+  "preferred_line_length": 120,
+  "project_panel": {
+    "folder_icons": false,
+    "file_icons": false
+  },
+  "git": {
+    "inline_blame": {
+      "delay_ms": 1000
+    }
+  },
+  "file_types": {
+    "JSON": [".prettierrc", "ejson"],
+    "Ruby": ["irbrc"]
+  },
+  "languages": {
+    "Ruby": {
+      "language_servers": ["ruby-lsp", "rubocop", "!solargraph"]
+    }
+  }
 }
