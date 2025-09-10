@@ -17,7 +17,6 @@
             "alt-s": "workspace::Save",
             "alt-shift-b": "outline_panel::ToggleFocus",
             "alt-shift-e": "project_panel::ToggleFocus",
-            "alt-shift-g": "git_panel::ToggleFocus",
             "alt-shift-f": "pane::DeploySearch",
             "alt-shift-n": "workspace::NewWindow",
             "alt-shift-p": "command_palette::Toggle",
