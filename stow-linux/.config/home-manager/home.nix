@@ -80,7 +80,7 @@
         "yarn"
       ];
     };
-    initExtra = ''
+    initContent = ''
       any-nix-shell zsh --info-right | source /dev/stdin
     '';
   };
