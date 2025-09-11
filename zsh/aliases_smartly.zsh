@@ -19,5 +19,4 @@ alias dcrt='dcr --rm test'
 alias dspec='dcr test rspec'
 alias dcr='devbox compose run'
 alias dcb='devbox compose build'
-alias debug-toolbox="kubectl exec -n debug-toolbox -it $(kubectl get pods -n debug-toolbox -o name | grep -m1 debug-toolbox | cut -d'/' -f 2) -- /bin/bash"
-
+# alias debug-toolbox="kubectl exec -n debug-toolbox -it $(kubectl get pods -n debug-toolbox -o name | grep -m1 debug-toolbox | cut -d'/' -f 2) -- /bin/bash"
