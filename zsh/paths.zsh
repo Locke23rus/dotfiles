@@ -8,6 +8,7 @@ PATH="$HOME/zig:$PATH"
 PATH="$HOME/.mix/escripts:$PATH"
 PATH="$HOME/.local/share/gem/ruby/3.2.0/bin:$PATH"
 PATH="$HOME/.local/bin:$PATH"
+PATH="$HOME/.local/zig-0.15.2:$PATH"
 
 MANPATH="/usr/local/man:$MANPATH"
 MANPATH="/opt/homebrew/manpages:$MANPATH"
