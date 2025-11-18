@@ -25,6 +25,7 @@ alias gp='git push'
 alias gl='git pull'
 alias gsm='git switch main 2>/dev/null; or git switch master 2>/dev/null'
 alias grs='git restore'
+alias ga='git add'
 
 alias l='eza'
 alias ls='eza'
