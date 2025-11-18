@@ -27,6 +27,7 @@
     "edit_prediction_provider": "copilot"
   },
   "agent": {
+    "message_editor_min_lines": 5,
     "use_modifier_to_send": true,
     "default_profile": "ask",
     "default_model": {
@@ -73,6 +74,8 @@
     }
   },
   "buffer_font_family": "Annotation Mono",
+  // "buffer_font_family": "JetBrainsMono Nerd Font",
+  // "buffer_font_family": "Atkinson Hyperlegible Mono",
   "buffer_font_features": { "ss01": true, "calt": true, "liga": true },
   "terminal": {
     "font_family": "Annotation Mono",

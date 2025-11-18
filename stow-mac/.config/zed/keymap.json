@@ -37,14 +37,30 @@
       "alt-up": "editor::SelectLargerSyntaxNode",
       "alt-down": "editor::SelectSmallerSyntaxNode",
       "alt-shift-up": "editor::MoveLineUp",
-      "alt-shift-down": "editor::MoveLineDown",
-      "cmd-d": "editor::DuplicateLineDown"
+      "alt-shift-down": "editor::MoveLineDown"
     }
   },
   {
     "context": "Terminal",
     "bindings": {
       "cmd-t": "workspace::NewTerminal"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-d": "editor::DuplicateLineDown"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-d": [
+        "editor::SelectNext",
+        {
+          "replace_newest": false
+        }
+      ]
     }
   }
 ]

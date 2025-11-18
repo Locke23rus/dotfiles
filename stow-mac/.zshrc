@@ -113,3 +113,6 @@ fi
 
 eval "$(mcfly init zsh)"
 eval "$(mise activate zsh)"
+
+# bun completions
+[ -s "/Users/kirillnikitin/.bun/_bun" ] && source "/Users/kirillnikitin/.bun/_bun"
