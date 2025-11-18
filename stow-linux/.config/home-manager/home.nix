@@ -15,7 +15,7 @@
   # the Home Manager release notes for a list of state version
   # changes in each release.
 
-  home.stateVersion = "24.11";
+  home.stateVersion = "25.11";
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -36,7 +36,7 @@
     fzf
     git
     git-extras
-    go_1_23
+    go_1_25
     hcloud
     helix
     hub
@@ -51,15 +51,15 @@
     nix
     nixfmt-rfc-style
     nodePackages.svgo
-    optipng
+    # optipng
     ripgrep
     rust-analyzer
     sqlite
     stow
     tealdeer
     tokei
-    zig
-    zls
+    # zig
+    # zls
     zsh-completions
     # (nerdfonts.override { fonts = [ "JetBrainsMono" ]; }) # nix fonts don't work in flatpak apps :/
   ];
