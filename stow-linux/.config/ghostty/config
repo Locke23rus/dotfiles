@@ -1,0 +1,13 @@
+theme = "Alabaster"
+font-size = 10
+font-family = "Annotation Mono"
+maximize = true
+
+keybind = performable:alt+c=copy_to_clipboard
+keybind = alt+v=copy_to_clipboard
+keybind = alt+,=open_config
+keybind = alt+shift+,=reload_config
+keybind = alt+shift+p=toggle_command_palette
+keybind = alt+shift+q=quit
+keybind = alt+shift+t=new_tab
+keybind = alt+shift+w=close_tab:this
