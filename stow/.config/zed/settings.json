@@ -2,13 +2,13 @@
   "when_closing_with_no_tabs": "keep_window_open",
   "linux": {
     "ui_font_size": 23,
-    "buffer_font_size": 19,
-    "buffer_font_weight": 500,
+    "buffer_font_size": 18,
+    "buffer_font_weight": 400,
     "agent_ui_font_size": 23,
-    "agent_buffer_font_size": 19,
+    "agent_buffer_font_size": 18,
     "terminal": {
-      "font_size": 18,
-      "font_weight": 600
+      "font_size": 17,
+      "font_weight": 400
     }
   },
   "macos": {
