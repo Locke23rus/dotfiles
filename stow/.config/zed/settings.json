@@ -1,109 +1,109 @@
 {
-  "when_closing_with_no_tabs": "keep_window_open",
-  "linux": {
-    "ui_font_size": 23,
-    "buffer_font_size": 18,
-    "buffer_font_weight": 400,
-    "agent_ui_font_size": 23,
-    "agent_buffer_font_size": 18,
-    "terminal": {
-      "font_size": 17,
-      "font_weight": 400
-    }
-  },
-  "macos": {
-    "ui_font_size": 15.0,
-    "buffer_font_size": 12,
-    "agent_buffer_font_size": 12,
-    "terminal": {
-      "font_size": 12
+    "when_closing_with_no_tabs": "keep_window_open",
+    "linux": {
+        "ui_font_size": 23,
+        "buffer_font_size": 18,
+        "buffer_font_weight": 400,
+        "agent_ui_font_size": 23,
+        "agent_buffer_font_size": 18,
+        "terminal": {
+            "font_size": 17,
+            "font_weight": 400
+        }
     },
-    "telemetry": {
-      "diagnostics": false,
-      "metrics": false
+    "macos": {
+        "ui_font_size": 15,
+        "buffer_font_size": 12,
+        "agent_buffer_font_size": 12,
+        "terminal": {
+            "font_size": 12
+        },
+        "telemetry": {
+            "diagnostics": false,
+            "metrics": false
+        }
+    },
+    "features": {
+        "edit_prediction_provider": "copilot"
+    },
+    "agent": {
+        "message_editor_min_lines": 5,
+        "use_modifier_to_send": true,
+        "default_profile": "ask",
+        "default_model": {
+            "provider": "copilot_chat",
+            "model": "claude-sonnet-4.5"
+        }
+    },
+    "theme": "Alabaster",
+    "experimental.theme_overrides": {
+        "editor.active_line.background": "#E9E9E9",
+        "terminal.ansi.magenta": "#811ABC",
+        "syntax": {
+            // red
+            "comment": { "color": "#AA3731" },
+            "comment.doc": { "color": "#AA3731" },
+            "string.doc": { "color": "#AA3731" },
+            // blue
+            "function": { "color": "#325CC0" },
+            "function.method": { "color": "#325CC0" },
+            "label": { "color": "#325CC0" },
+            "title": { "color": "#325CC0" },
+            "tag": { "color": "#325CC0" },
+            // magenta
+            "constant": { "color": "#811ABC" },
+            "number": { "color": "#811ABC" },
+            "boolean": { "color": "#811ABC" },
+            "string.escape": { "color": "#811ABC" },
+            "link_uri": { "color": "#811ABC" },
+            // bright_black
+            "punctuation": { "color": "#777777" },
+            "punctuation.bracket": { "color": "#777777" },
+            "punctuation.delimiter": { "color": "#777777" },
+            "punctuation.list_marker": { "color": "#777777" },
+            "punctuation.special": { "color": "#777777" },
+            // black
+            "function.builtin": { "color": "#000000" },
+            // green
+            "string": { "color": "#448C27" },
+            "string.regex": { "color": "#448C27" },
+            "string.special": { "color": "#448C27" },
+            "string.special.symbol": { "color": "#448C27" },
+            "text.literal": { "color": "#448C27" },
+            "link_text": { "color": "#448C27" }
+        }
+    },
+    "buffer_font_family": "Annotation Mono",
+    // "buffer_font_family": "JetBrainsMono Nerd Font",
+    // "buffer_font_family": "Atkinson Hyperlegible Mono",
+    "buffer_font_features": { "ss01": true, "calt": true, "liga": true },
+    "terminal": {
+        "font_family": "Annotation Mono",
+        "max_scroll_history_lines": 100000
+    },
+    "confirm_quit": true,
+    "collaboration_panel": {
+        "button": false
+    },
+    "autosave": "on_focus_change",
+    "preferred_line_length": 120,
+    "project_panel": {
+        "folder_icons": false,
+        "file_icons": true
+    },
+    "git": {
+        "inline_blame": {
+            "show_commit_summary": true,
+            "delay_ms": 1000
+        }
+    },
+    "file_types": {
+        "JSON": [".prettierrc", "ejson"],
+        "Ruby": ["irbrc"]
+    },
+    "languages": {
+        "Ruby": {
+            "language_servers": ["ruby-lsp", "rubocop", "!solargraph"]
+        }
     }
-  },
-  "features": {
-    "edit_prediction_provider": "copilot"
-  },
-  "agent": {
-    "message_editor_min_lines": 5,
-    "use_modifier_to_send": true,
-    "default_profile": "ask",
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4.5"
-    }
-  },
-  "theme": "Alabaster",
-  "experimental.theme_overrides": {
-    "editor.active_line.background": "#E9E9E9",
-    "terminal.ansi.magenta": "#811ABC",
-    "syntax": {
-      // red
-      "comment": { "color": "#AA3731" },
-      "comment.doc": { "color": "#AA3731" },
-      "string.doc": { "color": "#AA3731" },
-      // blue
-      "function": { "color": "#325CC0" },
-      "function.method": { "color": "#325CC0" },
-      "label": { "color": "#325CC0" },
-      "title": { "color": "#325CC0" },
-      "tag": { "color": "#325CC0" },
-      // magenta
-      "constant": { "color": "#811ABC" },
-      "number": { "color": "#811ABC" },
-      "boolean": { "color": "#811ABC" },
-      "string.escape": { "color": "#811ABC" },
-      "link_uri": { "color": "#811ABC" },
-      // bright_black
-      "punctuation": { "color": "#777777" },
-      "punctuation.bracket": { "color": "#777777" },
-      "punctuation.delimiter": { "color": "#777777" },
-      "punctuation.list_marker": { "color": "#777777" },
-      "punctuation.special": { "color": "#777777" },
-      // black
-      "function.builtin": { "color": "#000000" },
-      // green
-      "string": { "color": "#448C27" },
-      "string.regex": { "color": "#448C27" },
-      "string.special": { "color": "#448C27" },
-      "string.special.symbol": { "color": "#448C27" },
-      "text.literal": { "color": "#448C27" },
-      "link_text": { "color": "#448C27" }
-    }
-  },
-  "buffer_font_family": "Annotation Mono",
-  // "buffer_font_family": "JetBrainsMono Nerd Font",
-  // "buffer_font_family": "Atkinson Hyperlegible Mono",
-  "buffer_font_features": { "ss01": true, "calt": true, "liga": true },
-  "terminal": {
-    "font_family": "Annotation Mono",
-    "max_scroll_history_lines": 100000
-  },
-  "confirm_quit": true,
-  "collaboration_panel": {
-    "button": false
-  },
-  "autosave": "on_focus_change",
-  "preferred_line_length": 120,
-  "project_panel": {
-    "folder_icons": false,
-    "file_icons": true
-  },
-  "git": {
-    "inline_blame": {
-      "show_commit_summary": true,
-      "delay_ms": 1000
-    }
-  },
-  "file_types": {
-    "JSON": [".prettierrc", "ejson"],
-    "Ruby": ["irbrc"]
-  },
-  "languages": {
-    "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop", "!solargraph"]
-    }
-  }
 }
