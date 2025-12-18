@@ -2,7 +2,6 @@
   {
     "context": "Workspace",
     "bindings": {
-      "alt-,": "zed::OpenSettings",
       "alt-b": "workspace::ToggleLeftDock",
       "alt-enter": ["picker::ConfirmInput", { "secondary": false }],
       "alt-f": "buffer_search::Deploy",
@@ -23,8 +22,8 @@
       "alt-shift-r": "task::Spawn",
       "alt-t": "project_symbols::Toggle",
       "alt-w": "pane::CloseActiveItem",
-      "ctrl-shift-r": "projects::OpenRecent"
-    }
+      "ctrl-shift-r": "projects::OpenRecent",
+    },
   },
   {
     "context": "Pane",
@@ -32,8 +31,8 @@
       "ctrl-/": "pane::GoBack",
       "ctrl-?": "pane::GoForward",
       "ctrl-w": null,
-      "alt-shift-f": "project_search::ToggleFocus"
-    }
+      "alt-shift-f": "project_search::ToggleFocus",
+    },
   },
   {
     "context": "Editor",
@@ -71,15 +70,15 @@
       "ctrl-t": "task::Spawn",
       "ctrl-r": "task::Rerun",
       "alt-r": "task::Rerun",
-      "alt-.": "editor::ToggleCodeActions"
-    }
+      "alt-.": "editor::ToggleCodeActions",
+    },
   },
   {
     "context": "Editor && mode == full",
     "bindings": {
       "ctrl-enter": "editor::OpenExcerpts",
-      "alt-o": "outline::Toggle"
-    }
+      "alt-o": "outline::Toggle",
+    },
   },
   {
     "context": "Terminal",
@@ -88,21 +87,21 @@
       "alt-v": "terminal::Paste",
       "alt-t": "workspace::NewTerminal",
       "alt-w": "pane::CloseActiveItem",
-      "ctrl-w": "editor::DeleteToPreviousWordStart"
-    }
+      "ctrl-w": "editor::DeleteToPreviousWordStart",
+    },
   },
   {
     "context": "BufferSearchBar",
     "bindings": {
       "alt-g": "search::SelectNextMatch",
-      "alt-shift-g": "search::SelectPreviousMatch"
-    }
+      "alt-shift-g": "search::SelectPreviousMatch",
+    },
   },
   {
     "context": "AgentPanel",
     "bindings": {
-      "alt-shift-e": "project_panel::ToggleFocus"
-    }
+      "alt-shift-e": "project_panel::ToggleFocus",
+    },
   },
   {
     "context": "GitPanel",
@@ -111,34 +110,34 @@
       "alt-g alt-g": "git::Fetch",
       "alt-g down": "git::Pull",
       "alt-g up": "git::Push",
-      "alt-shift-enter": "git::Amend"
-    }
+      "alt-shift-enter": "git::Amend",
+    },
   },
   {
     "context": "GitCommit > Editor",
     "bindings": {
       "alt-enter": "git::Commit",
-      "alt-shift-enter": "git::Amend"
-    }
+      "alt-shift-enter": "git::Amend",
+    },
   },
   {
     "context": "CommitEditor > Editor",
     "bindings": {
       "alt-enter": "git::Commit",
-      "alt-shift-enter": "git::Amend"
-    }
+      "alt-shift-enter": "git::Amend",
+    },
   },
   {
     "context": "GitDiff > Editor",
     "bindings": {
       "alt-enter": "git::Commit",
-      "alt-shift-enter": "git::Amend"
-    }
+      "alt-shift-enter": "git::Amend",
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "alt-super-b": "workspace::ToggleRightDock"
-    }
-  }
+      "alt-super-b": "workspace::ToggleRightDock",
+    },
+  },
 ]

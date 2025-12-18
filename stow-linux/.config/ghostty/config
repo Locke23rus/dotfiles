@@ -11,3 +11,4 @@ keybind = alt+shift+p=toggle_command_palette
 keybind = alt+shift+q=quit
 keybind = alt+shift+t=new_tab
 keybind = alt+shift+w=close_tab:this
+keybind = alt+k=clear_screen

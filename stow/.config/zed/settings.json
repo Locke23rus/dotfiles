@@ -8,23 +8,23 @@
         "agent_buffer_font_size": 18,
         "terminal": {
             "font_size": 17,
-            "font_weight": 400
-        }
+            "font_weight": 400,
+        },
     },
     "macos": {
         "ui_font_size": 15,
         "buffer_font_size": 12,
         "agent_buffer_font_size": 12,
         "terminal": {
-            "font_size": 12
+            "font_size": 12,
         },
         "telemetry": {
             "diagnostics": false,
-            "metrics": false
-        }
+            "metrics": false,
+        },
     },
     "features": {
-        "edit_prediction_provider": "copilot"
+        "edit_prediction_provider": "copilot",
     },
     "agent": {
         "message_editor_min_lines": 5,
@@ -32,8 +32,8 @@
         "default_profile": "ask",
         "default_model": {
             "provider": "copilot_chat",
-            "model": "claude-sonnet-4.5"
-        }
+            "model": "claude-sonnet-4.5",
+        },
     },
     "theme": "Alabaster",
     "experimental.theme_overrides": {
@@ -70,8 +70,8 @@
             "string.special": { "color": "#448C27" },
             "string.special.symbol": { "color": "#448C27" },
             "text.literal": { "color": "#448C27" },
-            "link_text": { "color": "#448C27" }
-        }
+            "link_text": { "color": "#448C27" },
+        },
     },
     "buffer_font_family": "Annotation Mono",
     // "buffer_font_family": "JetBrainsMono Nerd Font",
@@ -79,31 +79,31 @@
     "buffer_font_features": { "ss01": true, "calt": true, "liga": true },
     "terminal": {
         "font_family": "Annotation Mono",
-        "max_scroll_history_lines": 100000
+        "max_scroll_history_lines": 100000,
     },
     "confirm_quit": true,
     "collaboration_panel": {
-        "button": false
+        "button": false,
     },
     "autosave": "on_focus_change",
     "preferred_line_length": 120,
     "project_panel": {
         "folder_icons": false,
-        "file_icons": true
+        "file_icons": true,
     },
     "git": {
         "inline_blame": {
             "show_commit_summary": true,
-            "delay_ms": 1000
-        }
+            "delay_ms": 1000,
+        },
     },
     "file_types": {
         "JSON": [".prettierrc", "ejson"],
-        "Ruby": ["irbrc"]
+        "Ruby": ["irbrc"],
     },
     "languages": {
         "Ruby": {
-            "language_servers": ["ruby-lsp", "rubocop", "!solargraph"]
-        }
-    }
+            "language_servers": ["ruby-lsp", "rubocop", "!solargraph"],
+        },
+    },
 }
