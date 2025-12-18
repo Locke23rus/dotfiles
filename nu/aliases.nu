@@ -1,36 +1,53 @@
-# git
+# GIT
 alias git-update-submodules = git submodule foreach git pull origin master
-alias yolo = git push -f
-# alias git = hub
+alias yolo = git push --force-with-lease
 alias got = git
 alias gut = git
+alias gti = git
+alias gd = git diff
+alias gdd = GIT_PAGER=delta git diff
+alias gddd = GIT_EXTERNAL_DIFF=difft git diff
 alias gdiff = git diff --no-index
+alias gci = git commit
+alias gc = git commit
+alias gdm = git delete-merged-branches; git delete-squashed-branches
+alias gco = git checkout
+alias gcb = git checkout -b
+alias gb = git branch
+alias gbd = git branch -d
+alias gbD = git branch -D
+alias gmm = git merge master
+alias gg = git status
+alias gs = git switch
+alias gr = git rebase
+alias grm = git rebase master
+alias gp = git push
+alias gl = git pull
+alias gsm = git switch main 2>/dev/null; or git switch master 2>/dev/null
+alias grs = git restore
+alias ga = git add
+alias g = git
+alias glol = git lol
+alias gcp = git cherry-pick
 
-
-# dev
-alias b = bundle
-alias b-e = bundle exec
-alias c = cargo
-# alias reyarn = rm -rf node_modules/ && yarn
-
-
-# Docker
-alias k = kubectl
-alias dcr = docker-compose run
-alias dcb = docker-compose build
-
-
-# start scripts
-alias start_redis = redis-server /usr/local/etc/redis.conf
-# alias start_livebook = docker run -p 8080:8080 --pull always -v $(pwd):/data:z livebook/livebook
-# alias start_livebook_dropbox = docker run -p 8080:8080 --pull always -v $HOME/Dropbox/livebook:/data:z livebook/livebook
-
-
-alias optisvg = svgo --disable=removeXMLProcInst --enable=removeTitle
-alias download-audio = youtube-dl -f 'bestaudio' -o '%(title)s.%(ext)s'
 alias l = ls
 alias ll = ls -la
 alias lll = eza -la
 
+alias start_redis = redis-server /usr/local/etc/redis.conf
+# alias start_livebook = docker run -p 8080:8080 --pull always -v $(pwd):/data:z livebook/livebook
+# alias start_livebook_dropbox = docker run -p 8080:8080 --pull always -v $HOME/Dropbox/livebook:/data:z livebook/livebook
+
+# ruby
+alias b = bundle
+alias b-e = bundle exec
+alias be = bundle exec
+alias br = bundle exec rake
+alias r = bundle exec rails
+alias bs = bundle exec rspec
+alias b-spec = bundle exec rspec
+
+alias c = cargo
+alias k = kubectl
 alias e = nvim
-alias hm = home-manager switch
+alias hms = home-manager switch
