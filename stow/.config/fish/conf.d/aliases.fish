@@ -55,3 +55,6 @@ alias k='kubectl'
 
 alias e='nvim'
 alias hms='home-manager switch'
+
+alias ..='cd ..'
+alias ...='cd ../..'
