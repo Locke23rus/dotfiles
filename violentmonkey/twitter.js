@@ -2,7 +2,7 @@
 // @name        twitter
 // @match				https://x.com/*
 // @grant       GM_addStyle
-// @version     0.10
+// @version     0.11
 // ==/UserScript==
 
 GM_addStyle(`
