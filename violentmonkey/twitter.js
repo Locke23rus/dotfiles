@@ -13,6 +13,7 @@ GM_addStyle(`
 [aria-label="Verified Orgs"],
 [aria-label="Jobs"],
 [aria-label="Grok"],
+[aria-label="Creator Studio"],
 [aria-label="Grok actions"] {
   display: none !important;
 }
