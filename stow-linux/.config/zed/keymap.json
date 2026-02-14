@@ -140,4 +140,22 @@
       "alt-super-b": "workspace::ToggleRightDock",
     },
   },
+  {
+    "context": "AcpThread > (Editor && use_modifier_to_send)",
+    "bindings": {
+      "alt-enter": "agent::Chat"
+    }
+  },
+  {
+    "context": "AcpThread > Editor",
+    "bindings": {
+      "alt-enter": "agent::ChatWithFollow"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "alt-enter": "assistant::InlineAssist"
+    }
+  }
 ]
