@@ -15,7 +15,8 @@
   # the Home Manager release notes for a list of state version
   # changes in each release.
 
-  home.stateVersion = "25.11";
+  # home.stateVersion = "25.11";
+  home.stateVersion = "26.05";
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -25,6 +26,7 @@
 
   home.packages = with pkgs; [
     any-nix-shell
+    bat
     bottom
     cacert
     carapace
@@ -36,9 +38,9 @@
     fzf
     git
     git-extras
-    go_1_25
+    # go_1_25
     hcloud
-    helix
+    # helix
     hub
     jless
     jq
@@ -49,8 +51,8 @@
     leiningen
     mise
     nix
-    nixfmt-rfc-style
-    nodePackages.svgo
+    nixfmt
+    # nodePackages.svgo
     # optipng
     ripgrep
     rust-analyzer
@@ -98,15 +100,15 @@
     };
   };
 
-  programs.bat.enable = true;
+  # programs.bat.enable = true;
 
   programs.direnv.enable = true;
   programs.direnv.nix-direnv.enable = true;
 
-  programs.mcfly = {
-    enable = true;
-    enableZshIntegration = true;
-  };
+  # programs.mcfly = {
+  #   enable = true;
+  #   enableZshIntegration = true;
+  # };
 
   programs.zoxide = {
     enable = true;
