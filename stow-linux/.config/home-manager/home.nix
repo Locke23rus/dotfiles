@@ -38,7 +38,7 @@
     fzf
     git
     git-extras
-    # go_1_25
+    go
     hcloud
     # helix
     hub
