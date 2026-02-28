@@ -2,12 +2,16 @@
 // @name        youtube-ads
 // @match				https://www.youtube.com/*
 // @grant       GM_addStyle
-// @version     0.3
+// @version     0.4
 // ==/UserScript==
 
 GM_addStyle(`
 #masthead-ad, .ytd-banner-promo-renderer, .ytd-display-ad-renderer, ytd-rich-section-renderer {
   display: none !important;
+}
+
+.ytp-time-contents, .ytp-time-current {
+  font-variant-numeric: tabular-nums;
 }
 `);
 
