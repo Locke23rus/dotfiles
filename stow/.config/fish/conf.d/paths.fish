@@ -1,1 +1,5 @@
-export PATH="$HOME/.local/bin:$PATH"
+# export PATH="$HOME/.local/bin:$PATH"
+
+if not contains "$HOME/.local/bin" $PATH
+    set -x PATH "$HOME/.local/bin" $PATH
+end
