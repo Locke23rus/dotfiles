@@ -1,6 +1,6 @@
 {
   "edit_predictions": {
-    "provider": "copilot"
+    "provider": "copilot",
   },
   "when_closing_with_no_tabs": "keep_window_open",
   "linux": {
@@ -56,9 +56,9 @@
     "text_rendering_mode": "grayscale",
   },
   "macos": {
-    "ui_font_size": 15,
-    "buffer_font_size": 12,
-    "agent_buffer_font_size": 12,
+    "ui_font_size": 14,
+    "buffer_font_size": 11,
+    "agent_buffer_font_size": 11,
     "terminal": {
       "font_size": 12,
     },
@@ -68,12 +68,24 @@
     },
   },
   "agent": {
+    "tool_permissions": {
+      "tools": {
+        "terminal": {
+          "always_allow": [
+            {
+              "pattern": "^yarn\\s+test(\\s|$)",
+            },
+          ],
+        },
+      },
+    },
     "message_editor_min_lines": 5,
     "use_modifier_to_send": true,
     "default_profile": "ask",
     "default_model": {
+      "effort": "high",
       "provider": "copilot_chat",
-      "model": "gpt-5.2",
+      "model": "gpt-5.3-codex",
     },
   },
   "theme": "Alabaster",
