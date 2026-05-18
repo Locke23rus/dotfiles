@@ -2,6 +2,7 @@ theme = "Alabaster"
 font-size = 10
 font-family = "Annotation Mono"
 maximize = true
+adjust-cell-height = 1
 
 keybind = performable:alt+c=copy_to_clipboard
 keybind = alt+v=paste_from_clipboard
