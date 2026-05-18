@@ -6,4 +6,3 @@ compile = false
 
 [tools]
 aube = "latest"
-ruby = "4.0.1"

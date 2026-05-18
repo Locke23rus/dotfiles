@@ -1,1 +1,1 @@
-/home/kirill/.local/bin/mise activate fish | source
+~/.local/bin/mise activate fish | source
