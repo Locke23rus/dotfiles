@@ -1,8 +1,21 @@
 {
-    "cli_default_open_behavior": "new_window",
-    "edit_predictions": {
-        "provider": "codestral",
+    "context_servers": {
+        "chrome-devtools": {
+            "enabled": true,
+            "remote": false,
+            "command": "npx",
+            "args": [
+                "chrome-devtools-mcp@latest"
+            ]
+        }
     },
+    "edit_predictions": {
+        "provider": "codestral"
+    },
+    "title_bar": {
+        "show_worktree_name": false
+    },
+    "cli_default_open_behavior": "new_window",
     "when_closing_with_no_tabs": "keep_window_open",
     "linux": {
         "agent": {
@@ -17,9 +30,12 @@
             ],
             "default_profile": "write",
             "default_model": {
-                "provider": "mistral",
-                "model": "devstral-medium-latest",
-                "enable_thinking": false,
+                // "provider": "mistral",
+                // "model": "devstral-medium-latest",
+                // "enable_thinking": false,
+                "provider":"lmstudio",
+                "model": "qwen/qwen3.8-27b",
+                "enable_thinking": true,
             },
         },
         "agent_servers": {
@@ -28,16 +44,26 @@
             },
         },
         "edit_predictions": {
+          "open_ai_compatible_api": {
+              "model": "qwen/qwen3.8-27b",
+              "api_url": "http://127.0.0.1:1234/v1/completions"
+          },
             "provider": "codestral",
+            // "provider": "open_ai_compatible_api",
         },
         "ui_font_family": "Atkinson Hyperlegible Next",
-        "ui_font_size": 22,
-        "buffer_font_size": 18,
+        // "ui_font_size": 22,
+        "ui_font_size": 16,
+        // "buffer_font_size": 18,
+        "buffer_font_size": 14,
         "buffer_font_weight": 400,
-        "agent_ui_font_size": 23,
-        "agent_buffer_font_size": 18,
+        // "agent_ui_font_size": 23,
+        "agent_ui_font_size": 16,
+        // "agent_buffer_font_size": 18,
+        "agent_buffer_font_size": 14,
         "terminal": {
-            "font_size": 17,
+            // "font_size": 17,
+            "font_size": 13,
             "font_weight": 400,
         },
         "languages": {
@@ -199,6 +225,42 @@
     "autosave": "on_focus_change",
     "preferred_line_length": 120,
     "agent": {
+        "tool_permissions": {
+            "tools": {
+                "terminal": {
+                    "always_allow": [
+                        {
+                            "pattern": "^go\\s+build(\\s|$)"
+                        },
+                        {
+                            "pattern": "^go\\s+test(\\s|$)"
+                        },
+                        {
+                            "pattern": "^cd\\s+/home/kirill/code/reader(\\s|$)"
+                        },
+                        {
+                            "pattern": "^GOCACHE=/home/kirill/code/reader/\\.gocache\\s+go\\s+build(\\s|$)"
+                        },
+                        {
+                            "pattern": "^GOCACHE=/home/kirill/code/reader/\\.gocache\\s+go\\s+test(\\s|$)"
+                        }
+                    ]
+                }
+            }
+        },
+        "default_profile": "write",
+        "favorite_models": [
+            {
+                "provider": "lmstudio",
+                "model": "qwen/qwen3.8-27b",
+                "enable_thinking": false
+            }
+        ],
+        "default_model": {
+            "provider": "lmstudio",
+            "model": "qwen/qwen3.8-27b",
+            "enable_thinking": false
+        },
         "sidebar_side": "right",
         "dock": "right",
     },
@@ -211,6 +273,7 @@
         "file_icons": true,
     },
     "git_panel": {
+        "group_by": "staging",
         "dock": "left",
     },
     "git": {

@@ -4,12 +4,12 @@ font-family = "Annotation Mono"
 maximize = true
 adjust-cell-height = 1
 
-keybind = performable:alt+c=copy_to_clipboard
-keybind = alt+v=paste_from_clipboard
-keybind = alt+,=open_config
-keybind = alt+shift+,=reload_config
-keybind = alt+shift+p=toggle_command_palette
-keybind = alt+shift+q=quit
-keybind = alt+t=new_tab
-keybind = alt+w=close_tab:this
-keybind = alt+k=clear_screen
+# keybind = performable:super+c=copy_to_clipboard
+# keybind = super+v=paste_from_clipboard
+keybind = super+,=open_config
+keybind = super+shift+,=reload_config
+keybind = super+shift+p=toggle_command_palette
+keybind = super+shift+q=quit
+keybind = super+t=new_tab
+keybind = super+w=close_tab:this
+keybind = super+k=clear_screen
