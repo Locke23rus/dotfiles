@@ -1,295 +1,367 @@
 {
-    "context_servers": {
-        "chrome-devtools": {
-            "enabled": true,
-            "remote": false,
-            "command": "npx",
-            "args": [
-                "chrome-devtools-mcp@latest"
-            ]
+  "context_servers": {
+    "chrome-devtools": {
+      "enabled": true,
+      "remote": false,
+      "command": "npx",
+      "args": ["chrome-devtools-mcp@latest"]
+    }
+  },
+  "edit_predictions": {
+    "provider": "codestral"
+  },
+  "title_bar": {
+    "show_worktree_name": false
+  },
+  "cli_default_open_behavior": "new_window",
+  "when_closing_with_no_tabs": "keep_window_open",
+  "linux": {
+    "agent": {
+      "message_editor_min_lines": 5,
+      "use_modifier_to_send": true,
+      "favorite_models": [
+        {
+          "provider": "mistral",
+          "model": "devstral-medium-latest",
+          "enable_thinking": false
         }
+      ],
+      "default_profile": "write",
+      "default_model": {
+        // "provider": "mistral",
+        // "model": "devstral-medium-latest",
+        // "enable_thinking": false,
+        "provider": "lmstudio",
+        "model": "qwen/qwen3.8-27b",
+        "enable_thinking": true
+      }
+    },
+    "agent_servers": {
+      "mistral-vibe": {
+        "type": "registry"
+      }
     },
     "edit_predictions": {
-        "provider": "codestral"
+      "open_ai_compatible_api": {
+        "model": "qwen/qwen3.8-27b",
+        "api_url": "http://127.0.0.1:1234/v1/completions"
+      },
+      "provider": "codestral"
+      // "provider": "open_ai_compatible_api",
     },
-    "title_bar": {
-        "show_worktree_name": false
-    },
-    "cli_default_open_behavior": "new_window",
-    "when_closing_with_no_tabs": "keep_window_open",
-    "linux": {
-        "agent": {
-            "message_editor_min_lines": 5,
-            "use_modifier_to_send": true,
-            "favorite_models": [
-                {
-                    "provider": "mistral",
-                    "model": "devstral-medium-latest",
-                    "enable_thinking": false,
-                },
-            ],
-            "default_profile": "write",
-            "default_model": {
-                // "provider": "mistral",
-                // "model": "devstral-medium-latest",
-                // "enable_thinking": false,
-                "provider":"lmstudio",
-                "model": "qwen/qwen3.8-27b",
-                "enable_thinking": true,
-            },
-        },
-        "agent_servers": {
-            "mistral-vibe": {
-                "type": "registry",
-            },
-        },
-        "edit_predictions": {
-          "open_ai_compatible_api": {
-              "model": "qwen/qwen3.8-27b",
-              "api_url": "http://127.0.0.1:1234/v1/completions"
-          },
-            "provider": "codestral",
-            // "provider": "open_ai_compatible_api",
-        },
-        "ui_font_family": "Atkinson Hyperlegible Next",
-        // "ui_font_size": 22,
-        "ui_font_size": 16,
-        // "buffer_font_size": 18,
-        "buffer_font_size": 14,
-        "buffer_font_weight": 400,
-        // "agent_ui_font_size": 23,
-        "agent_ui_font_size": 16,
-        // "agent_buffer_font_size": 18,
-        "agent_buffer_font_size": 14,
-        "terminal": {
-            // "font_size": 17,
-            "font_size": 13,
-            "font_weight": 400,
-        },
-        "languages": {
-            "TypeScript": {
-                "language_servers": ["tsgo"],
-            },
-            "JavaScript": {
-                "format_on_save": "on",
-                "formatter": [
-                    {
-                        "language_server": { "name": "oxfmt" },
-                    },
-                    { "code_action": "source.fixAll.oxc" },
-                ],
-            },
-        },
-        "lsp": {
-            "oxlint": {
-                "initialization_options": {
-                    "settings": {
-                        "disableNestedConfig": false,
-                        "fixKind": "safe_fix",
-                        "run": "onType",
-                        "typeAware": true,
-                        "unusedDisableDirectives": "deny",
-                    },
-                },
-            },
-            "oxfmt": {
-                "initialization_options": {
-                    "settings": {
-                        "configPath": null,
-                        "flags": {},
-                        "fmt.configPath": null,
-                        "fmt.experimental": true,
-                        "run": "onSave",
-                        "typeAware": false,
-                        "unusedDisableDirectives": false,
-                    },
-                },
-            },
-        },
-        "text_rendering_mode": "grayscale",
-    },
-    "macos": {
-        "agent": {
-            "message_editor_min_lines": 5,
-            "use_modifier_to_send": true,
-            "default_profile": "ask",
-            "default_model": {
-                "provider": "copilot_chat",
-                "model": "gpt-5.2",
-            },
-        },
-        "edit_predictions": {
-            "provider": "copilot",
-        },
-        "ui_font_size": 15,
-        "buffer_font_size": 12,
-        "agent_buffer_font_size": 12,
-        "terminal": {
-            "font_size": 12,
-        },
-        "telemetry": {
-            "diagnostics": false,
-            "metrics": false,
-        },
-    },
-    "theme": "Alabaster",
-    "theme_overrides": {
-        "Alabaster": {
-            "editor.active_line.background": "#E9E9E9",
-            "terminal.ansi.magenta": "#811ABC",
-            "syntax": {
-                // red
-                "comment": { "color": "#AA3731" },
-                "comment.doc": { "color": "#AA3731" },
-                "string.doc": { "color": "#AA3731" },
-                // blue
-                "function": { "color": "#325CC0" },
-                "function.method": { "color": "#325CC0" },
-                "label": { "color": "#325CC0" },
-                "title": { "color": "#325CC0" },
-                "tag": { "color": "#325CC0" },
-                // magenta
-                "constant": { "color": "#811ABC" },
-                "number": { "color": "#811ABC" },
-                "boolean": { "color": "#811ABC" },
-                "string.escape": { "color": "#811ABC" },
-                "link_uri": { "color": "#811ABC" },
-                // bright_black
-                "punctuation": { "color": "#777777" },
-                "punctuation.bracket": { "color": "#777777" },
-                "punctuation.delimiter": { "color": "#777777" },
-                "punctuation.list_marker": { "color": "#777777" },
-                "punctuation.special": { "color": "#777777" },
-                // black
-                "function.builtin": { "color": "#000000" },
-                // green
-                "string": { "color": "#448C27" },
-                "string.regex": { "color": "#448C27" },
-                "string.special": { "color": "#448C27" },
-                "string.special.symbol": { "color": "#448C27" },
-                "text.literal": { "color": "#448C27" },
-                "link_text": { "color": "#448C27" },
-            },
-        },
-    },
-    // "experimental.theme_overrides": {
-    //   "editor.active_line.background": "#E9E9E9",
-    //   "terminal.ansi.magenta": "#811ABC",
-    //   "syntax": {
-    //     // red
-    //     "comment": { "color": "#AA3731" },
-    //     "comment.doc": { "color": "#AA3731" },
-    //     "string.doc": { "color": "#AA3731" },
-    //     // blue
-    //     "function": { "color": "#325CC0" },
-    //     "function.method": { "color": "#325CC0" },
-    //     "label": { "color": "#325CC0" },
-    //     "title": { "color": "#325CC0" },
-    //     "tag": { "color": "#325CC0" },
-    //     // magenta
-    //     "constant": { "color": "#811ABC" },
-    //     "number": { "color": "#811ABC" },
-    //     "boolean": { "color": "#811ABC" },
-    //     "string.escape": { "color": "#811ABC" },
-    //     "link_uri": { "color": "#811ABC" },
-    //     // bright_black
-    //     "punctuation": { "color": "#777777" },
-    //     "punctuation.bracket": { "color": "#777777" },
-    //     "punctuation.delimiter": { "color": "#777777" },
-    //     "punctuation.list_marker": { "color": "#777777" },
-    //     "punctuation.special": { "color": "#777777" },
-    //     // black
-    //     "function.builtin": { "color": "#000000" },
-    //     // green
-    //     "string": { "color": "#448C27" },
-    //     "string.regex": { "color": "#448C27" },
-    //     "string.special": { "color": "#448C27" },
-    //     "string.special.symbol": { "color": "#448C27" },
-    //     "text.literal": { "color": "#448C27" },
-    //     "link_text": { "color": "#448C27" },
-    //   },
-    // },
-    "buffer_font_family": "Annotation Mono",
-    // "buffer_font_family": "JetBrainsMono Nerd Font",
-    // "buffer_font_family": "Atkinson Hyperlegible Mono",
-    "buffer_font_features": { "ss01": true, "calt": true, "liga": true },
+    "ui_font_family": "Atkinson Hyperlegible Next",
+    // "ui_font_size": 22,
+    "ui_font_size": 16,
+    // "buffer_font_size": 18,
+    "buffer_font_size": 14,
+    "buffer_font_weight": 400,
+    // "agent_ui_font_size": 23,
+    "agent_ui_font_size": 16,
+    // "agent_buffer_font_size": 18,
+    "agent_buffer_font_size": 14,
     "terminal": {
-        "font_family": "Annotation Mono",
-        "max_scroll_history_lines": 100000,
-    },
-    "confirm_quit": true,
-    "collaboration_panel": {
-        "dock": "left",
-        "button": false,
-    },
-    "autosave": "on_focus_change",
-    "preferred_line_length": 120,
-    "agent": {
-        "tool_permissions": {
-            "tools": {
-                "terminal": {
-                    "always_allow": [
-                        {
-                            "pattern": "^go\\s+build(\\s|$)"
-                        },
-                        {
-                            "pattern": "^go\\s+test(\\s|$)"
-                        },
-                        {
-                            "pattern": "^cd\\s+/home/kirill/code/reader(\\s|$)"
-                        },
-                        {
-                            "pattern": "^GOCACHE=/home/kirill/code/reader/\\.gocache\\s+go\\s+build(\\s|$)"
-                        },
-                        {
-                            "pattern": "^GOCACHE=/home/kirill/code/reader/\\.gocache\\s+go\\s+test(\\s|$)"
-                        }
-                    ]
-                }
-            }
-        },
-        "default_profile": "write",
-        "favorite_models": [
-            {
-                "provider": "lmstudio",
-                "model": "qwen/qwen3.8-27b",
-                "enable_thinking": false
-            }
-        ],
-        "default_model": {
-            "provider": "lmstudio",
-            "model": "qwen/qwen3.8-27b",
-            "enable_thinking": false
-        },
-        "sidebar_side": "right",
-        "dock": "right",
-    },
-    "outline_panel": {
-        "dock": "left",
-    },
-    "project_panel": {
-        "dock": "left",
-        "folder_icons": false,
-        "file_icons": true,
-    },
-    "git_panel": {
-        "group_by": "staging",
-        "dock": "left",
-    },
-    "git": {
-        "inline_blame": {
-            "show_commit_summary": true,
-            "delay_ms": 1000,
-        },
-    },
-    "file_types": {
-        "JSON": [".prettierrc", "ejson"],
-        "Ruby": ["irbrc"],
+      // "font_size": 17,
+      "font_size": 13,
+      "font_weight": 400
     },
     "languages": {
-        "Ruby": {
-            "language_servers": ["ruby-lsp", "rubocop", "!solargraph"],
-        },
+      "TypeScript": {
+        "language_servers": ["tsgo"]
+      },
+      "JavaScript": {
+        "format_on_save": "on",
+        "formatter": [
+          {
+            "language_server": { "name": "oxfmt" }
+          },
+          { "code_action": "source.fixAll.oxc" }
+        ]
+      }
     },
-    "code_lens": "on",
+    "lsp": {
+      "oxlint": {
+        "initialization_options": {
+          "settings": {
+            "disableNestedConfig": false,
+            "fixKind": "safe_fix",
+            "run": "onType",
+            "typeAware": true,
+            "unusedDisableDirectives": "deny"
+          }
+        }
+      },
+      "oxfmt": {
+        "initialization_options": {
+          "settings": {
+            "configPath": null,
+            "flags": {},
+            "fmt.configPath": null,
+            "fmt.experimental": true,
+            "run": "onSave",
+            "typeAware": false,
+            "unusedDisableDirectives": false
+          }
+        }
+      }
+    },
+    "text_rendering_mode": "grayscale"
+  },
+  "macos": {
+    "agent_servers": {
+      "cursor": {
+        "favorite_config_option_values": {
+          "model": ["grok-4.6", "gpt-5.6-luna"]
+        },
+        "default_config_options": {
+          "effort": "medium",
+          "fast": "false",
+          "model": "grok-4.6",
+          "mode": "agent"
+        },
+        "type": "registry"
+      },
+      "codex-acp": {
+        "default_config_options": {
+          "reasoning_effort": "medium",
+          "model": "gpt-5.6-luna"
+        },
+        "type": "registry"
+      }
+    },
+    "agent": {
+      "enable_feedback": false,
+      "sidebar_side": "right",
+      "dock": "right",
+      "default_model": {
+        "provider": "openai-subscribed",
+        "model": "gpt-5.6-luna",
+        "enable_thinking": true,
+        "effort": "medium"
+      },
+      "favorite_models": [
+        {
+          "provider": "openai-subscribed",
+          "model": "gpt-5.6-luna",
+          "enable_thinking": true,
+          "effort": "medium"
+        },
+        {
+          "provider": "openai-subscribed",
+          "model": "gpt-5.6-sol",
+          "enable_thinking": true,
+          "effort": "low"
+        }
+      ],
+      "model_parameters": []
+    },
+    "edit_predictions": {
+      "open_ai_compatible_api": {
+        "max_output_tokens": 64,
+        "prompt_format": "qwen",
+        "model": "qwen2.5-coder-1.5b-instruct-mlx",
+        "api_url": "http://localhost:1234/v1/completions"
+      },
+      "allow_data_collection": "no",
+      "provider": "open_ai_compatible_api"
+    },
+    "ui_font_size": 15,
+    "buffer_font_size": 12,
+    "agent_buffer_font_size": 12,
+    "terminal": {
+      "font_size": 12
+    },
+    "telemetry": {
+      "diagnostics": false,
+      "metrics": false
+    },
+    "languages": {
+      "TypeScript": {
+        "language_servers": ["typescript-ls", "oxfmt", "!vtsls", "!typescript-language-server"],
+        "format_on_save": "on",
+        "formatter": [{ "language_server": { "name": "oxfmt" } }]
+      },
+      "TSX": {
+        "language_servers": ["typescript-ls", "oxfmt", "!vtsls", "!typescript-language-server"],
+        "format_on_save": "on",
+        "formatter": [{ "language_server": { "name": "oxfmt" } }]
+      },
+      "JavaScript": {
+        // "language_servers": ["typescript-ls", "oxfmt", "!vtsls", "!typescript-language-server"],
+        "format_on_save": "on",
+        "formatter": [{ "language_server": { "name": "oxfmt" } }]
+      },
+      "JSON": {
+        "format_on_save": "on",
+        "formatter": [{ "language_server": { "name": "oxfmt" } }]
+      },
+      "JSONC": {
+        "format_on_save": "on",
+        "formatter": [{ "language_server": { "name": "oxfmt" } }]
+      },
+      "Markdown": {
+        "format_on_save": "on",
+        "formatter": [{ "language_server": { "name": "oxfmt" } }]
+      }
+    }
+  },
+  "theme": "Alabaster",
+  "theme_overrides": {
+    "Alabaster": {
+      "editor.active_line.background": "#E9E9E9",
+      "terminal.ansi.magenta": "#811ABC",
+      "syntax": {
+        // red
+        "comment": { "color": "#AA3731" },
+        "comment.doc": { "color": "#AA3731" },
+        "string.doc": { "color": "#AA3731" },
+        // blue
+        "function": { "color": "#325CC0" },
+        "function.method": { "color": "#325CC0" },
+        "label": { "color": "#325CC0" },
+        "title": { "color": "#325CC0" },
+        "tag": { "color": "#325CC0" },
+        // magenta
+        "constant": { "color": "#811ABC" },
+        "number": { "color": "#811ABC" },
+        "boolean": { "color": "#811ABC" },
+        "string.escape": { "color": "#811ABC" },
+        "link_uri": { "color": "#811ABC" },
+        // bright_black
+        "punctuation": { "color": "#777777" },
+        "punctuation.bracket": { "color": "#777777" },
+        "punctuation.delimiter": { "color": "#777777" },
+        "punctuation.list_marker": { "color": "#777777" },
+        "punctuation.special": { "color": "#777777" },
+        // black
+        "function.builtin": { "color": "#000000" },
+        // green
+        "string": { "color": "#448C27" },
+        "string.regex": { "color": "#448C27" },
+        "string.special": { "color": "#448C27" },
+        "string.special.symbol": { "color": "#448C27" },
+        "text.literal": { "color": "#448C27" },
+        "link_text": { "color": "#448C27" }
+      }
+    }
+  },
+  // "experimental.theme_overrides": {
+  //   "editor.active_line.background": "#E9E9E9",
+  //   "terminal.ansi.magenta": "#811ABC",
+  //   "syntax": {
+  //     // red
+  //     "comment": { "color": "#AA3731" },
+  //     "comment.doc": { "color": "#AA3731" },
+  //     "string.doc": { "color": "#AA3731" },
+  //     // blue
+  //     "function": { "color": "#325CC0" },
+  //     "function.method": { "color": "#325CC0" },
+  //     "label": { "color": "#325CC0" },
+  //     "title": { "color": "#325CC0" },
+  //     "tag": { "color": "#325CC0" },
+  //     // magenta
+  //     "constant": { "color": "#811ABC" },
+  //     "number": { "color": "#811ABC" },
+  //     "boolean": { "color": "#811ABC" },
+  //     "string.escape": { "color": "#811ABC" },
+  //     "link_uri": { "color": "#811ABC" },
+  //     // bright_black
+  //     "punctuation": { "color": "#777777" },
+  //     "punctuation.bracket": { "color": "#777777" },
+  //     "punctuation.delimiter": { "color": "#777777" },
+  //     "punctuation.list_marker": { "color": "#777777" },
+  //     "punctuation.special": { "color": "#777777" },
+  //     // black
+  //     "function.builtin": { "color": "#000000" },
+  //     // green
+  //     "string": { "color": "#448C27" },
+  //     "string.regex": { "color": "#448C27" },
+  //     "string.special": { "color": "#448C27" },
+  //     "string.special.symbol": { "color": "#448C27" },
+  //     "text.literal": { "color": "#448C27" },
+  //     "link_text": { "color": "#448C27" },
+  //   },
+  // },
+  "buffer_font_family": "Annotation Mono",
+  // "buffer_font_family": "JetBrainsMono Nerd Font",
+  // "buffer_font_family": "Atkinson Hyperlegible Mono",
+  "buffer_font_features": { "ss01": true, "calt": true, "liga": true },
+  "terminal": {
+    "font_family": "Annotation Mono",
+    "max_scroll_history_lines": 100000
+  },
+  "confirm_quit": true,
+  "collaboration_panel": {
+    "dock": "left",
+    "button": false
+  },
+  "autosave": "on_focus_change",
+  "preferred_line_length": 120,
+  "agent": {
+    "tool_permissions": {
+      "tools": {
+        "terminal": {
+          "always_allow": [
+            {
+              "pattern": "^go\\s+build(\\s|$)"
+            },
+            {
+              "pattern": "^go\\s+test(\\s|$)"
+            },
+            {
+              "pattern": "^cd\\s+/home/kirill/code/reader(\\s|$)"
+            },
+            {
+              "pattern": "^GOCACHE=/home/kirill/code/reader/\\.gocache\\s+go\\s+build(\\s|$)"
+            },
+            {
+              "pattern": "^GOCACHE=/home/kirill/code/reader/\\.gocache\\s+go\\s+test(\\s|$)"
+            }
+          ]
+        }
+      }
+    },
+    "default_profile": "write",
+    "favorite_models": [
+      {
+        "provider": "lmstudio",
+        "model": "qwen/qwen3.8-27b",
+        "enable_thinking": false
+      }
+    ],
+    "default_model": {
+      "provider": "lmstudio",
+      "model": "qwen/qwen3.8-27b",
+      "enable_thinking": false
+    },
+    "sidebar_side": "right",
+    "dock": "right"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "project_panel": {
+    "dock": "left",
+    "folder_icons": false,
+    "file_icons": true
+  },
+  "git_panel": {
+    "group_by": "staging",
+    "dock": "left"
+  },
+  "git": {
+    "inline_blame": {
+      "show_commit_summary": true,
+      "delay_ms": 1000
+    }
+  },
+  "file_types": {
+    "JSON": [".prettierrc", "ejson"],
+    "Ruby": ["irbrc"]
+  },
+  "languages": {
+    "Ruby": {
+      "language_servers": ["ruby-lsp", "rubocop", "!solargraph"]
+    }
+  },
+  "code_lens": "on"
 }
