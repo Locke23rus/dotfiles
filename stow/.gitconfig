@@ -54,7 +54,7 @@
   line-numbers = true
   true-color = always
   hyperlinks = true
-  hyperlinks-file-link-format = "vscode://file/{path}:{line}"
+  hyperlinks-file-link-format = "zed://file/{path}:{line}"
 [merge]
   conflictstyle = diff3
 [includeIf "gitdir:~/code/smartly/"]
