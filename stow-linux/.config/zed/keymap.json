@@ -66,7 +66,7 @@
       "super-z": "editor::Undo",
       "super-shift-z": "editor::Redo",
       "super-shift-k": "editor::DeleteLine",
-      "ctrl-/": "pane::GoBack",
+      "ctrl--": "pane::GoBack",
       "ctrl-shift-/": "pane::GoForward",
       "super-t": "task::Spawn",
       "super-r": "task::Rerun",
@@ -214,6 +214,90 @@
     "context": "GitPicker",
     "unbind": {
       "alt-1": "git_picker::ActivateBranchesTab"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "super-2": [
+        "pane::ActivateItem",
+        1
+      ]
+    }
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "alt-2": [
+        "pane::ActivateItem",
+        1
+      ]
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "super-3": [
+        "pane::ActivateItem",
+        2
+      ]
+    }
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "alt-3": [
+        "pane::ActivateItem",
+        2
+      ]
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "super-4": [
+        "pane::ActivateItem",
+        3
+      ]
+    }
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "alt-4": [
+        "pane::ActivateItem",
+        3
+      ]
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "super-5": [
+        "pane::ActivateItem",
+        4
+      ]
+    }
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "alt-5": [
+        "pane::ActivateItem",
+        4
+      ]
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "super-0": "pane::ActivateLastItem"
+    }
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "alt-0": "pane::ActivateLastItem"
     }
   }
 ]

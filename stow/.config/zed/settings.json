@@ -49,32 +49,56 @@
     },
     "ui_font_family": "Atkinson Hyperlegible Next",
     // "ui_font_size": 22,
-    "ui_font_size": 16,
+    "ui_font_size": 15,
     // "buffer_font_size": 18,
-    "buffer_font_size": 14,
+    "buffer_font_size": 13,
     "buffer_font_weight": 400,
     // "agent_ui_font_size": 23,
-    "agent_ui_font_size": 16,
+    "agent_ui_font_size": 15,
     // "agent_buffer_font_size": 18,
-    "agent_buffer_font_size": 14,
+    "agent_buffer_font_size": 13,
     "terminal": {
       // "font_size": 17,
-      "font_size": 13,
+      "font_size": 12,
       "font_weight": 400
     },
     "languages": {
-      "TypeScript": {
-        "language_servers": ["tsgo"]
-      },
-      "JavaScript": {
-        "format_on_save": "on",
-        "formatter": [
-          {
-            "language_server": { "name": "oxfmt" }
-          },
-          { "code_action": "source.fixAll.oxc" }
-        ]
-      }
+        "TypeScript": {
+            // "language_servers": ["tsgo"],
+            "format_on_save": "on",
+            "formatter": [
+                { "language_server": { "name": "oxfmt" }, },
+                { "code_action": "source.fixAll.oxc" },
+            ],
+        },
+        "JavaScript": {
+            "format_on_save": "on",
+            "formatter": [
+                { "language_server": { "name": "oxfmt" }, },
+                { "code_action": "source.fixAll.oxc" },
+            ],
+        },
+        "TSX": {
+          "format_on_save": "on",
+          "formatter": [
+              { "language_server": { "name": "oxfmt" }, },
+              { "code_action": "source.fixAll.oxc" },
+          ],
+        },
+        "HTML": {
+          "format_on_save": "on",
+          "formatter": [
+              { "language_server": { "name": "oxfmt" }, },
+              { "code_action": "source.fixAll.oxc" },
+          ],
+        },
+        "Markdown": {
+          "format_on_save": "on",
+          "formatter": [
+              { "language_server": { "name": "oxfmt" }, },
+              { "code_action": "source.fixAll.oxc" },
+          ],
+        }
     },
     "lsp": {
       "oxlint": {
@@ -279,8 +303,8 @@
   },
   "project_panel": {
     "dock": "left",
-    "folder_icons": false,
-    "file_icons": true
+    "folder_indicator": "chevron",
+    "file_icons": false
   },
   "git_panel": {
     "group_by": "staging",
