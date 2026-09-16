@@ -1,4 +1,13 @@
 {
+  "agent_servers": {
+    "cursor": {
+      "type": "registry",
+      "default_config_options": {
+        "effort": "high",
+        "mode": "plan"
+      }
+    }
+  },
   "context_servers": {
     "chrome-devtools": {
       "enabled": true,
@@ -293,7 +302,7 @@
     "default_model": {
       "provider": "lmstudio",
       "model": "qwen/qwen3.8-27b",
-      "enable_thinking": false
+      "enable_thinking": true
     },
     "sidebar_side": "right",
     "dock": "right"

@@ -6,3 +6,5 @@ compile = false
 
 [tools]
 aube = "latest"
+bun = "latest"
+pi = "latest"
