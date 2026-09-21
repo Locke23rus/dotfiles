@@ -8,3 +8,4 @@ compile = false
 "aqua:modem-dev/hunk" = "latest"
 aube = "latest"
 bun = "latest"
+pi = "latest"
