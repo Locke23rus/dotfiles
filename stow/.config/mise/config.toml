@@ -5,4 +5,6 @@ idiomatic_version_file_enable_tools = ["ruby", "node"]
 compile = false
 
 [tools]
+"aqua:modem-dev/hunk" = "latest"
 aube = "latest"
+bun = "latest"
