@@ -160,8 +160,10 @@
       }
     },
     "agent": {
+      "threads_sidebar": {
+        "position": "right"
+      },
       "enable_feedback": false,
-      "sidebar_side": "right",
       "dock": "right",
       "default_model": {
         "provider": "openai-subscribed",
@@ -291,6 +293,9 @@
   "autosave": "on_focus_change",
   "preferred_line_length": 120,
   "agent": {
+    "threads_sidebar": {
+      "position": "right"
+    },
     "default_profile": "write",
     "favorite_models": [
       {
@@ -304,7 +309,6 @@
       "model": "qwen/qwen3.8-27b",
       "enable_thinking": true
     },
-    "sidebar_side": "right",
     "dock": "right"
   },
   "outline_panel": {
