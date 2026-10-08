@@ -1,0 +1,12 @@
+[Unit]
+Description=keyd application mapper (per-app key bindings)
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/keyd-application-mapper
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target
