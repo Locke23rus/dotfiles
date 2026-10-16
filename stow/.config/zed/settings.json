@@ -1,15 +1,6 @@
 {
-  "context_servers": {
-    "chrome-devtools": {
-      "enabled": true,
-      "remote": false,
-      "command": "npx",
-      "args": ["chrome-devtools-mcp@latest"]
-    }
-  },
-  "edit_predictions": {},
   "title_bar": {
-    "show_worktree_name": false
+    "show_worktree_name": false,
   },
   "cli_default_open_behavior": "new_window",
   "when_closing_with_no_tabs": "keep_window_open",
@@ -21,8 +12,8 @@
         {
           "provider": "mistral",
           "model": "devstral-medium-latest",
-          "enable_thinking": false
-        }
+          "enable_thinking": false,
+        },
       ],
       "default_profile": "write",
       "default_model": {
@@ -31,20 +22,20 @@
         // "enable_thinking": false,
         "provider": "lmstudio",
         "model": "qwen/qwen3.8-27b",
-        "enable_thinking": true
-      }
+        "enable_thinking": true,
+      },
     },
     "agent_servers": {
       "mistral-vibe": {
-        "type": "registry"
-      }
+        "type": "registry",
+      },
     },
     "edit_predictions": {
       "open_ai_compatible_api": {
         "model": "qwen/qwen3.8-27b",
-        "api_url": "http://127.0.0.1:1234/v1/completions"
+        "api_url": "http://127.0.0.1:1234/v1/completions",
       },
-      "provider": "codestral"
+      "provider": "codestral",
       // "provider": "open_ai_compatible_api",
     },
     "ui_font_family": "Atkinson Hyperlegible Next",
@@ -60,54 +51,36 @@
     "terminal": {
       // "font_size": 17,
       "font_size": 12,
-      "font_weight": 400
+      "font_weight": 400,
     },
     "languages": {
       "TypeScript": {
         "language_servers": ["typescript-ls", "oxfmt", "!vtsls", "!typescript-language-server"],
         "format_on_save": "on",
-        "formatter": [
-          { "language_server": { "name": "oxfmt" } },
-          { "code_action": "source.fixAll.oxc" }
-        ]
+        "formatter": [{ "language_server": { "name": "oxfmt" } }, { "code_action": "source.fixAll.oxc" }],
       },
       "JavaScript": {
         "language_servers": ["typescript-ls", "oxfmt", "!vtsls", "!typescript-language-server"],
         "format_on_save": "on",
-        "formatter": [
-          { "language_server": { "name": "oxfmt" } },
-          { "code_action": "source.fixAll.oxc" }
-        ]
+        "formatter": [{ "language_server": { "name": "oxfmt" } }, { "code_action": "source.fixAll.oxc" }],
       },
       "TSX": {
         "language_servers": ["typescript-ls", "oxfmt", "!vtsls", "!typescript-language-server"],
         "format_on_save": "on",
-        "formatter": [
-          { "language_server": { "name": "oxfmt" } },
-          { "code_action": "source.fixAll.oxc" }
-        ]
+        "formatter": [{ "language_server": { "name": "oxfmt" } }, { "code_action": "source.fixAll.oxc" }],
       },
       "JSON": {
         "format_on_save": "on",
-        "formatter": [
-          { "language_server": { "name": "oxfmt" } },
-          { "code_action": "source.fixAll.oxc" }
-        ]
+        "formatter": [{ "language_server": { "name": "oxfmt" } }, { "code_action": "source.fixAll.oxc" }],
       },
       "HTML": {
         "format_on_save": "on",
-        "formatter": [
-          { "language_server": { "name": "oxfmt" } },
-          { "code_action": "source.fixAll.oxc" }
-        ]
+        "formatter": [{ "language_server": { "name": "oxfmt" } }, { "code_action": "source.fixAll.oxc" }],
       },
       "Markdown": {
         "format_on_save": "on",
-        "formatter": [
-          { "language_server": { "name": "oxfmt" } },
-          { "code_action": "source.fixAll.oxc" }
-        ]
-      }
+        "formatter": [{ "language_server": { "name": "oxfmt" } }, { "code_action": "source.fixAll.oxc" }],
+      },
     },
     "lsp": {
       "oxlint": {
@@ -117,9 +90,9 @@
             "fixKind": "safe_fix",
             "run": "onType",
             "typeAware": true,
-            "unusedDisableDirectives": "deny"
-          }
-        }
+            "unusedDisableDirectives": "deny",
+          },
+        },
       },
       "oxfmt": {
         "initialization_options": {
@@ -130,109 +103,93 @@
             "fmt.experimental": true,
             "run": "onSave",
             "typeAware": false,
-            "unusedDisableDirectives": false
-          }
-        }
-      }
+            "unusedDisableDirectives": false,
+          },
+        },
+      },
     },
-    "text_rendering_mode": "grayscale"
+    "text_rendering_mode": "grayscale",
   },
   "macos": {
     "agent_servers": {
       "cursor": {
         "favorite_config_option_values": {
-          "model": ["grok-4.7", "gpt-5.6-luna"]
+          "model": ["grok-4.7", "composer-2.5"],
         },
         "default_config_options": {
           "effort": "medium",
           "fast": "false",
           "model": "grok-4.7",
-          "mode": "agent"
+          "mode": "agent",
         },
-        "type": "registry"
+        "type": "registry",
       },
       "codex-acp": {
         "default_config_options": {
           "reasoning_effort": "medium",
-          "model": "gpt-5.6-luna"
+          "model": "gpt-6-luna",
         },
-        "type": "registry"
-      }
-    },
-    "agent": {
-      "enable_feedback": false,
-      "dock": "right",
-      "default_model": {
-        "provider": "openai-subscribed",
-        "model": "gpt-5.6-luna",
-        "enable_thinking": true,
-        "effort": "medium"
+        "type": "registry",
       },
-      "favorite_models": [
-        {
-          "provider": "openai-subscribed",
-          "model": "gpt-5.6-luna",
-          "enable_thinking": true,
-          "effort": "medium"
-        },
-        {
-          "provider": "openai-subscribed",
-          "model": "gpt-5.6-sol",
-          "enable_thinking": true,
-          "effort": "low"
-        }
-      ],
-      "model_parameters": []
+    },
+    "context_servers": {
+      "chrome-devtools": {
+        "enabled": true,
+        "remote": false,
+        "command": "npx",
+        "args": ["chrome-devtools-mcp@latest"],
+      },
     },
     "edit_predictions": {
       "open_ai_compatible_api": {
         "max_output_tokens": 64,
         "prompt_format": "qwen",
         "model": "qwen2.5-coder-1.5b-instruct-mlx",
-        "api_url": "http://localhost:1234/v1/completions"
+        "api_url": "http://localhost:1234/v1/completions",
       },
       "allow_data_collection": "no",
-      "provider": "open_ai_compatible_api"
+      "provider": "open_ai_compatible_api",
     },
-    "ui_font_size": 14,
-    "buffer_font_size": 12,
-    "agent_buffer_font_size": 12,
-    "terminal": {
-      "font_size": 12
-    },
+    "ui_font_size": 13,
+    "ui_font_family": "Atkinson Hyperlegible Next",
+    "buffer_font_size": 11,
+    "agent_buffer_font_size": 11,
+    // "terminal": { "font_size": 11 },
+    "agent_ui_font_size": 13,
+    "git_commit_buffer_font_size": 11,
     "telemetry": {
       "diagnostics": false,
-      "metrics": false
+      "metrics": false,
     },
     "languages": {
       "TypeScript": {
         // "language_servers": ["typescript-ls", "oxfmt", "!vtsls", "!typescript-language-server"],
-        "format_on_save": "on"
+        "format_on_save": "on",
         // "formatter": [{ "language_server": { "name": "oxfmt" } }]
       },
       "TSX": {
         // "language_servers": ["typescript-ls", "oxfmt", "!vtsls", "!typescript-language-server"],
-        "format_on_save": "on"
+        "format_on_save": "on",
         // "formatter": [{ "language_server": { "name": "oxfmt" } }]
       },
       "JavaScript": {
         // "language_servers": ["typescript-ls", "oxfmt", "!vtsls", "!typescript-language-server"],
-        "format_on_save": "on"
+        "format_on_save": "on",
         // "formatter": [{ "language_server": { "name": "oxfmt" } }]
       },
       "JSON": {
-        "format_on_save": "on"
+        "format_on_save": "on",
         // "formatter": [{ "language_server": { "name": "oxfmt" } }]
       },
       "JSONC": {
-        "format_on_save": "on"
+        "format_on_save": "on",
         // "formatter": [{ "language_server": { "name": "oxfmt" } }]
       },
       "Markdown": {
-        "format_on_save": "on"
+        "format_on_save": "on",
         // "formatter": [{ "language_server": { "name": "oxfmt" } }]
-      }
-    }
+      },
+    },
   },
   "theme": "Alabaster",
   "theme_overrides": {
@@ -270,9 +227,9 @@
         "string.special": { "color": "#448C27" },
         "string.special.symbol": { "color": "#448C27" },
         "text.literal": { "color": "#448C27" },
-        "link_text": { "color": "#448C27" }
-      }
-    }
+        "link_text": { "color": "#448C27" },
+      },
+    },
   },
   "buffer_font_family": "Annotation Mono",
   // "buffer_font_family": "JetBrainsMono Nerd Font",
@@ -280,57 +237,61 @@
   "buffer_font_features": { "ss01": true, "calt": true, "liga": true },
   "terminal": {
     "font_family": "Annotation Mono",
-    "max_scroll_history_lines": 100000
+    "max_scroll_history_lines": 100000,
   },
   "confirm_quit": true,
   "collaboration_panel": {
     "dock": "left",
-    "button": false
+    "button": false,
   },
   "autosave": "on_focus_change",
   "preferred_line_length": 120,
   "agent": {
+    "threads_sidebar": {
+      "position": "right",
+    },
     "default_profile": "write",
     "favorite_models": [
       {
         "provider": "lmstudio",
         "model": "qwen/qwen3.8-27b",
-        "enable_thinking": false
-      }
+        "enable_thinking": false,
+      },
     ],
     "default_model": {
-      "provider": "lmstudio",
-      "model": "qwen/qwen3.8-27b",
-      "enable_thinking": true
+      "effort": "medium",
+      "provider": "zed.dev",
+      "model": "gpt-6-luna",
+      "enable_thinking": true,
     },
-    "dock": "right"
+    "dock": "right",
   },
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "project_panel": {
     "dock": "left",
     "folder_indicator": "chevron",
-    "file_icons": false
+    "file_icons": false,
   },
   "git_panel": {
     "group_by": "staging",
-    "dock": "left"
+    "dock": "left",
   },
   "git": {
     "inline_blame": {
       "show_commit_summary": true,
-      "delay_ms": 1000
-    }
+      "delay_ms": 1000,
+    },
   },
   "file_types": {
     "JSON": [".prettierrc", "ejson"],
-    "Ruby": ["irbrc"]
+    "Ruby": ["irbrc"],
   },
   "languages": {
     "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop", "!solargraph"]
-    }
-  }
+      "language_servers": ["ruby-lsp", "rubocop", "!solargraph"],
+    },
+  },
   // "code_lens": "on"
 }
