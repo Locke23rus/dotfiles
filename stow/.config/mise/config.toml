@@ -7,4 +7,7 @@ compile = false
 [tools]
 aube = "latest"
 bun = "latest"
+just = "latest"
 pi = "latest"
+usage = "latest"
+zoxide = "latest"
