@@ -1,0 +1,3 @@
+# Loaded only on macOS (needs auto_env = true in ~/.miserc.toml)
+[tools]
+coreutils = "latest"

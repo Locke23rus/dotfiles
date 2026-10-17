@@ -1,0 +1,2 @@
+# Loaded only on Linux (needs auto_env = true in ~/.miserc.toml)
+[tools]
