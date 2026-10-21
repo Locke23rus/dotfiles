@@ -4,12 +4,16 @@ idiomatic_version_file_enable_tools = ["ruby", "node"]
 [settings.ruby]
 compile = false
 
+[settings.self_update]
+auto = true
+
 [tools]
 aube = "latest"
 bat = "latest"
 bun = "latest"
 carapace = "latest"
 cargo-binstall = "latest"
+delta = "latest"
 difftastic = "latest"
 eza = "latest"
 fd = "latest"
