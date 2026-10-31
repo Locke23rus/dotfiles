@@ -2,4 +2,3 @@
 [tools]
 coreutils = "latest"
 rtk = "latest"
-tealdeer = "latest"
