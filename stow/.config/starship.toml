@@ -1,0 +1,9 @@
+[elixir]
+disabled = true
+
+[kubernetes]
+disabled = true
+style = "green"
+
+[package]
+disabled = true
